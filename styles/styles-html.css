@@ -1,0 +1,18 @@
+body {
+    background-color: f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
