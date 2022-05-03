@@ -29,6 +29,7 @@ proporcionar una descripción concisa de la página -->
     <title>Diccionario de elementos HTML5</title>
   </head>
   <body>
+    <nav>Este será un futuro menu principal de navegación</nav>
     <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
     demás subtitulos y parrafos estarán por debajo de él.-->
     <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
@@ -104,6 +105,11 @@ proporcionar una descripción concisa de la página -->
             <figcaption>Linea de tiempo desde la creación de HTML</figcaption>
           </figure>
         </center>
+      </section>
+      <hr />
+      <section>
+        <label for="tutorial">El progreso de este tutorial es:</label>
+        <progress id="tutorial" max="100" value="50">50%</progress>
       </section>
       <hr />
       <section>
@@ -641,12 +647,352 @@ proporcionar una descripción concisa de la página -->
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+            <p>
+              Este es un tutorial para aprender HTML en video. Tiene la
+              caracteristica que es muy dinámico y el tutor se explica muy bien.
+              Espero lo disfrutes.
+            </p>
+            <button type="button">
+              <a
+                href="https://www.youtube.com/watch?v=qz0aGYrrlhU&feature=emb_imp_woyt"
+                target="_blank"
+                >Verlo en Youtube</a
+              >
+            </button>
           </center>
         </div>
       </section>
       <hr />
+      <section>
+        <h3>Audio</h3>
+        <i
+          >Se usa esta etiqueta al momento de inclur un audio desde nuestro
+          servidor &ltaudio src="/dir/dir2/audio.ogg"&gt Nombre del audio
+          &lt/audio&gt y acepta formatos MP3, Ogg.
+        </i>
+      </section>
+      <hr />
+      <section>
+        <h3>Form e Inputs</h3>
+        <i
+          >Se usa esta etiqueta al momento de inclur un formulario en nuestra
+          página. &ltform&gt &lt/form&gt
+        </i>
+        <p>Estos son los posibles elementos que puede incluir in FORM:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Inputs</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>
+                    Input type button ------
+                    <input type="button" value="Botón" />
+                  </li>
+                  <li>
+                    <fieldset>
+                      <legend>Ejemplo checkbox:</legend>
+
+                      <div>
+                        <input type="checkbox" id="c1" name="1" checked />
+                        <label for="1">cbox 1</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="c2" name="2" />
+                        <label for="2">cbox 2</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li>
+                    Ejemplo input type color ------
+                    <input type="color" value="#ff0000" />
+                  </li>
+                  <li>
+                    <label for="start"> Ejemplo date ------ </label>
+                    <input
+                      type="date"
+                      id="start"
+                      name="date-objective"
+                      value="2022-05-02"
+                      min="2022-01-01"
+                      max="2022-12-31"
+                    />
+                  </li>
+                  <li>
+                    <label for="meeting-time">Elige fecha y hora ------ </label>
+
+                    <input
+                      type="datetime-local"
+                      id="meeting-time"
+                      name="meeting-time"
+                      value="2018-03-02T19:30"
+                      min="2022-01-01T00:00"
+                      max="2022-12-31T00:00"
+                    />
+                  </li>
+                  <li>
+                    <label for="email">Escribe tu email ------ </label>
+
+                    <input
+                      type="email"
+                      id="email"
+                      pattern=".+@3lstrategy\.com"
+                      size="30"
+                      required
+                      placeholder="llanes@3lstrategy.com"
+                    />
+                  </li>
+                  <li>
+                    <label for="avatar">Elige una imagen ------ </label>
+
+                    <input
+                      type="file"
+                      id="imagen1"
+                      name="imagen1"
+                      accept="image/png, image/jpeg"
+                    />
+                  </li>
+                  <li>
+                    <div>
+                      <label for="file"
+                        >Elige tus archivos a cargar: Plural ------
+                      </label>
+                      <input type="file" id="file" name="file" multiple />
+                    </div>
+                  </li>
+                  <li>
+                    Permite incluir valores escondidos en el formulario ------
+                    <br />&ltinput type="hidden" id="postId" name="postId"
+                    value="34657"&gt
+                  </li>
+                  <li>
+                    <p>
+                      Imagen usada para diferentes propositos. Por ejemplo un
+                      boton ------
+                    </p>
+                    <input
+                      type="image"
+                      id="image"
+                      alt="Login"
+                      src="https://www.w3schools.com/tags/img_submit.gif"
+                    />
+                    <p>
+                      &ltinput type="image" id="image" alt="Login"
+                      src="https://www.w3schools.com/tags/img_submit.gif" /&gt
+                    </p>
+                  </li>
+                  <li>
+                    <label for="start-month">Mes ------ </label>
+
+                    <input
+                      type="month"
+                      id="start-month"
+                      name="start"
+                      min="2022-03"
+                      value="2022-05"
+                    />
+                  </li>
+                  <li>
+                    <label for="tentacles">Numeros (10-100) ------ </label>
+
+                    <input
+                      type="number"
+                      id="numeros"
+                      name="numeros"
+                      min="10"
+                      max="100"
+                    />
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>
+                    <div>
+                      <label for="nombreusuario"
+                        >Nombre de usuario ------
+                      </label>
+                      <input
+                        type="text"
+                        id="nombreusuario"
+                        name="usernombreusuarioname"
+                      />
+                    </div>
+
+                    <div>
+                      <label for="pass"
+                        >Password (8 caracteres mínimo) ------
+                      </label>
+                      <input
+                        type="password"
+                        id="pass"
+                        name="password"
+                        minlength="8"
+                        required
+                        placeholder="********"
+                      />
+                    </div>
+                  </li>
+                  <li>
+                    <fieldset>
+                      <legend>Selecciona un valor ------</legend>
+
+                      <div>
+                        <input
+                          type="radio"
+                          id="v1"
+                          name="valores"
+                          value="v1"
+                          checked
+                        />
+                        <label for="v1">v1</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" id="v2" name="valores" value="v2" />
+                        <label for="v2">v2</label>
+                      </div>
+
+                      <div>
+                        <input type="radio" id="v3" name="valores" value="v3" />
+                        <label for="v3">v3</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li>
+                    <p>configuración de audio - mediante rangos ------</p>
+
+                    <div>
+                      <input
+                        type="range"
+                        id="volumen"
+                        name="volumen"
+                        min="0"
+                        max="11"
+                      />
+                      <label for="volumen">Volumen</label>
+                    </div>
+
+                    <div>
+                      <input
+                        type="range"
+                        id="bajos"
+                        name="bajos"
+                        min="0"
+                        max="100"
+                        value="90"
+                        step="10"
+                      />
+                      <label for="cowbell">Bajos</label>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Boton para resetear valor. ------</p>
+
+                    <input type="reset" value="Reset" />
+                  </li>
+                  <li>
+                    <label for="s-b">Búsqueda en este sitio ------ </label>
+                    <input type="b" id="s-b" name="q" />
+
+                    <button>Buscar</button>
+                  </li>
+                  <li>
+                    <p>Botón para enviar formulario al servido ------</p>
+                    <input type="submit" value="Send" />
+                  </li>
+                  <li>
+                    <label for="phone">Escribe tu teléfono ------ </label>
+
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      required
+                    />
+
+                    <small>Formato: 123-456-7890</small>
+                  </li>
+                  <li>
+                    <label for="name">nombre (4 a 8 caracteres) ------ </label>
+
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Leonardo"
+                      required
+                      minlength="4"
+                      maxlength="8"
+                      size="10"
+                    />
+                  </li>
+                  <li>
+                    <label for="appt"
+                      >Elige el tiempo para tu tarea ------
+                    </label>
+
+                    <input
+                      type="time"
+                      id="appt"
+                      name="appt"
+                      min="17:00"
+                      max="20:00"
+                      required
+                    />
+
+                    <small>Horas para tarea 5 pm a 8 pm </small>
+                  </li>
+                  <li>
+                    <label for="url"> Escribe una https:// URL:</label>
+
+                    <input
+                      type="url"
+                      name="url"
+                      id="url"
+                      placeholder="https://example.com"
+                      pattern="https://.*"
+                      size="30"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <label for="week">Elige una semana:</label>
+
+                    <input
+                      type="week"
+                      name="week"
+                      id="camp-week"
+                      min="2022-W0"
+                      max="2022-W52"
+                      required
+                    />
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <hr />
+      <section>
+        <p>Novedades de HTML en un futuro</p>
+        <ol>
+          <li>Nuevas etiquetas</li>
+          <li>Web semántica</li>
+          <li>Nuevas API e interacción con JS</li>
+          <li>Nuevos estándares colaborando con XHTML</li>
+        </ol>
+      </section>
     </main>
     <footer>
+      <nav>Este será un futuro menu footer de navegación</nav>
       <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
     </footer>
   </body>
