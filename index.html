@@ -42,969 +42,1058 @@ proporcionar una descripción concisa de la página -->
     <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
     <!-- Los buscadores consideran a los titulos como palabras claves. -->
     <main>
-      <section>
-        <h1>Diccionario de elementos HTML5</h1>
-        <p>
-          A continuación se mostraran dde manera exhaustiva todos los elementos
-          que componen el lenguaje de marcado HTML especificamente la versión
-          <b>HTML5</b>.
-        </p>
-        <center>
-          <img src="./images/htmllogo.png" width="80px" />
-        </center>
-        <br />
-        <center>
-          <q>Innovation distinguishes between a leader and a follower</q>
-        </center>
-        <p>
-          <strong
-            >Este diccionario será ordenado de forma alfabetica para un mejor
-            aprendizaje del usuario.</strong
-          >
-        </p>
-        <article>
-          <p>
-            HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup
-            Language) es el componente más básico de la Web. Define el
-            significado y la estructura del contenido web. Además de HTML,
-            generalmente se utilizan otras tecnologías para describir la
-            apariencia/presentación de una página web (CSS) o la
-            funcionalidad/comportamiento (JavaScript).
-          </p>
-          <p>
-            "Hipertexto" hace referencia a los enlaces que conectan páginas web
-            entre sí, ya sea dentro de un único sitio web o entre sitios web.
-            Los enlaces son un aspecto fundamental de la Web. Al subir contenido
-            a Internet y vincularlo a las páginas creadas por otras personas, te
-            conviertes en un participante activo en la «World Wide Web» (Red
-            Informática Mundial).
-          </p>
-          <blockquote>
-            Last modified: 20 abr 2021, by MDN contributors
-          </blockquote>
-        </article>
-      </section>
-      <hr />
-      <section>
-        <p>
-          Así se logró estructurar cada definición en lenguaje <em>HTML5.</em>
-        </p>
-        <code> (&ltH2&gt Letra de abecedario &lt/H2&gt) </code><br />
-        <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
-        <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code>
-      </section>
-
-      <hr />
-      <section>
-        <p>A continuación las versiones obsoletas de HTML.</p>
-        <ul>
-          <li>HTML 2.0</li>
-          <li>HTML 3.2</li>
-          <li>HTML 4.01</li>
-        </ul>
-        <center>
-          <figure>
-            <img
-              src="./images//html5timeline.gif"
-              alt="Linea de tiempo HTML"
-              style="width: 50%"
-            />
-            <figcaption>Linea de tiempo desde la creación de HTML</figcaption>
-          </figure>
-        </center>
-      </section>
-      <hr />
-      <section>
-        <label for="tutorial">El progreso de este tutorial es:</label>
-        <progress id="tutorial" max="100" value="50">50%</progress>
-      </section>
-      <hr />
-      <section>
-        <h2>Diccionario: A - Z</h2>
-        <h3>&lta&gt Enlace</h3>
-        <p>
-          Crea un enlace a otras páginas de internet, archivos o ubicaciones
-          dentro de la misma página, direcciones de correo, o cualquier otra
-          URL.
-        </p>
-        <h3>&ltabbr&gt abreviatura</h3>
-        <p>
-          Representa una abreviación o acrónimo; el atributo opcional title
-          puede ampliar o describir la abreviatura. Si está presente, el
-          atributo title debe contener la descripción completa y nada más.
-        </p>
-        <h3>&ltaddress&gt address</h3>
-        <p>
-          Aporta información de contacto para su article más cercano o ancestro
-          body; en el último caso lo aplica a todo el documento.
-        </p>
-        <h3>&ltarea&gt area</h3>
-        <p>
-          Sirve para crear las distintas secciones en las que se puede dividir
-          un mapas de imágenes en el cliente.
-        </p>
-        <h3>&ltarticle&gt article</h3>
-        <p>
-          representa una composición auto-contenida en un documento, página, una
-          aplicación o en el sitio, que se destina a distribuir de forma
-          independiente o reutilizable, por ejemplo, en la indicación. Podría
-          ser un mensaje en un foro, un artículo de una revista o un periódico,
-          una entrada de blog, un comentario de un usuario, un widget
-          interactivo o gadget, o cualquier otro elemento independiente del
-          contenido.
-        </p>
-        <h3>&ltaside&gt aside</h3>
-        <p>
-          Representa una sección de una página que consiste en contenido que
-          está indirectamente relacionado con el contenido principal del
-          documento. Estas secciones son a menudo representadas como barras
-          laterales o como inserciones y contienen una explicación al margen
-          como una definición de glosario, elementos relacionados
-          indirectamente, como publicidad, la biografía del autor, o en
-          aplicaciones web, la información de perfil o enlaces a blogs
-          relacionados.
-        </p>
-        <h3>&ltaudio&gt audio</h3>
-        <p>
-          El elemento audio se usa para insertar contenido de audio en un
-          documento HTML o XHTML. El elemento audio se agregó como parte de HTML
-          5.
-        </p>
-        <h3>&ltb&gt bold</h3>
-        <p>
-          Indica que el texto debe ser representado con una variable bold, o
-          negrita, de la tipografía que se esté usando.
-        </p>
-        <h3>&ltbase&gt base</h3>
-        <p>
-          Especifica la dirección URL base que se utilizará para todas las
-          direcciones URL relativas contenidas dentro de un documento. Sólo
-          puede haber un elemento "base" en un documento.
-        </p>
-        <h3>&ltbdi&gt bi-direccional</h3>
-        <p>
-          Aisla un trozo de texto para que pueda ser formateado con una
-          dirección diferente al texto que hay fuera de él.
-        </p>
-        <h3>&ltbdo&gt bi-direccional Overriding</h3>
-        <p>
-          La dirección de escritura del texto está relacionada con el idioma y
-          se declara con el atributo dir. Pero en ocasiones esto no es
-          suficiente, entonces entra en juego el elemento bdo (anulación del
-          algoritmo bidireccional) que al anular el algoritmo permite un control
-          total de la direccionalidad.
-        </p>
-        <h3>&ltblockqoute&gt blockquote</h3>
-        <p>
-          Crea citas en bloque, marca las citas a otros autores o documentos.
-        </p>
-        <h3>&ltbody&gt body</h3>
-        <p>
-          Representa el contenido de un documento HTML. Solo puede haber un
-          elemento "body" en un documento.
-        </p>
-        <h3>&ltbr&gt line break</h3>
-        <p>
-          Produce un salto de línea en el texto (retorno de carro). Es útil para
-          escribir un poema o una dirección, donde la división de las líneas es
-          significante.
-        </p>
-        <h3>&ltbutton&gt button</h3>
-        <p>
-          Representa un elemento cliqueable de tipo botón que puede ser
-          utilizado en formularios o en cualquier parte de la página que
-          necesite un botón estándar y simple de aplicar. De forma
-          predeterminada, los botones HTML se presentan con un estilo similar en
-          todas las plataformas.
-        </p>
-        <h3>&ltcanvas&gt canvas</h3>
-        <p>
-          Se puede utilizar para dibujar gráficos a través de secuencias de
-          comandos (por lo general JavaScript ).
-        </p>
-        <h3>&ltcaption&gt caption</h3>
-        <p>Es el encargado de darle un título descriptivo a las tablas.</p>
-        <h3>&ltcite&gt cite</h3>
-        <p>Marca una referencia a una fuente, o el autor de un texto citado.</p>
-        <h3>&ltcode&gt code</h3>
-        <p>Es el apropiado para marcar el código de un programa.</p>
-        <h3>&ltcol&gt col</h3>
-        <p>
-          Permite especificar propiedades para una columna o un grupo de ellas.
-        </p>
-        <h3>&ltcolgroup&gt colgroup</h3>
-        <p>Grupo de columnas. Permite crear grupos de columnas.</p>
-        <h3>&ltdata&gt data</h3>
-        <p>
-          Vincula un contenido dado con una traducción legible por una máquina.
-        </p>
-        <h3>&ltdatalist&gt datalist</h3>
-        <p>
-          contiene un conjunto de elementos "option" que representan los valores
-          disponibles para otros controles.
-        </p>
-        <h3>&ltdd&gt dd</h3>
-        <p>
-          Provee detalles acerca de o la definición de un término precedente
-          ("dt") en una lista de descripciones ("dl").
-        </p>
-        <h3>&ltdel&gt deleted</h3>
-        <p>
-          Marca las partes de un texto o documento que han sido suprimidas o
-          sustituidas.
-        </p>
-        <h3>&ltdetails&gt details</h3>
-        <p>
-          Es usado como un widget de revelación a través del cual el usuario
-          puede obtener información adicional .
-        </p>
-        <h3>&ltdfn&gt dfn</h3>
-        <p>Sirve para marcar el término que se quiere definir.</p>
-        <h3>&ltdialog&gt dialog</h3>
-        <p>
-          Representa una caja de diálogo u otro componente interactivo, como
-          inspector o ventana.
-        </p>
-        <h3>&ltdiv&gt div</h3>
-        <p>Sirve para crear secciones o agrupar contenidos.</p>
-        <h3>&ltdl&gt dl</h3>
-        <p>
-          representa una lista descriptiva. El elemento encierra una lista de
-          grupos de términos y de descripciones.
-        </p>
-        <h3>&ltdt&gt dt</h3>
-        <p>
-          especifica un término en una descripción o lista de definiciones, y
-          como tal debe utilizarse dentro de un elemento "dl".
-        </p>
-        <h3>&ltem&gt em</h3>
-        <p>
-          es el apropiado para marcar con énfasis las partes importantes de un
-          texto.
-        </p>
-        <h3>&ltembed&gt embed</h3>
-        <p>
-          Representa un punto de integración para una aplicación externa o de
-          contenido interactivo (en otras palabras, un plug-in).
-        </p>
-        <h3>&ltfieldset&gt fieldset</h3>
-        <p>Permite organizar en grupos los campos de un formulario.</p>
-        <h3>&ltfigcaption&gt figcaption</h3>
-        <p>
-          representa un subtítulo o leyenda asociado al contenido del elemento
-          padre "figure", pudiendo ser colocado como primer o último hijo. Es
-          importante destacar que el elemento "figcaption" es opcional.
-        </p>
-        <h3>&ltfigure&gt figure</h3>
-        <p>
-          Representa contenido independiente, a menudo con un título. Si bien se
-          relaciona con el flujo principal, su posición es independiente de
-          éste. Por lo general, se trata de una imagen, una ilustración, un
-          diagrama, un fragmento de código, o un esquema al que se hace
-          referencia en el texto principal, pero que se puede mover a otra
-          página o a un apéndice sin que afecte al flujo principal.
-        </p>
-        <h3>&ltfooter&gt footer</h3>
-        <p>
-          Representa un pie de página para el contenido de sección más cercano o
-          el elemento raíz de sección.
-        </p>
-
-        <h3>&ltform&gt form</h3>
-        <p>
-          Representa una sección de un documento que contiene controles
-          interactivos que permiten a un usuario enviar información a un
-          servidor web.
-        </p>
-        <h3>&lthead&gt head</h3>
-        <p>
-          provee información general (metadatos) acerca del documento,
-          incluyendo su título y enlaces a scripts y hojas de estilos.
-        </p>
-        <h3>&ltheader&gt header</h3>
-        <p>
-          Representa un grupo de ayudas introductorias o de navegación. Puede
-          contener algunos elementos de encabezado, así como también un logo, un
-          formulario de búsqueda, un nombre de autor y otros componentes.
-        </p>
-        <h3>&lthr&gt hr</h3>
-        <p>
-          Representa un cambio de tema entre párrafos (por ejemplo, un cambio de
-          escena en una historia, un cambio de tema en una sección).
-        </p>
-        <h3>&lthtml&gt html</h3>
-        <p>
-          Representa la raiz de un documento HTML. El resto de elementos
-          descienden de este elemento.
-        </p>
-        <h3>&lti&gt i</h3>
-        <p>Muestra el texto marcado con un estilo en cursiva o italica.</p>
-        <h3>&ltiframe&gt iframe</h3>
-        <p>
-          Representa un contexto de navegación anidado, el cual permite
-          incrustrar otra página HTML en la página actual.
-        </p>
-        <h3>&ltimg&gt img</h3>
-        <p>Representa una imagen en el documento.</p>
-        <h3>&ltinput&gt input</h3>
-        <p>
-          Se usa para crear controles interactivos para formularios basados en
-          la web con el fin de recibir datos del usuario.
-        </p>
-        <h3>&ltins&gt ins</h3>
-        <p>Marca las partes de un texto que han sido añadidos al documento.</p>
-        <h3>&ltkbd&gt kbd</h3>
-        <p>Marca el texto que debe introducir el usuario.</p>
-        <h3>&ltkeygen&gt keygen</h3>
-        <p>
-          Existe para facilitar la generación de llaves, y el envío de la clave
-          pública como parte de un formulario HTML.
-        </p>
-        <h3>&ltlabel&gt label</h3>
-        <p>
-          Representa una etiqueta para un elemento en una interfaz de usuario.
-          Este puede estar asociado con un control ya sea mediante la
-          utilizacion del atributo for, o ubicando el control dentro del
-          elemento label.
-        </p>
-        <h3>&ltlegend&gt legend</h3>
-        <p>
-          Crea un título para un grupos los campos ("fieldset") de un
-          formulario.
-        </p>
-        <h3>&ltli&gt elemento de lista</h3>
-        <p>Declara cada uno de los elementos de una lista.</p>
-        <h3>&ltlink&gt link</h3>
-        <p>
-          Especifica la relación entre el documento actual y un recurso externo.
-        </p>
-        <h3>&ltmain&gt main</h3>
-        <p>
-          Representa el contenido principal del "body" de un documento o
-          aplicación.
-        </p>
-        <h3>&ltmap&gt map</h3>
-        <p>Descripción de uno o dos párrafos.</p>
-        <h3>&ltmark&gt mark</h3>
-        <p>
-          Representa un texto marcado o resaltado como referencia o anotación,
-          debido a su relevancia o importancia en un contexto particular.
-        </p>
-        <h3>&ltmeta&gt meta</h3>
-        <p>Sirve para aportar información sobre el documento.</p>
-        <h3>&ltmeter&gt meter</h3>
-        <p>
-          El elemento representa un valor escalar dentro de un rango conocido o
-          un valor fraccionario.
-        </p>
-        <h3>&ltnav&gt nav</h3>
-        <p>
-          Representa una sección de una página cuyo propósito es proporcionar
-          enlaces de navegación, ya sea dentro del documento actual o a otros
-          documentos. Ejemplos comunes de secciones de navegación son menús,
-          tablas de contenido e índices.
-        </p>
-        <h3>&ltnoscript&gt noscript</h3>
-        <p>
-          Aporta contenidos alternativos al elemento script. las aplicaciones de
-          usuario que no soporten scripts deben mostrar en su lugar el contenido
-          de este elemento.
-        </p>
-        <h3>&ltobject&gt object</h3>
-        <p>
-          Representa un recurso externo, que puede ser tratado como una imagen,
-          un contexto de navegación anidado, o como un recurso que debe ser
-          manejado por un plugin.
-        </p>
-        <h3>&ltol&gt lista ordenada</h3>
-        <p>
-          Permite definir listas o viñetas ordenadas (“Ordered List”), bien con
-          numeración o alfabéticamente.
-        </p>
-        <h3>&ltoptgroup&gt optgroup</h3>
-        <p>
-          El elemento crea una agrupación de opciones dentro de un elemento
-          "select".
-        </p>
-        <h3>&ltoption&gt option</h3>
-        <p>
-          se usa para representar un item dentro de un "select", un "optgroup"
-          (en-US) o un elemento HTML5 "datalist".
-        </p>
-        <h3>&ltoutput&gt output</h3>
-        <p>
-          Elemento es un elemento contenedor en el que un sitio o aplicación
-          puede inyectar los resultados de un cálculo o el resultado de una
-          acción del usuario.
-        </p>
-        <h3>&ltp&gt parrafo</h3>
-        <p>Es el apropiado para distribuir el texto en párrafos.</p>
-        <h3>&ltparam&gt param</h3>
-        <p>Permite especificar parámetros de ejecución para un objeto.</p>
-        <h3>&ltpicture&gt picture</h3>
-        <p>
-          es un contenedor usado para especificar múltiples elementos "source" y
-          un elemento "img" contenido en él para proveer versiones de una imagen
-          para diferentes escenarios de dispositivos.
-        </p>
-        <h3>&ltpre&gt pre</h3>
-        <p>
-          representa texto preformateado. El texto en este elemento típicamente
-          se muestra en una fuente fija, no proporcional, exactamente como es
-          mostrado en el archivo. Los espacios dentro de este elemento también
-          son mostrados como están escritos.
-        </p>
-        <h3>&ltprogress&gt progress</h3>
-        <p>
-          Se utiliza para visualizar el progreso de una tarea. Aunque los
-          detalles de como se muestran depende directamente del navegador que
-          utiliza el cliente, aunque básicamente aparece una barra de progreso.
-        </p>
-        <h3>&ltq&gt quote</h3>
-        <p>Indica que el texto adjunto es una cita corta en línea.</p>
-        <h3>&ltrp&gt rp</h3>
-        <p>
-          El elemento se usa para proporcionar paréntesis alternativos para los
-          navegadores que no admiten la visualización de anotaciones Ruby
-          mediante el elemento "ruby".
-        </p>
-        <h3>&ltrt&gt rt</h3>
-        <p>
-          El elemento especifica el componente de texto Ruby de una anotación
-          Ruby, que se utiliza para proporcionar información de pronunciación,
-          traducción o transliteración para la tipografía de Asia oriental.
-        </p>
-        <h3>&ltruby&gt ruby</h3>
-        <p>
-          El elemento representa pequeñas anotaciones que se representan encima,
-          debajo o al lado del texto base, generalmente utilizadas para mostrar
-          la pronunciación de los caracteres de Asia oriental. También se puede
-          usar para anotar otros tipos de texto, pero este uso es menos común.
-        </p>
-        <h3>&lts&gt s</h3>
-        <p>Muestra el texto tachado con una linea horizontal.</p>
-        <h3>&ltsamp&gt samp</h3>
-        <p>
-          Se utiliza para incluir texto en línea que representa una muestra (o
-          cita) de la salida de un programa de ordenador. El contenido de esta
-          etiqueta es renderizado generalmente usando la tipografía
-          monoespaciada por defecto del navegador.
-        </p>
-        <h3>&ltscript&gt script</h3>
-        <p>
-          El elemento se utiliza para incrustar código o datos ejecutables; esto
-          generalmente se usa para incrustar o hacer referencia al código
-          JavaScript.
-        </p>
-        <h3>&ltsection&gt section</h3>
-        <p>
-          El elemento representa una sección independiente genérica de un
-          documento, que no tiene un elemento semántico más específico para
-          representarlo. Las secciones siempre deben tener un encabezado, con
-          muy pocas excepciones.
-        </p>
-        <h3>&ltselect&gt select</h3>
-        <p>
-          El elemento representa un control que proporciona un menú de opciones.
-        </p>
-        <h3>&ltslot&gt slot</h3>
-        <p>
-          Es un placeholder en un componente que tu puedes llenar con tu propio
-          marcado, que te permite crear árboles DOM por separado y presentarlos
-          juntos.
-        </p>
-        <h3>&ltsmall&gt small</h3>
-        <p>
-          Hace el tamaño del texto una talla más pequeña (por ejemplo, de largo
-          a mediano, o de pequeño a extra pequeño) que el tamaño mínimo de
-          fuente del navegador.
-        </p>
-        <h3>&ltsource&gt source</h3>
-        <p>
-          especifica recursos de medios múltiples para los elementos "picture",
-          "audio", o "video".
-        </p>
-        <h3>&ltspan&gt span</h3>
-        <p>
-          Es un contenedor en línea. Sirve para aplicar estilo al texto o
-          agrupar elementos en línea.
-        </p>
-        <h3>&ltstrong&gt strong</h3>
-        <p>
-          Es el apropiado para marcar con especial énfasis las partes más
-          importantes de un texto.
-        </p>
-        <h3>&ltstyle&gt style</h3>
-        <p>Es el elemento encargado de indicar la información de estilo.</p>
-        <h3>&ltsub&gt sub</h3>
-        <p>
-          Define un fragmento de texto que se debe mostrar, por razones
-          tipográficas, más bajo, y generalmente más pequeño, que el tramo
-          principal del texto, es decir, en subíndice.
-        </p>
-        <h3>&ltsummary&gt summary</h3>
-        <p>
-          Elemento especifica un resumen, título o leyenda para el cuadro de
-          divulgación de un elemento "detalles". Al hacer clic en el elemento
-          "resumen", el estado del elemento padre "detalles" cambia entre
-          abierto y cerrado.
-        </p>
-        <h3>&ltsup&gt sup</h3>
-        <p>
-          Define un fragmento de texto que se debe mostrar, por razones
-          tipográficas, más alto, y generalmente más pequeño, que el tramo
-          principal del texto, es decir, en superíndice.
-        </p>
-        <h3>&lttable&gt table</h3>
-        <p>Representa datos en dos o mas dimensiones.</p>
-        <h3>&lttbody&gt tbody</h3>
-        <p>
-          El elemento encapsula un conjunto de filas de tabla (elementos "tr"),
-          lo que indica que comprenden el cuerpo de la tabla ("table").
-        </p>
-        <h3>&lttd&gt td</h3>
-        <p>
-          Define la celda de una tabla que contiene datos. Esta participa en el
-          modelo de tablas.
-        </p>
-        <h3>&lttemplate&gt template</h3>
-        <p>
-          Es un mecanismo para mantener el contenido HTML del lado del cliente
-          que no se renderiza cuando se carga una página, pero que
-          posteriormente puede ser instanciado durante el tiempo de ejecución
-          empleando JavaScript.
-        </p>
-        <h3>&lttextarea&gt textarea</h3>
-        <p>
-          Representa un control para la edición mutilínea de texto sin formato.
-        </p>
-        <h3>&lttfoot&gt tfoot</h3>
-        <p>
-          El elemento define un conjunto de filas que resumen las columnas de la
-          tabla.
-        </p>
-        <h3>&ltth&gt th</h3>
-        <p>
-          Define una celda como encabezado de un grupo de celdas en una tabla.
-          La naturaleza exacta de este grupo está definida por los atributos
-          scope y headers.
-        </p>
-        <h3>&ltthead&gt thead</h3>
-        <p>
-          El elemento define un conjunto de filas que definen el encabezado de
-          las columnas de la tabla.
-        </p>
-        <h3>&lttime&gt time</h3>
-        <p>Representa un periodo específico en el tiempo.</p>
-        <h3>&lttitle&gt title</h3>
-        <p>Indica el título del documento.</p>
-        <h3>&lttr&gt tr</h3>
-        <p>
-          Define una fila de celdas en una tabla. Estas pueden ser una mezcla de
-          elementos "td" y "th".
-        </p>
-        <h3>&lttrack&gt track</h3>
-        <p>
-          Es usado como hijo de los elementos multimedia, "audio" y "video".
-        </p>
-        <h3>&ltu&gt u</h3>
-        <p>Muestra el texto subrayado.</p>
-        <h3>&ltul&gt lista no ordenada</h3>
-        <p>crea una lista no ordenada.</p>
-        <h3>&ltvar&gt var</h3>
-        <p>Marca variables de programas y similares.</p>
-        <h3>&ltvideo&gt video</h3>
-        <p>se utiliza para incrustar vídeos en un documento HTML o XHTML.</p>
-        <h3>&ltwbr&gt wbr</h3>
-        <p>
-          Representa una posición dentro del texto donde el explorador puede
-          opcionalmente saltar una línea , aunque sus reglas de salto de línea
-          de otra manera no crearían un salto en esa posición.
-        </p>
-      </section>
-      <section>
-        <p>
-          <strong
-            >Este enlace te llevará a la documentación completa por parte de
-            Mozilla:
-            <a
-              href="https://developer.mozilla.org/es/docs/Web/HTML"
-              target="_blank"
-            >
-              https://developer.mozilla.org/es/docs/Web/HTML
-            </a>
-          </strong>
-        </p>
-      </section>
-      <hr />
-      <section>
-        <h3>Video</h3>
-        <i
-          >Se usa esta etiqueta al momento de inclur un video desde nuestro
-          servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
-          &lt/video&gt y acepta formatos MP4,WebM, Ogg
-        </i>
-        <div>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos HTML5</h1>
           <center>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/qz0aGYrrlhU"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            <p>
-              Este es un tutorial para aprender HTML en video. Tiene la
-              caracteristica que es muy dinámico y el tutor se explica muy bien.
-              Espero lo disfrutes.
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/htmllogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <p>
+            <strong
+              >Este diccionario será ordenado de forma alfabetica para un mejor
+              aprendizaje del usuario.</strong
+            >
+          </p>
+          <article>
+            <p class="concept_definition">
+              HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText
+              Markup Language) es el componente más básico de la Web. Define el
+              significado y la estructura del contenido web. Además de HTML,
+              generalmente se utilizan otras tecnologías para describir la
+              apariencia/presentación de una página web (CSS) o la
+              funcionalidad/comportamiento (JavaScript).
             </p>
-            <button type="button">
-              <a
-                href="https://www.youtube.com/watch?v=qz0aGYrrlhU&feature=emb_imp_woyt"
-                target="_blank"
-                >Verlo en Youtube</a
-              >
-            </button>
+            <p>
+              "Hipertexto" hace referencia a los enlaces que conectan páginas
+              web entre sí, ya sea dentro de un único sitio web o entre sitios
+              web. Los enlaces son un aspecto fundamental de la Web. Al subir
+              contenido a Internet y vincularlo a las páginas creadas por otras
+              personas, te conviertes en un participante activo en la «World
+              Wide Web» (Red Informática Mundial).
+            </p>
+            <blockquote>
+              Last modified: 20 abr 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="timeline">
+        <div class="container">
+          <div class="blockgrid_1">
+            <p><strong>Versiones obsoletas de HTML.</strong></p>
+            <ul>
+              <li>HTML 2.0</li>
+              <li>HTML 3.2</li>
+              <li>HTML 4.01</li>
+            </ul>
+          </div>
+          <div class="blockgrid_1">
+            <center>
+              <figure>
+                <img
+                  src="./images//html5timeline.gif"
+                  alt="Linea de tiempo HTML"
+                  class="figure_1"
+                />
+                <figcaption>
+                  Linea de tiempo desde la creación de HTML
+                </figcaption>
+              </figure>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de este tutorial es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+      <section id="herarchical_structure">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Estructura de este diccionario de
+              <em>HTML5.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code>
+          </div>
+        </div>
+      </section>
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran de manera exhaustiva todos los elementos
+            que componen el lenguaje de marcado HTML especificamente la versión
+            <b>HTML5</b>.
+          </p>
+          <h2 id="name_order_dictionary">Diccionario:</h2>
+          <h3>&lta&gt Enlace</h3>
+          <p>
+            Cre enlace a otras páginas de internet, archivos o ubicaciones
+            dentro de la misma página, direcciones de correo, o cualquier otra
+            URL.
+          </p>
+          <h3>&ltabbr&gt abreviatura</h3>
+          <p>
+            Representa una abreviación o acrónimo; el atributo opcional title
+            puede ampliar o describir la abreviatura. Si está presente, el
+            atributo title debe contener la descripción completa y nada más.
+          </p>
+          <h3>&ltaddress&gt address</h3>
+          <p>
+            Aporta información de contacto para su article más cercano o
+            ancestro body; en el último caso lo aplica a todo el documento.
+          </p>
+          <h3>&ltarea&gt area</h3>
+          <p>
+            Sirve para crear las distintas secciones en las que se puede dividir
+            un mapas de imágenes en el cliente.
+          </p>
+          <h3>&ltarticle&gt article</h3>
+          <p>
+            representa una composición auto-contenida en un documento, página,
+            una aplicación o en el sitio, que se destina a distribuir de forma
+            independiente o reutilizable, por ejemplo, en la indicación. Podría
+            ser un mensaje en un foro, un artículo de una revista o un
+            periódico, una entrada de blog, un comentario de un usuario, un
+            widget interactivo o gadget, o cualquier otro elemento independiente
+            del contenido.
+          </p>
+          <h3>&ltaside&gt aside</h3>
+          <p>
+            Representa una sección de una página que consiste en contenido que
+            está indirectamente relacionado con el contenido principal del
+            documento. Estas secciones son a menudo representadas como barras
+            laterales o como inserciones y contienen una explicación al margen
+            como una definición de glosario, elementos relacionados
+            indirectamente, como publicidad, la biografía del autor, o en
+            aplicaciones web, la información de perfil o enlaces a blogs
+            relacionados.
+          </p>
+          <h3>&ltaudio&gt audio</h3>
+          <p>
+            El elemento audio se usa para insertar contenido de audio en un
+            documento HTML o XHTML. El elemento audio se agregó como parte de
+            HTML 5.
+          </p>
+          <h3>&ltb&gt bold</h3>
+          <p>
+            Indica que el texto debe ser representado con una variable bold, o
+            negrita, de la tipografía que se esté usando.
+          </p>
+          <h3>&ltbase&gt base</h3>
+          <p>
+            Especifica la dirección URL base que se utilizará para todas las
+            direcciones URL relativas contenidas dentro de un documento. Sólo
+            puede haber un elemento "base" en un documento.
+          </p>
+          <h3>&ltbdi&gt bi-direccional</h3>
+          <p>
+            Aisla un trozo de texto para que pueda ser formateado con una
+            dirección diferente al texto que hay fuera de él.
+          </p>
+          <h3>&ltbdo&gt bi-direccional Overriding</h3>
+          <p>
+            La dirección de escritura del texto está relacionada con el idioma y
+            se declara con el atributo dir. Pero en ocasiones esto no es
+            suficiente, entonces entra en juego el elemento bdo (anulación del
+            algoritmo bidireccional) que al anular el algoritmo permite un
+            control total de la direccionalidad.
+          </p>
+          <h3>&ltblockqoute&gt blockquote</h3>
+          <p>
+            Crea citas en bloque, marca las citas a otros autores o documentos.
+          </p>
+          <h3>&ltbody&gt body</h3>
+          <p>
+            Representa el contenido de un documento HTML. Solo puede haber un
+            elemento "body" en un documento.
+          </p>
+          <h3>&ltbr&gt line break</h3>
+          <p>
+            Produce un salto de línea en el texto (retorno de carro). Es útil
+            para escribir un poema o una dirección, donde la división de las
+            líneas es significante.
+          </p>
+          <h3>&ltbutton&gt button</h3>
+          <p>
+            Representa un elemento cliqueable de tipo botón que puede ser
+            utilizado en formularios o en cualquier parte de la página que
+            necesite un botón estándar y simple de aplicar. De forma
+            predeterminada, los botones HTML se presentan con un estilo similar
+            en todas las plataformas.
+          </p>
+          <h3>&ltcanvas&gt canvas</h3>
+          <p>
+            Se puede utilizar para dibujar gráficos a través de secuencias de
+            comandos (por lo general JavaScript ).
+          </p>
+          <h3>&ltcaption&gt caption</h3>
+          <p>Es el encargado de darle un título descriptivo a las tablas.</p>
+          <h3>&ltcite&gt cite</h3>
+          <p>
+            Marca una referencia a una fuente, o el autor de un texto citado.
+          </p>
+          <h3>&ltcode&gt code</h3>
+          <p>Es el apropiado para marcar el código de un programa.</p>
+          <h3>&ltcol&gt col</h3>
+          <p>
+            Permite especificar propiedades para una columna o un grupo de
+            ellas.
+          </p>
+          <h3>&ltcolgroup&gt colgroup</h3>
+          <p>Grupo de columnas. Permite crear grupos de columnas.</p>
+          <h3>&ltdata&gt data</h3>
+          <p>
+            Vincula un contenido dado con una traducción legible por una
+            máquina.
+          </p>
+          <h3>&ltdatalist&gt datalist</h3>
+          <p>
+            contiene un conjunto de elementos "option" que representan los
+            valores disponibles para otros controles.
+          </p>
+          <h3>&ltdd&gt dd</h3>
+          <p>
+            Provee detalles acerca de o la definición de un término precedente
+            ("dt") en una lista de descripciones ("dl").
+          </p>
+          <h3>&ltdel&gt deleted</h3>
+          <p>
+            Marca las partes de un texto o documento que han sido suprimidas o
+            sustituidas.
+          </p>
+          <h3>&ltdetails&gt details</h3>
+          <p>
+            Es usado como un widget de revelación a través del cual el usuario
+            puede obtener información adicional .
+          </p>
+          <h3>&ltdfn&gt dfn</h3>
+          <p>Sirve para marcar el término que se quiere definir.</p>
+          <h3>&ltdialog&gt dialog</h3>
+          <p>
+            Representa una caja de diálogo u otro componente interactivo, como
+            inspector o ventana.
+          </p>
+          <h3>&ltdiv&gt div</h3>
+          <p>Sirve para crear secciones o agrupar contenidos.</p>
+          <h3>&ltdl&gt dl</h3>
+          <p>
+            representa una lista descriptiva. El elemento encierra una lista de
+            grupos de términos y de descripciones.
+          </p>
+          <h3>&ltdt&gt dt</h3>
+          <p>
+            especifica un término en una descripción o lista de definiciones, y
+            como tal debe utilizarse dentro de un elemento "dl".
+          </p>
+          <h3>&ltem&gt em</h3>
+          <p>
+            es el apropiado para marcar con énfasis las partes importantes de un
+            texto.
+          </p>
+          <h3>&ltembed&gt embed</h3>
+          <p>
+            Representa un punto de integración para una aplicación externa o de
+            contenido interactivo (en otras palabras, un plug-in).
+          </p>
+          <h3>&ltfieldset&gt fieldset</h3>
+          <p>Permite organizar en grupos los campos de un formulario.</p>
+          <h3>&ltfigcaption&gt figcaption</h3>
+          <p>
+            representa un subtítulo o leyenda asociado al contenido del elemento
+            padre "figure", pudiendo ser colocado como primer o último hijo. Es
+            importante destacar que el elemento "figcaption" es opcional.
+          </p>
+          <h3>&ltfigure&gt figure</h3>
+          <p>
+            Representa contenido independiente, a menudo con un título. Si bien
+            se relaciona con el flujo principal, su posición es independiente de
+            éste. Por lo general, se trata de una imagen, una ilustración, un
+            diagrama, un fragmento de código, o un esquema al que se hace
+            referencia en el texto principal, pero que se puede mover a otra
+            página o a un apéndice sin que afecte al flujo principal.
+          </p>
+          <h3>&ltfooter&gt footer</h3>
+          <p>
+            Representa un pie de página para el contenido de sección más cercano
+            o el elemento raíz de sección.
+          </p>
+
+          <h3>&ltform&gt form</h3>
+          <p>
+            Representa una sección de un documento que contiene controles
+            interactivos que permiten a un usuario enviar información a un
+            servidor web.
+          </p>
+          <h3>&lthead&gt head</h3>
+          <p>
+            provee información general (metadatos) acerca del documento,
+            incluyendo su título y enlaces a scripts y hojas de estilos.
+          </p>
+          <h3>&ltheader&gt header</h3>
+          <p>
+            Representa un grupo de ayudas introductorias o de navegación. Puede
+            contener algunos elementos de encabezado, así como también un logo,
+            un formulario de búsqueda, un nombre de autor y otros componentes.
+          </p>
+          <h3>&lthr&gt hr</h3>
+          <p>
+            Representa un cambio de tema entre párrafos (por ejemplo, un cambio
+            de escena en una historia, un cambio de tema en una sección).
+          </p>
+          <h3>&lthtml&gt html</h3>
+          <p>
+            Representa la raiz de un documento HTML. El resto de elementos
+            descienden de este elemento.
+          </p>
+          <h3>&lti&gt i</h3>
+          <p>Muestra el texto marcado con un estilo en cursiva o italica.</p>
+          <h3>&ltiframe&gt iframe</h3>
+          <p>
+            Representa un contexto de navegación anidado, el cual permite
+            incrustrar otra página HTML en la página actual.
+          </p>
+          <h3>&ltimg&gt img</h3>
+          <p>Representa una imagen en el documento.</p>
+          <h3>&ltinput&gt input</h3>
+          <p>
+            Se usa para crear controles interactivos para formularios basados en
+            la web con el fin de recibir datos del usuario.
+          </p>
+          <h3>&ltins&gt ins</h3>
+          <p>
+            Marca las partes de un texto que han sido añadidos al documento.
+          </p>
+          <h3>&ltkbd&gt kbd</h3>
+          <p>Marca el texto que debe introducir el usuario.</p>
+          <h3>&ltkeygen&gt keygen</h3>
+          <p>
+            Existe para facilitar la generación de llaves, y el envío de la
+            clave pública como parte de un formulario HTML.
+          </p>
+          <h3>&ltlabel&gt label</h3>
+          <p>
+            Representa una etiqueta para un elemento en una interfaz de usuario.
+            Este puede estar asociado con un control ya sea mediante la
+            utilizacion del atributo for, o ubicando el control dentro del
+            elemento label.
+          </p>
+          <h3>&ltlegend&gt legend</h3>
+          <p>
+            Crea un título para un grupos los campos ("fieldset") de un
+            formulario.
+          </p>
+          <h3>&ltli&gt elemento de lista</h3>
+          <p>Declara cada uno de los elementos de una lista.</p>
+          <h3>&ltlink&gt link</h3>
+          <p>
+            Especifica la relación entre el documento actual y un recurso
+            externo.
+          </p>
+          <h3>&ltmain&gt main</h3>
+          <p>
+            Representa el contenido principal del "body" de un documento o
+            aplicación.
+          </p>
+          <h3>&ltmap&gt map</h3>
+          <p>Descripción de uno o dos párrafos.</p>
+          <h3>&ltmark&gt mark</h3>
+          <p>
+            Representa un texto marcado o resaltado como referencia o anotación,
+            debido a su relevancia o importancia en un contexto particular.
+          </p>
+          <h3>&ltmeta&gt meta</h3>
+          <p>Sirve para aportar información sobre el documento.</p>
+          <h3>&ltmeter&gt meter</h3>
+          <p>
+            El elemento representa un valor escalar dentro de un rango conocido
+            o un valor fraccionario.
+          </p>
+          <h3>&ltnav&gt nav</h3>
+          <p>
+            Representa una sección de una página cuyo propósito es proporcionar
+            enlaces de navegación, ya sea dentro del documento actual o a otros
+            documentos. Ejemplos comunes de secciones de navegación son menús,
+            tablas de contenido e índices.
+          </p>
+          <h3>&ltnoscript&gt noscript</h3>
+          <p>
+            Aporta contenidos alternativos al elemento script. las aplicaciones
+            de usuario que no soporten scripts deben mostrar en su lugar el
+            contenido de este elemento.
+          </p>
+          <h3>&ltobject&gt object</h3>
+          <p>
+            Representa un recurso externo, que puede ser tratado como una
+            imagen, un contexto de navegación anidado, o como un recurso que
+            debe ser manejado por un plugin.
+          </p>
+          <h3>&ltol&gt lista ordenada</h3>
+          <p>
+            Permite definir listas o viñetas ordenadas (“Ordered List”), bien
+            con numeración o alfabéticamente.
+          </p>
+          <h3>&ltoptgroup&gt optgroup</h3>
+          <p>
+            El elemento crea una agrupación de opciones dentro de un elemento
+            "select".
+          </p>
+          <h3>&ltoption&gt option</h3>
+          <p>
+            se usa para representar un item dentro de un "select", un "optgroup"
+            (en-US) o un elemento HTML5 "datalist".
+          </p>
+          <h3>&ltoutput&gt output</h3>
+          <p>
+            Elemento es un elemento contenedor en el que un sitio o aplicación
+            puede inyectar los resultados de un cálculo o el resultado de una
+            acción del usuario.
+          </p>
+          <h3>&ltp&gt parrafo</h3>
+          <p>Es el apropiado para distribuir el texto en párrafos.</p>
+          <h3>&ltparam&gt param</h3>
+          <p>Permite especificar parámetros de ejecución para un objeto.</p>
+          <h3>&ltpicture&gt picture</h3>
+          <p>
+            es un contenedor usado para especificar múltiples elementos "source"
+            y un elemento "img" contenido en él para proveer versiones de una
+            imagen para diferentes escenarios de dispositivos.
+          </p>
+          <h3>&ltpre&gt pre</h3>
+          <p>
+            representa texto preformateado. El texto en este elemento
+            típicamente se muestra en una fuente fija, no proporcional,
+            exactamente como es mostrado en el archivo. Los espacios dentro de
+            este elemento también son mostrados como están escritos.
+          </p>
+          <h3>&ltprogress&gt progress</h3>
+          <p>
+            Se utiliza para visualizar el progreso de una tarea. Aunque los
+            detalles de como se muestran depende directamente del navegador que
+            utiliza el cliente, aunque básicamente aparece una barra de
+            progreso.
+          </p>
+          <h3>&ltq&gt quote</h3>
+          <p>Indica que el texto adjunto es una cita corta en línea.</p>
+          <h3>&ltrp&gt rp</h3>
+          <p>
+            El elemento se usa para proporcionar paréntesis alternativos para
+            los navegadores que no admiten la visualización de anotaciones Ruby
+            mediante el elemento "ruby".
+          </p>
+          <h3>&ltrt&gt rt</h3>
+          <p>
+            El elemento especifica el componente de texto Ruby de una anotación
+            Ruby, que se utiliza para proporcionar información de pronunciación,
+            traducción o transliteración para la tipografía de Asia oriental.
+          </p>
+          <h3>&ltruby&gt ruby</h3>
+          <p>
+            El elemento representa pequeñas anotaciones que se representan
+            encima, debajo o al lado del texto base, generalmente utilizadas
+            para mostrar la pronunciación de los caracteres de Asia oriental.
+            También se puede usar para anotar otros tipos de texto, pero este
+            uso es menos común.
+          </p>
+          <h3>&lts&gt s</h3>
+          <p>Muestra el texto tachado con una linea horizontal.</p>
+          <h3>&ltsamp&gt samp</h3>
+          <p>
+            Se utiliza para incluir texto en línea que representa una muestra (o
+            cita) de la salida de un programa de ordenador. El contenido de esta
+            etiqueta es renderizado generalmente usando la tipografía
+            monoespaciada por defecto del navegador.
+          </p>
+          <h3>&ltscript&gt script</h3>
+          <p>
+            El elemento se utiliza para incrustar código o datos ejecutables;
+            esto generalmente se usa para incrustar o hacer referencia al código
+            JavaScript.
+          </p>
+          <h3>&ltsection&gt section</h3>
+          <p>
+            El elemento representa una sección independiente genérica de un
+            documento, que no tiene un elemento semántico más específico para
+            representarlo. Las secciones siempre deben tener un encabezado, con
+            muy pocas excepciones.
+          </p>
+          <h3>&ltselect&gt select</h3>
+          <p>
+            El elemento representa un control que proporciona un menú de
+            opciones.
+          </p>
+          <h3>&ltslot&gt slot</h3>
+          <p>
+            Es un placeholder en un componente que tu puedes llenar con tu
+            propio marcado, que te permite crear árboles DOM por separado y
+            presentarlos juntos.
+          </p>
+          <h3>&ltsmall&gt small</h3>
+          <p>
+            Hace el tamaño del texto una talla más pequeña (por ejemplo, de
+            largo a mediano, o de pequeño a extra pequeño) que el tamaño mínimo
+            de fuente del navegador.
+          </p>
+          <h3>&ltsource&gt source</h3>
+          <p>
+            especifica recursos de medios múltiples para los elementos
+            "picture", "audio", o "video".
+          </p>
+          <h3>&ltspan&gt span</h3>
+          <p>
+            Es un contenedor en línea. Sirve para aplicar estilo al texto o
+            agrupar elementos en línea.
+          </p>
+          <h3>&ltstrong&gt strong</h3>
+          <p>
+            Es el apropiado para marcar con especial énfasis las partes más
+            importantes de un texto.
+          </p>
+          <h3>&ltstyle&gt style</h3>
+          <p>Es el elemento encargado de indicar la información de estilo.</p>
+          <h3>&ltsub&gt sub</h3>
+          <p>
+            Define un fragmento de texto que se debe mostrar, por razones
+            tipográficas, más bajo, y generalmente más pequeño, que el tramo
+            principal del texto, es decir, en subíndice.
+          </p>
+          <h3>&ltsummary&gt summary</h3>
+          <p>
+            Elemento especifica un resumen, título o leyenda para el cuadro de
+            divulgación de un elemento "detalles". Al hacer clic en el elemento
+            "resumen", el estado del elemento padre "detalles" cambia entre
+            abierto y cerrado.
+          </p>
+          <h3>&ltsup&gt sup</h3>
+          <p>
+            Define un fragmento de texto que se debe mostrar, por razones
+            tipográficas, más alto, y generalmente más pequeño, que el tramo
+            principal del texto, es decir, en superíndice.
+          </p>
+          <h3>&lttable&gt table</h3>
+          <p>Representa datos en dos o mas dimensiones.</p>
+          <h3>&lttbody&gt tbody</h3>
+          <p>
+            El elemento encapsula un conjunto de filas de tabla (elementos
+            "tr"), lo que indica que comprenden el cuerpo de la tabla ("table").
+          </p>
+          <h3>&lttd&gt td</h3>
+          <p>
+            Define la celda de una tabla que contiene datos. Esta participa en
+            el modelo de tablas.
+          </p>
+          <h3>&lttemplate&gt template</h3>
+          <p>
+            Es un mecanismo para mantener el contenido HTML del lado del cliente
+            que no se renderiza cuando se carga una página, pero que
+            posteriormente puede ser instanciado durante el tiempo de ejecución
+            empleando JavaScript.
+          </p>
+          <h3>&lttextarea&gt textarea</h3>
+          <p>
+            Representa un control para la edición mutilínea de texto sin
+            formato.
+          </p>
+          <h3>&lttfoot&gt tfoot</h3>
+          <p>
+            El elemento define un conjunto de filas que resumen las columnas de
+            la tabla.
+          </p>
+          <h3>&ltth&gt th</h3>
+          <p>
+            Define una celda como encabezado de un grupo de celdas en una tabla.
+            La naturaleza exacta de este grupo está definida por los atributos
+            scope y headers.
+          </p>
+          <h3>&ltthead&gt thead</h3>
+          <p>
+            El elemento define un conjunto de filas que definen el encabezado de
+            las columnas de la tabla.
+          </p>
+          <h3>&lttime&gt time</h3>
+          <p>Representa un periodo específico en el tiempo.</p>
+          <h3>&lttitle&gt title</h3>
+          <p>Indica el título del documento.</p>
+          <h3>&lttr&gt tr</h3>
+          <p>
+            Define una fila de celdas en una tabla. Estas pueden ser una mezcla
+            de elementos "td" y "th".
+          </p>
+          <h3>&lttrack&gt track</h3>
+          <p>
+            Es usado como hijo de los elementos multimedia, "audio" y "video".
+          </p>
+          <h3>&ltu&gt u</h3>
+          <p>Muestra el texto subrayado.</p>
+          <h3>&ltul&gt lista no ordenada</h3>
+          <p>crea una lista no ordenada.</p>
+          <h3>&ltvar&gt var</h3>
+          <p>Marca variables de programas y similares.</p>
+          <h3>&ltvideo&gt video</h3>
+          <p>se utiliza para incrustar vídeos en un documento HTML o XHTML.</p>
+          <h3>&ltwbr&gt wbr</h3>
+          <p>
+            Representa una posición dentro del texto donde el explorador puede
+            opcionalmente saltar una línea , aunque sus reglas de salto de línea
+            de otra manera no crearían un salto en esa posición.
+          </p>
+        </div>
+      </section>
+      <section id="complete_documentation">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/HTML"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/es/docs/Web/HTML
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div id="video-container">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/mU6anWqZJcc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=qz0aGYrrlhU&feature=emb_imp_woyt"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/qz0aGYrrlhU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=qz0aGYrrlhU&feature=emb_imp_woyt"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
           </center>
         </div>
       </section>
-      <hr />
-      <section>
-        <h3>Audio</h3>
-        <i
-          >Se usa esta etiqueta al momento de inclur un audio desde nuestro
-          servidor &ltaudio src="/dir/dir2/audio.ogg"&gt Nombre del audio
-          &lt/audio&gt y acepta formatos MP3, Ogg.
-        </i>
+      <section id="audio_elements">
+        <div class="container">
+          <h3>Audio</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un audio desde nuestro
+            servidor &ltaudio src="/dir/dir2/audio.ogg"&gt Nombre del audio
+            &lt/audio&gt y acepta formatos MP3, Ogg.
+          </i>
+        </div>
       </section>
-      <hr />
       <section>
-        <h3>Form e Inputs</h3>
-        <i
-          >Se usa esta etiqueta al momento de inclur un formulario en nuestra
-          página. &ltform&gt &lt/form&gt
-        </i>
-        <p>Estos son los posibles elementos que puede incluir in FORM:</p>
-        <table>
-          <thead>
-            <tr>
+        <div class="container">
+          <h3>Form e Inputs</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un formulario en nuestra
+            página. &ltform&gt &lt/form&gt
+          </i>
+          <p>Estos son los posibles elementos que puede incluir in FORM:</p>
+          <table>
+            <caption>
+              Tabla con las variaciones de INPUTS
+            </caption>
+            <!-- <thead>
+            <td>
               <th>Inputs</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <ul>
-                  <li>
-                    Input type button ------
-                    <input type="button" value="Botón" />
-                  </li>
-                  <li>
-                    <fieldset>
-                      <legend>Ejemplo checkbox:</legend>
+            </td>
+          </thead> -->
+            <tbody>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      Input type button ------
+                      <input type="button" class="boton_tipo_2" value="Botón" />
+                    </li>
+                    <li>
+                      <fieldset>
+                        <legend>Ejemplo checkbox:</legend>
 
-                      <div>
-                        <input type="checkbox" id="c1" name="1" checked />
-                        <label for="1">cbox 1</label>
-                      </div>
+                        <div>
+                          <input type="checkbox" id="c1" name="1" checked />
+                          <label for="1">cbox 1</label>
+                        </div>
 
-                      <div>
-                        <input type="checkbox" id="c2" name="2" />
-                        <label for="2">cbox 2</label>
-                      </div>
-                    </fieldset>
-                  </li>
-                  <li>
-                    Ejemplo input type color ------
-                    <input type="color" value="#ff0000" />
-                  </li>
-                  <li>
-                    <label for="start"> Ejemplo date ------ </label>
-                    <input
-                      type="date"
-                      id="start"
-                      name="date-objective"
-                      value="2022-05-02"
-                      min="2022-01-01"
-                      max="2022-12-31"
-                    />
-                  </li>
-                  <li>
-                    <label for="meeting-time">Elige fecha y hora ------ </label>
-
-                    <input
-                      type="datetime-local"
-                      id="meeting-time"
-                      name="meeting-time"
-                      value="2018-03-02T19:30"
-                      min="2022-01-01T00:00"
-                      max="2022-12-31T00:00"
-                    />
-                  </li>
-                  <li>
-                    <label for="email">Escribe tu email ------ </label>
-
-                    <input
-                      type="email"
-                      id="email"
-                      pattern=".+@3lstrategy\.com"
-                      size="30"
-                      required
-                      placeholder="llanes@3lstrategy.com"
-                    />
-                  </li>
-                  <li>
-                    <label for="avatar">Elige una imagen ------ </label>
-
-                    <input
-                      type="file"
-                      id="imagen1"
-                      name="imagen1"
-                      accept="image/png, image/jpeg"
-                    />
-                  </li>
-                  <li>
-                    <div>
-                      <label for="file"
-                        >Elige tus archivos a cargar: Plural ------
-                      </label>
-                      <input type="file" id="file" name="file" multiple />
-                    </div>
-                  </li>
-                  <li>
-                    Permite incluir valores escondidos en el formulario ------
-                    <br /><i
-                      >&ltinput type="hidden" id="postId" name="postId"
-                      value="34657"&gt
-                    </i>
-                  </li>
-                  <li>
-                    <p>
-                      Imagen usada para diferentes propositos. Por ejemplo un
-                      boton ------
-                    </p>
-                    <input
-                      type="image"
-                      id="image"
-                      alt="Login"
-                      src="https://www.w3schools.com/tags/img_submit.gif"
-                    /><br />
-                    <i>
-                      &ltinput type="image" id="image" alt="Login"
-                      src="https://www.w3schools.com/tags/img_submit.gif" /&gt
-                    </i>
-                  </li>
-                  <li>
-                    <label for="start-month">Mes ------ </label>
-
-                    <input
-                      type="month"
-                      id="start-month"
-                      name="start"
-                      min="2022-03"
-                      value="2022-05"
-                    />
-                  </li>
-                  <li>
-                    <label for="tentacles">Numeros (10-100) ------ </label>
-
-                    <input
-                      type="number"
-                      id="numeros"
-                      name="numeros"
-                      min="10"
-                      max="100"
-                    />
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <ul>
-                  <li>
-                    <div>
-                      <label for="nombreusuario"
-                        >Nombre de usuario ------
-                      </label>
+                        <div>
+                          <input type="checkbox" id="c2" name="2" />
+                          <label for="2">cbox 2</label>
+                        </div>
+                      </fieldset>
+                    </li>
+                    <li>
+                      Ejemplo input type color ------
+                      <input type="color" value="#ff0000" />
+                    </li>
+                    <li>
+                      <label for="start"> Ejemplo date ------ </label>
                       <input
-                        type="text"
-                        id="nombreusuario"
-                        name="usernombreusuarioname"
+                        type="date"
+                        id="start"
+                        name="date-objective"
+                        value="2022-05-02"
+                        min="2022-01-01"
+                        max="2022-12-31"
                       />
-                    </div>
-
-                    <div>
-                      <label for="pass"
-                        >Password (8 caracteres mínimo) ------
+                    </li>
+                    <li>
+                      <label for="meeting-time"
+                        >Elige fecha y hora ------
                       </label>
+
                       <input
-                        type="password"
-                        id="pass"
-                        name="password"
-                        minlength="8"
+                        type="datetime-local"
+                        id="meeting-time"
+                        name="meeting-time"
+                        value="2018-03-02T19:30"
+                        min="2022-01-01T00:00"
+                        max="2022-12-31T00:00"
+                      />
+                    </li>
+                    <li>
+                      <label for="email">Escribe tu email ------ </label>
+
+                      <input
+                        type="email"
+                        id="email"
+                        pattern=".+@3lstrategy\.com"
+                        size="30"
                         required
-                        placeholder="********"
+                        placeholder="llanes@3lstrategy.com"
                       />
-                    </div>
-                  </li>
-                  <li>
-                    <fieldset>
-                      <legend>Selecciona un valor ------</legend>
+                    </li>
+                    <li>
+                      <label for="avatar">Elige una imagen ------ </label>
+
+                      <input
+                        type="file"
+                        id="imagen1"
+                        name="imagen1"
+                        accept="image/png, image/jpeg"
+                      />
+                    </li>
+                    <li>
+                      <div>
+                        <label for="file"
+                          >Elige tus archivos a cargar: Plural ------
+                        </label>
+                        <input type="file" id="file" name="file" multiple />
+                      </div>
+                    </li>
+                    <li>
+                      Permite incluir valores escondidos en el formulario ------
+                      <br /><i
+                        >&ltinput type="hidden" id="postId" name="postId"
+                        value="34657"&gt
+                      </i>
+                    </li>
+                    <li>
+                      <p>
+                        Imagen usada para diferentes propositos. Por ejemplo un
+                        boton ------
+                      </p>
+                      <input
+                        type="image"
+                        id="image"
+                        alt="Login"
+                        src="https://www.w3schools.com/tags/img_submit.gif"
+                      /><br />
+                      <i>
+                        &ltinput type="image" id="image" alt="Login"
+                        src="https://www.w3schools.com/tags/img_submit.gif" /&gt
+                      </i>
+                    </li>
+                    <li>
+                      <label for="start-month">Mes ------ </label>
+
+                      <input
+                        type="month"
+                        id="start-month"
+                        name="start"
+                        min="2022-03"
+                        value="2022-05"
+                      />
+                    </li>
+                    <li>
+                      <label for="tentacles">Numeros (10-100) ------ </label>
+
+                      <input
+                        type="number"
+                        id="numeros"
+                        name="numeros"
+                        min="10"
+                        max="100"
+                      />
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <div>
+                        <label for="nombreusuario"
+                          >Nombre de usuario ------
+                        </label>
+                        <input
+                          type="text"
+                          id="nombreusuario"
+                          name="usernombreusuarioname"
+                        />
+                      </div>
+
+                      <div>
+                        <label for="pass"
+                          >Password (8 caracteres mínimo) ------
+                        </label>
+                        <input
+                          type="password"
+                          id="pass"
+                          name="password"
+                          minlength="8"
+                          required
+                          placeholder="********"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <fieldset>
+                        <legend>Selecciona un valor ------</legend>
+
+                        <div>
+                          <input
+                            type="radio"
+                            id="v1"
+                            name="valores"
+                            value="v1"
+                            checked
+                          />
+                          <label for="v1">v1</label>
+                        </div>
+
+                        <div>
+                          <input
+                            type="radio"
+                            id="v2"
+                            name="valores"
+                            value="v2"
+                          />
+                          <label for="v2">v2</label>
+                        </div>
+
+                        <div>
+                          <input
+                            type="radio"
+                            id="v3"
+                            name="valores"
+                            value="v3"
+                          />
+                          <label for="v3">v3</label>
+                        </div>
+                      </fieldset>
+                    </li>
+                    <li>
+                      <p>configuración de audio - mediante rangos ------</p>
 
                       <div>
                         <input
-                          type="radio"
-                          id="v1"
-                          name="valores"
-                          value="v1"
-                          checked
+                          type="range"
+                          id="volumen"
+                          name="volumen"
+                          min="0"
+                          max="11"
                         />
-                        <label for="v1">v1</label>
+                        <label for="volumen">Volumen</label>
                       </div>
 
                       <div>
-                        <input type="radio" id="v2" name="valores" value="v2" />
-                        <label for="v2">v2</label>
+                        <input
+                          type="range"
+                          id="bajos"
+                          name="bajos"
+                          min="0"
+                          max="100"
+                          value="90"
+                          step="10"
+                        />
+                        <label for="cowbell">Bajos</label>
                       </div>
+                    </li>
+                    <li>
+                      <p>Boton para resetear valor. ------</p>
 
-                      <div>
-                        <input type="radio" id="v3" name="valores" value="v3" />
-                        <label for="v3">v3</label>
-                      </div>
-                    </fieldset>
-                  </li>
-                  <li>
-                    <p>configuración de audio - mediante rangos ------</p>
+                      <input type="reset" class="boton_tipo_3" value="Reset" />
+                    </li>
+                    <li>
+                      <label for="s-b">Búsqueda en este sitio ------ </label>
+                      <input type="b" id="s-b" name="q" />
 
-                    <div>
+                      <button class="boton_tipo_3">Buscar</button>
+                    </li>
+                    <li>
+                      <p>Botón para enviar formulario al servido ------</p>
                       <input
-                        type="range"
-                        id="volumen"
-                        name="volumen"
-                        min="0"
-                        max="11"
+                        type="submit"
+                        class="boton_tipo_3"
+                        value="Enviar"
                       />
-                      <label for="volumen">Volumen</label>
-                    </div>
+                    </li>
+                    <li>
+                      <label for="phone">Escribe tu teléfono ------ </label>
 
-                    <div>
                       <input
-                        type="range"
-                        id="bajos"
-                        name="bajos"
-                        min="0"
-                        max="100"
-                        value="90"
-                        step="10"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
                       />
-                      <label for="cowbell">Bajos</label>
-                    </div>
-                  </li>
-                  <li>
-                    <p>Boton para resetear valor. ------</p>
 
-                    <input type="reset" value="Reset" />
-                  </li>
-                  <li>
-                    <label for="s-b">Búsqueda en este sitio ------ </label>
-                    <input type="b" id="s-b" name="q" />
+                      <small>Formato: 123-456-7890</small>
+                    </li>
+                    <li>
+                      <label for="name"
+                        >nombre (4 a 8 caracteres) ------
+                      </label>
 
-                    <button>Buscar</button>
-                  </li>
-                  <li>
-                    <p>Botón para enviar formulario al servido ------</p>
-                    <input type="submit" value="Enviar" />
-                  </li>
-                  <li>
-                    <label for="phone">Escribe tu teléfono ------ </label>
+                      <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Leonardo"
+                        required
+                        minlength="4"
+                        maxlength="8"
+                        size="10"
+                      />
+                    </li>
+                    <li>
+                      <label for="appt"
+                        >Elige el tiempo para tu tarea ------
+                      </label>
 
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                      required
-                    />
+                      <input
+                        type="time"
+                        id="appt"
+                        name="appt"
+                        min="17:00"
+                        max="20:00"
+                        required
+                      />
 
-                    <small>Formato: 123-456-7890</small>
-                  </li>
-                  <li>
-                    <label for="name">nombre (4 a 8 caracteres) ------ </label>
+                      <small>Horas para tarea 5 pm a 8 pm </small>
+                    </li>
+                    <li>
+                      <label for="url"> Escribe una https:// URL:</label>
 
-                    <input
-                      type="text"
-                      id="nombre"
-                      name="nombre"
-                      placeholder="Leonardo"
-                      required
-                      minlength="4"
-                      maxlength="8"
-                      size="10"
-                    />
-                  </li>
-                  <li>
-                    <label for="appt"
-                      >Elige el tiempo para tu tarea ------
-                    </label>
+                      <input
+                        type="url"
+                        name="url"
+                        id="url"
+                        placeholder="https://example.com"
+                        pattern="https://.*"
+                        size="30"
+                        required
+                      />
+                    </li>
+                    <li>
+                      <label for="week">Elige una semana:</label>
 
-                    <input
-                      type="time"
-                      id="appt"
-                      name="appt"
-                      min="17:00"
-                      max="20:00"
-                      required
-                    />
-
-                    <small>Horas para tarea 5 pm a 8 pm </small>
-                  </li>
-                  <li>
-                    <label for="url"> Escribe una https:// URL:</label>
-
-                    <input
-                      type="url"
-                      name="url"
-                      id="url"
-                      placeholder="https://example.com"
-                      pattern="https://.*"
-                      size="30"
-                      required
-                    />
-                  </li>
-                  <li>
-                    <label for="week">Elige una semana:</label>
-
-                    <input
-                      type="week"
-                      name="week"
-                      id="camp-week"
-                      min="2022-W0"
-                      max="2022-W52"
-                      required
-                    />
-                  </li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                      <input
+                        type="week"
+                        name="week"
+                        id="camp-week"
+                        min="2022-W0"
+                        max="2022-W52"
+                        required
+                      />
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
       <section>
-        <p>Novedades de HTML en un futuro</p>
-        <ol>
-          <li>Nuevas etiquetas</li>
-          <li>Web semántica</li>
-          <li>Nuevas API e interacción con JS</li>
-          <li>Nuevos estándares colaborando con XHTML</li>
-        </ol>
+        <div class="container">
+          <p>Novedades de HTML en un futuro</p>
+          <ol>
+            <li>Nuevas etiquetas</li>
+            <li>Web semántica</li>
+            <li>Nuevas API e interacción con JS</li>
+            <li>Nuevos estándares colaborando con XHTML</li>
+          </ol>
+        </div>
       </section>
-      <hr />
     </main>
     <footer>
       <nav>Este será un futuro menu footer de navegación</nav>
       <center>
-        <div>
+        <div id="copyright">
           <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
         </div>
       </center>
