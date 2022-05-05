@@ -72,12 +72,23 @@ main{
 
 .cssdicnav ul{
     display: flex;
+    justify-content: center;
 }
 
 .cssdicnav ul li{
     list-style-type: none;
     margin-left: 5px;
     padding:5px;
+}
+
+.cssdicnavcategories ul{
+    display: flex;
+}
+
+.cssdicnavcategories ul li {
+    list-style-type: none;
+    margin-left: 5px;
+    padding:5px;   
 }
 
 button{
@@ -248,7 +259,7 @@ q{
     background-color: #f9f9f9;
 }
 
-#video-container{
+.video-container_orange{
     display: grid;
     grid-template-columns:  1fr 1fr;
     grid-auto-rows: auto;
@@ -258,11 +269,28 @@ q{
     margin-top: 20px;
 }
 
-#video-container span p {
-    padding: 0px 15px 0px 15px;
+.video-container_blue{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 5px;
+    /* justify-content: space-evenly;*/
+    justify-items: stretch; 
+    margin-top: 20px;
 }
 
-#video-container span{
+
+.video-container_orange span p {
+    padding: 0px 15px 0px 15px;
+    
+}
+
+.video-container_blue span p {
+    padding: 0px 15px 0px 15px;
+    color:white;
+}
+
+.video-container_orange span{
     padding: 0px 0px 15px 0px;
     background-color: #f16524;
     /* margin-top: 2px;
@@ -270,6 +298,17 @@ q{
     margin-left: 5px;
     margin-right: 5px; */
 }
+
+.video-container_blue span{
+    padding: 0px 0px 15px 0px;
+    background-color:#264de4;
+    /* margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px; */
+}
+
+
 
 #copyright{
     /* text-shadow: 1px 1px 5px black; */
@@ -302,6 +341,10 @@ q{
     background-blend-mode:screen;
     background-attachment: fixed;
 
+}
+
+#complete_documentation_css a{
+    color: white;
 }
 
 #name_order_dictionary::after{
