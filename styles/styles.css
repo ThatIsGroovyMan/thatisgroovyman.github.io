@@ -4,7 +4,8 @@
 }
 body {
     background-color: ffffff;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family:  sans-serif;
     margin: 0;
     color: black;
 }
@@ -412,3 +413,39 @@ padding: 30px 0px 30px 0px ;
     justify-items: stretch; 
     margin-top: 20px;
 }
+
+.concept_description{
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+.propoertiesvalues li{
+    font-size: 14px;
+}
+
+.propoertiesvalues code{
+    font-size: 14px;
+    color: #264de4;
+}
+
+/* .syntaxcode {
+    font-size: 12px;
+    padding: 10px 30px 10px 30px;
+    background-color: #f9f9f9;
+    border: 1px solid lightgray;
+    width: fit-content;
+}
+
+.attributeexample{
+    color: #264de4;
+    font-weight: bold;
+}
+
+.propvalue {
+    background-color: lightgray;
+    padding: 5px;
+    font-style: italic;
+    width: fit-content;
+    border-radius: 2px;
+} */
