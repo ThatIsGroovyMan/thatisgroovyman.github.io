@@ -1,0 +1,599 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
+              CSS es el lenguaje de estilos utilizado para describir la
+              presentación de documentos HTML o XML (en-US) (incluyendo varios
+              languages basados en XML como SVG, MathML o XHTML). CSS describe
+              como debe ser renderizado el elemento estructurado en la pantalla,
+              en papel, en el habla o en otros medios.
+            </p>
+            <p>
+              CSS es uno de los lenguajes base de la Open Web y posee una
+              especificación estandarizada por parte del W3C. Anteriormente , el
+              desarrollo de varias partes de las especificaciones de CSS era
+              realizado de manera sincrónica, lo que permiía el versionado de
+              las recomendaciones. Probablemente habrás escuchado acerca de
+              CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado como una
+              versión oficial.
+            </p>
+            <p>
+              Desde CSS3, el alcance de las especificaciones se incrementó de
+              forma significativa y el progreso de los diferentes modulos de CSS
+              comenzó a mostrar varias diferencias, lo que hizo más efectivo
+              desarrollar y publicar recomendaciones separadas por módulos.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="timeline">
+        <div class="container">
+          <div class="blockgrid_1">
+            <p><strong>Versiones obsoletas de CSS:</strong></p>
+            <ul>
+              <li>CSS 1</li>
+              <li>CSS 2</li>
+              <li>CSS 2.1</li>
+            </ul>
+          </div>
+          <div class="blockgrid_1">
+            <center>
+              <figure>
+                <img
+                  src="./images/cssfigure.png"
+                  alt="Linea de tiempo CSS"
+                  class="figure_1_css"
+                />
+                <figcaption>
+                  Representación de una hoja de estilo CSS
+                </figcaption>
+              </figure>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de este tutorial es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran de manera exhaustiva todos los elementos
+            que componen el lenguaje de estilo CSS especificamente la versión
+            <b>CSS3</b>.
+          </p>
+          <h2 id="name_order_dictionary">Diccionario:</h2>
+          <h3>&lta&gt Enlace</h3>
+          <p>
+            Cre enlace a otras páginas de internet, archivos o ubicaciones
+            dentro de la misma página, direcciones de correo, o cualquier otra
+            URL.
+          </p>
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/CSS"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/es/docs/Web/CSS
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div id="video-container">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/mU6anWqZJcc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=qz0aGYrrlhU&feature=emb_imp_woyt"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/qz0aGYrrlhU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=qz0aGYrrlhU&feature=emb_imp_woyt"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+      <section id="audio_elements">
+        <div class="container">
+          <h3>Audio</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un audio desde nuestro
+            servidor &ltaudio src="/dir/dir2/audio.ogg"&gt Nombre del audio
+            &lt/audio&gt y acepta formatos MP3, Ogg.
+          </i>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h3>Form e Inputs</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un formulario en nuestra
+            página. &ltform&gt &lt/form&gt
+          </i>
+          <p>Estos son los posibles elementos que puede incluir in FORM:</p>
+          <table>
+            <caption>
+              Tabla con las variaciones de INPUTS
+            </caption>
+            <!-- <thead>
+            <td>
+              <th>Inputs</th>
+            </td>
+          </thead> -->
+            <tbody>
+              <tr>
+                <td>
+                  <ul>
+                    <li>
+                      Input type button ------
+                      <input type="button" class="boton_tipo_2" value="Botón" />
+                    </li>
+                    <li>
+                      <fieldset>
+                        <legend>Ejemplo checkbox:</legend>
+
+                        <div>
+                          <input type="checkbox" id="c1" name="1" checked />
+                          <label for="1">cbox 1</label>
+                        </div>
+
+                        <div>
+                          <input type="checkbox" id="c2" name="2" />
+                          <label for="2">cbox 2</label>
+                        </div>
+                      </fieldset>
+                    </li>
+                    <li>
+                      Ejemplo input type color ------
+                      <input type="color" value="#ff0000" />
+                    </li>
+                    <li>
+                      <label for="start"> Ejemplo date ------ </label>
+                      <input
+                        type="date"
+                        id="start"
+                        name="date-objective"
+                        value="2022-05-02"
+                        min="2022-01-01"
+                        max="2022-12-31"
+                      />
+                    </li>
+                    <li>
+                      <label for="meeting-time"
+                        >Elige fecha y hora ------
+                      </label>
+
+                      <input
+                        type="datetime-local"
+                        id="meeting-time"
+                        name="meeting-time"
+                        value="2018-03-02T19:30"
+                        min="2022-01-01T00:00"
+                        max="2022-12-31T00:00"
+                      />
+                    </li>
+                    <li>
+                      <label for="email">Escribe tu email ------ </label>
+
+                      <input
+                        type="email"
+                        id="email"
+                        pattern=".+@3lstrategy\.com"
+                        size="30"
+                        required
+                        placeholder="llanes@3lstrategy.com"
+                      />
+                    </li>
+                    <li>
+                      <label for="avatar">Elige una imagen ------ </label>
+
+                      <input
+                        type="file"
+                        id="imagen1"
+                        name="imagen1"
+                        accept="image/png, image/jpeg"
+                      />
+                    </li>
+                    <li>
+                      <div>
+                        <label for="file"
+                          >Elige tus archivos a cargar: Plural ------
+                        </label>
+                        <input type="file" id="file" name="file" multiple />
+                      </div>
+                    </li>
+                    <li>
+                      Permite incluir valores escondidos en el formulario ------
+                      <br /><i
+                        >&ltinput type="hidden" id="postId" name="postId"
+                        value="34657"&gt
+                      </i>
+                    </li>
+                    <li>
+                      <p>
+                        Imagen usada para diferentes propositos. Por ejemplo un
+                        boton ------
+                      </p>
+                      <input
+                        type="image"
+                        id="image"
+                        alt="Login"
+                        src="https://www.w3schools.com/tags/img_submit.gif"
+                      /><br />
+                      <i>
+                        &ltinput type="image" id="image" alt="Login"
+                        src="https://www.w3schools.com/tags/img_submit.gif" /&gt
+                      </i>
+                    </li>
+                    <li>
+                      <label for="start-month">Mes ------ </label>
+
+                      <input
+                        type="month"
+                        id="start-month"
+                        name="start"
+                        min="2022-03"
+                        value="2022-05"
+                      />
+                    </li>
+                    <li>
+                      <label for="tentacles">Numeros (10-100) ------ </label>
+
+                      <input
+                        type="number"
+                        id="numeros"
+                        name="numeros"
+                        min="10"
+                        max="100"
+                      />
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>
+                      <div>
+                        <label for="nombreusuario"
+                          >Nombre de usuario ------
+                        </label>
+                        <input
+                          type="text"
+                          id="nombreusuario"
+                          name="usernombreusuarioname"
+                        />
+                      </div>
+
+                      <div>
+                        <label for="pass"
+                          >Password (8 caracteres mínimo) ------
+                        </label>
+                        <input
+                          type="password"
+                          id="pass"
+                          name="password"
+                          minlength="8"
+                          required
+                          placeholder="********"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <fieldset>
+                        <legend>Selecciona un valor ------</legend>
+
+                        <div>
+                          <input
+                            type="radio"
+                            id="v1"
+                            name="valores"
+                            value="v1"
+                            checked
+                          />
+                          <label for="v1">v1</label>
+                        </div>
+
+                        <div>
+                          <input
+                            type="radio"
+                            id="v2"
+                            name="valores"
+                            value="v2"
+                          />
+                          <label for="v2">v2</label>
+                        </div>
+
+                        <div>
+                          <input
+                            type="radio"
+                            id="v3"
+                            name="valores"
+                            value="v3"
+                          />
+                          <label for="v3">v3</label>
+                        </div>
+                      </fieldset>
+                    </li>
+                    <li>
+                      <p>configuración de audio - mediante rangos ------</p>
+
+                      <div>
+                        <input
+                          type="range"
+                          id="volumen"
+                          name="volumen"
+                          min="0"
+                          max="11"
+                        />
+                        <label for="volumen">Volumen</label>
+                      </div>
+
+                      <div>
+                        <input
+                          type="range"
+                          id="bajos"
+                          name="bajos"
+                          min="0"
+                          max="100"
+                          value="90"
+                          step="10"
+                        />
+                        <label for="cowbell">Bajos</label>
+                      </div>
+                    </li>
+                    <li>
+                      <p>Boton para resetear valor. ------</p>
+
+                      <input type="reset" class="boton_tipo_3" value="Reset" />
+                    </li>
+                    <li>
+                      <label for="s-b">Búsqueda en este sitio ------ </label>
+                      <input type="b" id="s-b" name="q" />
+
+                      <button class="boton_tipo_3">Buscar</button>
+                    </li>
+                    <li>
+                      <p>Botón para enviar formulario al servido ------</p>
+                      <input
+                        type="submit"
+                        class="boton_tipo_3"
+                        value="Enviar"
+                      />
+                    </li>
+                    <li>
+                      <label for="phone">Escribe tu teléfono ------ </label>
+
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
+                      />
+
+                      <small>Formato: 123-456-7890</small>
+                    </li>
+                    <li>
+                      <label for="name"
+                        >nombre (4 a 8 caracteres) ------
+                      </label>
+
+                      <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Leonardo"
+                        required
+                        minlength="4"
+                        maxlength="8"
+                        size="10"
+                      />
+                    </li>
+                    <li>
+                      <label for="appt"
+                        >Elige el tiempo para tu tarea ------
+                      </label>
+
+                      <input
+                        type="time"
+                        id="appt"
+                        name="appt"
+                        min="17:00"
+                        max="20:00"
+                        required
+                      />
+
+                      <small>Horas para tarea 5 pm a 8 pm </small>
+                    </li>
+                    <li>
+                      <label for="url"> Escribe una https:// URL:</label>
+
+                      <input
+                        type="url"
+                        name="url"
+                        id="url"
+                        placeholder="https://example.com"
+                        pattern="https://.*"
+                        size="30"
+                        required
+                      />
+                    </li>
+                    <li>
+                      <label for="week">Elige una semana:</label>
+
+                      <input
+                        type="week"
+                        name="week"
+                        id="camp-week"
+                        min="2022-W0"
+                        max="2022-W52"
+                        required
+                      />
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>

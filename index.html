@@ -30,13 +30,18 @@ proporcionar una descripción concisa de la página -->
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/styles-html.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
     <!--  es un metadato que representa el titulo de todo el documento HTML -->
     <title>Diccionario de elementos HTML5</title>
   </head>
   <body>
-    <nav>Este será un futuro menu principal de navegación</nav>
+    <nav class="htmldicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+      </ul>
+    </nav>
     <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
     demás subtitulos y parrafos estarán por debajo de él.-->
     <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
@@ -58,12 +63,6 @@ proporcionar una descripción concisa de la página -->
             <br />
             <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
           </center>
-          <p>
-            <strong
-              >Este diccionario será ordenado de forma alfabetica para un mejor
-              aprendizaje del usuario.</strong
-            >
-          </p>
           <article>
             <p class="concept_definition">
               HTML (Lenguaje de Marcas de Hipertexto, del inglés HyperText
@@ -89,7 +88,7 @@ proporcionar una descripción concisa de la página -->
       </section>
       <section id="timeline">
         <div class="container">
-          <div class="blockgrid_1">
+          <div class="blockgrid_1_html">
             <p><strong>Versiones obsoletas de HTML.</strong></p>
             <ul>
               <li>HTML 2.0</li>
@@ -120,7 +119,7 @@ proporcionar una descripción concisa de la página -->
           <progress id="tutorial" max="100" value="50">50%</progress>
         </center>
       </section>
-      <section id="herarchical_structure">
+      <section id="herarchical_structure_html">
         <div class="container">
           <div class="backgroundgrey">
             <p>
@@ -658,7 +657,7 @@ proporcionar una descripción concisa de la página -->
           </p>
         </div>
       </section>
-      <section id="complete_documentation">
+      <section id="complete_documentation_html">
         <div class="container">
           <div class="backdrop_container">
             <p class="centertext">
@@ -1084,7 +1083,9 @@ proporcionar una descripción concisa de la página -->
       </section>
     </main>
     <footer>
-      <nav>Este será un futuro menu footer de navegación</nav>
+      <nav class="htmldicnav">
+        Este será un futuro menu footer de navegación
+      </nav>
       <center>
         <div id="copyright">
           <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
