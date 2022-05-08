@@ -1,0 +1,2031 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Selectores</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
+              CSS es el lenguaje de estilos utilizado para describir la
+              presentación de documentos HTML o XML (en-US) (incluyendo varios
+              languages basados en XML como SVG, MathML o XHTML). CSS describe
+              como debe ser renderizado el elemento estructurado en la pantalla,
+              en papel, en el habla o en otros medios.
+            </p>
+            <p>
+              CSS es uno de los lenguajes base de la Open Web y posee una
+              especificación estandarizada por parte del W3C. Anteriormente , el
+              desarrollo de varias partes de las especificaciones de CSS era
+              realizado de manera sincrónica, lo que permiía el versionado de
+              las recomendaciones. Probablemente habrás escuchado acerca de
+              CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado como una
+              versión oficial.
+            </p>
+            <p>
+              Desde CSS3, el alcance de las especificaciones se incrementó de
+              forma significativa y el progreso de los diferentes modulos de CSS
+              comenzó a mostrar varias diferencias, lo que hizo más efectivo
+              desarrollar y publicar recomendaciones separadas por módulos.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="timeline">
+        <div class="container">
+          <div class="blockgrid_1">
+            <p><strong>Versiones obsoletas de CSS:</strong></p>
+            <ul>
+              <li>CSS 1</li>
+              <li>CSS 2</li>
+              <li>CSS 2.1</li>
+            </ul>
+          </div>
+          <div class="blockgrid_1">
+            <center>
+              <figure>
+                <img
+                  src="./images/cssfigure.png"
+                  alt="Linea de tiempo CSS"
+                  class="figure_1_css"
+                />
+                <figcaption>
+                  Representación de una hoja de estilo CSS
+                </figcaption>
+              </figure>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de este tutorial es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="name_order_dictionary">Diccionario:</h2>
+
+          <h3>:active</h3>
+          <p>
+            The :active CSS pseudo-class represents an element (such as a
+            button) that is being activated by the user. When using a mouse,
+            "activation" typically starts when the user presses down the primary
+            mouse button.
+          </p>
+          <p>
+            /* Selects any "a" that is being activated */ a:active { color: red;
+            }
+          </p>
+          <p>
+            The :active pseudo-class is commonly used on "a" and "button"
+            elements. Other common targets of this pseudo-class include elements
+            that are contained in an activated element, and form elements that
+            are being activated through their associated "label".
+          </p>
+          <p>
+            Styles defined by the :active pseudo-class will be overridden by any
+            subsequent link-related pseudo-class (:link, :hover, or :visited)
+            that has at least equal specificity. To style links appropriately,
+            put the :active rule after all other link-related rules, as defined
+            by the LVHA-order: :link — :visited — :hover — :active.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:active</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:active"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:active</a
+              >
+            </div>
+          </div>
+
+          <h3>:any-link</h3>
+          <p>
+            The :any-link CSS pseudo-class selector represents an element that
+            acts as the source anchor of a hyperlink, independent of whether it
+            has been visited. In other words, it matches every "a" or "area"
+            element that has an href attribute. Thus, it matches all elements
+            that match :link or :visited.
+          </p>
+          <p>
+            /* Selects any element that would be matched by :link or :visited */
+            :any-link { color: green; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:any-link</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:any-link</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:autofill</h3>
+          <p>
+            The :autofill CSS pseudo-class matches when an "input" element has
+            its value autofilled by the browser. The class stops matching if the
+            user edits the field.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:autofill</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:autofill
+              </a>
+            </div>
+          </div>
+          <!---->
+
+          <h3>:blank</h3>
+          <p>
+            The :blank CSS pseudo-class selects empty user input elements (e.g.
+            "input" or "textarea").
+          </p>
+
+          <div class="concept_description">
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <p>:blank</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:blank"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:blank
+              </a>
+            </div>
+          </div>
+          <!---->
+
+          <h3>:checked</h3>
+          <p>
+            The :checked CSS pseudo-class selector represents any radio (input
+            type="radio"), checkbox (input type="checkbox"), or option (option
+            in a select) element that is checked or toggled to an on state.
+          </p>
+          <p>
+            /* Matches any checked/selected radio, checkbox, or option */
+            :checked { margin-left: 25px; border: 1px solid blue; }
+          </p>
+          <p>
+            The user can engage this state by checking/selecting an element, or
+            disengage it by unchecking/deselecting the element.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:checked</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:checked"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:checked</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:default</h3>
+          <p>
+            The :default CSS pseudo-class selects form elements that are the
+            default in a group of related elements.
+          </p>
+          <p>
+            What this selector matches is defined in HTML Standard §4.16.3
+            Pseudo-classes — it may match the button, input type="checkbox",
+            input type="radio", and option elements:
+          </p>
+          <ul>
+            <li>
+              A default option element is the first one with the selected
+              attribute, or the first enabled option in DOM order. multiple
+              select's can have more than one selected option, so all will match
+              :default.
+            </li>
+            <li>
+              input type="checkbox" and input type="radio" match if they have
+              the checked attribute.
+            </li>
+            <li>
+              button matches if it is a form's default submission button: the
+              first button in DOM order that belongs to the form. This also
+              applies to input types that submit forms, like image or submit.
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:default</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:default"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:default</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:defined</h3>
+          <p>
+            The :defined CSS pseudo-class represents any element that has been
+            defined. This includes any standard element built in to the browser,
+            and custom elements that have been successfully defined (i.e. with
+            the CustomElementRegistry.define() method).
+          </p>
+          <p>
+            /* Selects any defined element */ :defined { font-style: italic; }
+            /* Selects any instance of a specific custom element */
+            simple-custom:defined { display: block; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:defined</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:defined"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/>defined</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:dir()</h3>
+          <p>
+            The :dir() CSS pseudo-class matches elements based on the
+            directionality of the text contained in them.
+          </p>
+          <p>
+            /* Selects any element with right-to-left text */ :dir(rtl) {
+            background-color: red; }
+          </p>
+          <p>
+            The :dir() pseudo-class uses only the semantic value of the
+            directionality, i.e., the one defined in the document itself. It
+            doesn't account for styling directionality, i.e., the directionality
+            set by CSS properties such as direction.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The :dir() pseudo-class requires one parameter, representing the
+                text directionality you want to target.
+              </p>
+            </div>
+            <h4>Parameters</h4>
+            <ul>
+              <li><code>ltr: </code> Target left-to-right elements.</li>
+              <li><code>trl: </code> Target right-to-left elements.</li>
+            </ul>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:dir</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:disabled</h3>
+          <p>
+            The :disabled CSS pseudo-class represents any disabled element. An
+            element is disabled if it can't be activated (selected, clicked on,
+            typed into, etc.) or accept focus. The element also has an enabled
+            state, in which it can be activated or accept focus.
+          </p>
+          <p>
+            /* Selects any disabled input */ input:disabled { background: #ccc;
+            }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:disabled</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:empty</h3>
+          <p>
+            The :empty CSS pseudo-class represents any element that has no
+            children. Children can be either element nodes or text (including
+            whitespace). Comments, processing instructions, and CSS content do
+            not affect whether an element is considered empty.
+          </p>
+          <p>
+            /* Selects any "div" that contains no content */ div:empty {
+            background: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:empty</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:empty"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:empty</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:enabled</h3>
+          <p>
+            The :enabled CSS pseudo-class represents any enabled element. An
+            element is enabled if it can be activated (selected, clicked on,
+            typed into, etc.) or accept focus. The element also has a disabled
+            state, in which it can't be activated or accept focus.
+          </p>
+          <p>/* Selects any enabled input */ input:enabled { color: blue; }</p>
+          <div class="concept_description">
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <p>:enabled</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:first</h3>
+          <p>
+            The :first CSS pseudo-class, used with the @page at-rule, represents
+            the first page of a printed document. (See :first-child for general
+            first element of a node.)
+          </p>
+          <p>
+            /* Selects the first page when printing */ @page :first {
+            margin-left: 50%; margin-top: 50%; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:first</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:first
+              </a>
+            </div>
+          </div>
+          <!---->
+          <h3>:first-child</h3>
+          <p>
+            The :first-child CSS pseudo-class represents the first element among
+            a group of sibling elements.
+          </p>
+          <p>
+            /* Selects any p that is the first element among its siblings */
+            p:first-child { color: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:first-child</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child
+              </a>
+            </div>
+          </div>
+          <!---->
+          <h3>:first-of-type</h3>
+          <p>
+            The :first-of-type CSS pseudo-class represents the first element of
+            its type among a group of sibling elements.
+          </p>
+          <p>
+            /* Selects any p that is the first element of its type among its
+            siblings */ p:first-of-type { color: red; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:first-of-type</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:focus</h3>
+          <p>
+            The :focus CSS pseudo-class represents an element (such as a form
+            input) that has received focus. It is generally triggered when the
+            user clicks or taps on an element or selects it with the keyboard's
+            Tab key.
+          </p>
+          <p>
+            /* Selects any input when focused */ input:focus { color: red; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:focus</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:focus</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:focus-visible</h3>
+          <p>
+            The :focus-visible pseudo-class applies while an element matches the
+            :focus pseudo-class and the UA (User Agent) determines via
+            heuristics that the focus should be made evident on the element.
+            (Many browsers show a "focus ring" by default in this case.)
+          </p>
+          <p>
+            This selector is useful to provide a different focus indicator based
+            on the user's input modality (mouse vs. keyboard).
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:focus-visible</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:focus-within</h3>
+          <p>
+            The :focus-within CSS pseudo-class matches an element if the element
+            or any of its descendants are focused. In other words, it represents
+            an element that is itself matched by the :focus pseudo-class or has
+            a descendant that is matched by :focus. (This includes descendants
+            in shadow trees.)
+          </p>
+          <p>
+            /* Selects a div when one of its descendants is focused */
+            div:focus-within { background: cyan; }
+          </p>
+          <p>
+            This selector is useful, to take a common example, for highlighting
+            an entire form container when the user focuses on one of its input
+            fields.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:focus-within</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:fullscreen</h3>
+          <p>
+            The :fullscreen CSS pseudo-class matches every element which is
+            currently in fullscreen mode. If multiple elements have been put
+            into fullscreen mode, this selects them all.
+          </p>
+
+          <div class="concept_description">
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <p>:fullscreen</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:fullscreen</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:has()</h3>
+          <p>
+            The :has() CSS pseudo-class represents an element if any of the
+            selectors passed as parameters (relative to the :scope of the given
+            element) match at least one element.
+          </p>
+          <p>
+            /* Selects any "a", as long as it has an img element directly inside
+            it */ /* Note that this is not supported in any browser yet */ let
+            test = document.querySelector('a:has(> img)');
+          </p>
+          <p>
+            The :has() pseudo-class takes a relative selector list as an
+            argument. In earlier revisions of the CSS Selectors Level 4
+            specification, :has had a limitation that it couldn't be used within
+            stylesheets. Instead, it could only be used with functions like
+            document.querySelector(); this was due to performance concerns. This
+            limitation has been removed because no browser implemented it that
+            way. Instead, browsers currently only support the use of :has()
+            within stylesheets.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:has( forgiving-relative-selector-list )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:has"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:has</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:host</h3>
+          <p>
+            The :host CSS pseudo-class selects the shadow host of the shadow DOM
+            containing the CSS it is used inside — in other words, this allows
+            you to select a custom element from inside its shadow DOM.
+          </p>
+          <p>/* Selects a shadow root host */ :host { font-weight: bold; }</p>
+          <p>
+            Universal selectors can be namespaced when using @namespace. This is
+            useful when dealing with documents containing multiple namespaces
+            such as HTML5 with inline SVG or MathML, or XML that mixes multiple
+            vocabularies.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:host</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:host
+              </a>
+            </div>
+          </div>
+          <!---->
+          <h3>:host-context()</h3>
+          <p>
+            The :host-context() CSS pseudo-class function selects the shadow
+            host of the shadow DOM containing the CSS it is used inside (so you
+            can select a custom element from inside its shadow DOM) — but only
+            if the selector given as the function's parameter matches the shadow
+            host's ancestor(s) in the place it sits inside the DOM hierarchy.
+          </p>
+          <p>
+            In other words, this allows a custom element, or anything within
+            that custom element's shadow DOM, to apply different styles based on
+            its position within the outer DOM or classes/attributes applied to
+            ancestor elements.
+          </p>
+          <p>
+            One typical use of this is with a descendant selector expression —
+            for example h1 — to select only instances of the custom element that
+            are inside an h1. Another typical use would be to allow inner
+            elements to react to classes or attributes on any ancestor elements
+            - for example, applying a different text color when a .dark-theme
+            class is applied to body.
+          </p>
+          <p>
+            /* Selects a shadow root host, only if it is a descendant of the
+            selector argument given */ :host-context(h1) { font-weight: bold; }
+            :host-context(main article) { font-weight: bold; } /* Changes
+            paragraph text color from black to white when a .dark-theme class is
+            applied to the document body */ p { color: #000; }
+            :host-context(body.dark-theme) p { color: #fff; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:host-context()</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context()"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context()</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:host()</h3>
+          <p>
+            The :host() CSS pseudo-class function selects the shadow host of the
+            shadow DOM containing the CSS it is used inside (so you can select a
+            custom element from inside its shadow DOM) — but only if the
+            selector given as the function's parameter matches the shadow host.
+          </p>
+          <p>
+            The most obvious use of this is to put a class name only on certain
+            custom element instances, and then include the relevant class
+            selector as the function argument. You can't use this with a
+            descendant selector expression to select only instances of the
+            custom element that are inside a particular ancestor. That's the job
+            of :host-context().
+          </p>
+          <p>
+            /* Selects a shadow root host, only if it is matched by the selector
+            argument */ :host(.special-custom-element) { font-weight: bold; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:host_function</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:host_function</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:hover</h3>
+          <p>
+            The :hover CSS pseudo-class matches when the user interacts with an
+            element with a pointing device, but does not necessarily activate
+            it. It is generally triggered when the user hovers over an element
+            with the cursor (mouse pointer).
+          </p>
+          <p>
+            /* Selects any "a" element when "hovered" */ a:hover { color:
+            orange; }
+          </p>
+          <p>
+            Styles defined by the :hover pseudo-class will be overridden by any
+            subsequent link-related pseudo-class (:link, :visited, or :active)
+            that has at least equal specificity. To style links appropriately,
+            put the :hover rule after the :link and :visited rules but before
+            the :active one, as defined by the LVHA-order: :link — :visited —
+            :hover — :active.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:hover</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:hover</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:in-range</h3>
+          <p>
+            The :in-range CSS pseudo-class represents an input element whose
+            current value is within the range limits specified by the min and
+            max attributes.
+          </p>
+          <p>
+            /* Selects any input, but only when it has a range specified, and
+            its value is inside that range */ input:in-range { background-color:
+            rgba(0, 255, 0, 0.25); }
+          </p>
+          <p>
+            This pseudo-class is useful for giving the user a visual indication
+            that a field's current value is within the permitted limits.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:in-range</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:in-range</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:indeterminate</h3>
+          <p>
+            The :indeterminate CSS pseudo-class represents any form element
+            whose state is indeterminate, such as checkboxes which have their
+            HTML indeterminate attribute set to true, radio buttons which are
+            members of a group in which all radio buttons are unchecked, and
+            indeterminate progress elements.
+          </p>
+          <p>
+            /* Selects any input whose state is indeterminate */
+            input:indeterminate { background: lime; }
+          </p>
+          <p>Elements targeted by this selector are:</p>
+          <ul>
+            <li>
+              input type="checkbox" elements whose indeterminate property is set
+              to true by JavaScript
+            </li>
+            <li>
+              input type="radio" elements, when all radio buttons with the same
+              name value in the form are unchecked
+            </li>
+            <li>progress elements in an indeterminate state</li>
+          </ul>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:indeterminate</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:invalid</h3>
+          <p>
+            The :invalid CSS pseudo-class represents any form, fieldset, input
+            or other form element whose contents fail to validate.
+          </p>
+          <p>
+            /* Selects any invalid input */ input:invalid { background-color:
+            pink; }
+          </p>
+          <p>
+            This pseudo-class is useful for highlighting field errors for the
+            user.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:invalid</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:invalid</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:is() (:matches(), :any())</h3>
+          <p>
+            The :is() CSS pseudo-class function takes a selector list as its
+            argument, and selects any element that can be selected by one of the
+            selectors in that list. This is useful for writing large selectors
+            in a more compact form.
+          </p>
+          <p>
+            /* Selects any paragraph inside a header, main or footer element
+            that is being hovered */ :is(header, main, footer) p:hover { color:
+            red; cursor: pointer; }
+            <br />
+            /* The above is equivalent to the following */ header p:hover, main
+            p:hover, footer p:hover { color: red; cursor: pointer; }
+          </p>
+          <p>Pseudo-elements are not valid in the selector list for :is().</p>
+          <p>
+            Note that older browsers support this functionality as :matches(),
+            or through an older, prefixed pseudo-class — :any(), including older
+            versions of Chrome, Firefox, and Safari. :any() works in exactly the
+            same way as :matches()/:is(), except that it requires vendor
+            prefixes and doesn't support complex selectors.
+          </p>
+          <p>
+            These legacy pseudo-classes can be used to provide backwards
+            compatibility.
+          </p>
+          <p>
+            /* Backwards-compatible version with :-*-any() and :matches() (It is
+            not possible to group selectors into single rule, because presence
+            of invalid selector would invalidate whole rule.) */
+            :-webkit-any(header, main, footer) p:hover { color: red; cursor:
+            pointer; }<br />
+            :-moz-any(header, main, footer) p:hover { color: red; cursor:
+            pointer; }<br />
+            :matches(header, main, footer) p:hover { color: red; cursor:
+            pointer; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:is() (:matches(), :any())</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:is"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:is</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:lang()</h3>
+          <p>
+            The :lang() CSS pseudo-class matches elements based on the language
+            they are determined to be in.
+          </p>
+          <p>
+            /* Selects any p in English (en) */ p:lang(en) { quotes: '\201C'
+            '\201D' '\2018' '\2019'; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:lang( language-code )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:lang"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:lang</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:last-child</h3>
+          <p>
+            The :last-child CSS pseudo-class represents the last element among a
+            group of sibling elements.
+          </p>
+          <p>
+            /* Selects any p that is the last element among its siblings */
+            p:last-child { color: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <p>:last-child</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:last-of-type</h3>
+          <p>
+            The :last-of-type CSS pseudo-class represents the last element of
+            its type among a group of sibling elements.
+          </p>
+          <p>
+            /* Selects any p that is the last element of its type among its
+            siblings */ p:last-of-type { color: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:last-of-type</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:last-of-type</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:left</h3>
+          <p>
+            The :left CSS pseudo-class, used with the @page at-rule, represents
+            all left-hand pages of a printed document.
+          </p>
+          <p>
+            /* Selects any left-hand pages when printing */ @page :left {
+            margin: 2in 3in; }
+          </p>
+          <p>
+            Whether a given page is "left" or "right" is determined by the major
+            writing direction of the document. For example, if the first page
+            has a major writing direction of left-to-right then it will be a
+            :right page; if it has a major writing direction of right-to-left
+            then it will be a :left page.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:left</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:left"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:left</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:link</h3>
+          <p>
+            The :link CSS pseudo-class represents an element that has not yet
+            been visited. It matches every unvisited a or area element that has
+            an href attribute.
+          </p>
+          <p>
+            /* Selects any "a" that has not been visited yet */ a:link { color:
+            red; }
+          </p>
+          <p>
+            Styles defined by the :link pseudo-class will be overridden by any
+            subsequent link-related pseudo-class (:active, :hover, or :visited)
+            that has at least equal specificity. To style links appropriately,
+            put the :link rule before all other link-related rules, as defined
+            by the LVHA-order: :link — :visited — :hover — :active.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:link</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:link"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:link</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:not()</h3>
+          <p>
+            The :not() CSS pseudo-class represents elements that do not match a
+            list of selectors. Since it prevents specific items from being
+            selected, it is known as the negation pseudo-class.
+          </p>
+          <p>
+            /* Selects any element that is NOT a paragraph */ :not(p) { color:
+            blue; }
+          </p>
+          <p>
+            The :not() pseudo-class has a number of quirks, tricks, and
+            unexpected results that you should be aware of before using it.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The :not() pseudo-class requires a comma-separated list of one
+                or more selectors as its argument. The list must not contain
+                another negation selector or a pseudo-element.
+              </p>
+              <p>:not( complex-selector-list )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:not"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:not</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:nth-child()</h3>
+          <p>
+            The :nth-child() CSS pseudo-class matches elements based on their
+            position among a group of siblings.
+          </p>
+          <p>
+            /* Selects the second
+            <li>
+              element in a list */ li:nth-child(2) { color: lime; } <br />
+
+              /* Selects every fourth element among any group of siblings */
+              :nth-child(4n) { color: lime; }
+            </li>
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                :nth-child() takes a single argument that describes a pattern
+                for matching element indices in a list of siblings. Element
+                indices are 1-based.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:nth-last-child()</h3>
+          <p>
+            The :nth-last-child() CSS pseudo-class matches elements based on
+            their position among a group of siblings, counting from the end.
+          </p>
+          <p>
+            /* Selects every fourth element among any group of siblings,
+            counting backwards from the last one */ :nth-last-child(4n) { color:
+            lime; }
+          </p>
+          <div class="concept_description">
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The nth-last-child pseudo-class is specified with a single
+                argument, which represents the pattern for matching elements,
+                counting from the end.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-child"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-child</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:nth-last-of-type()</h3>
+          <p>
+            The :nth-last-of-type() CSS pseudo-class matches elements based on
+            their position among siblings of the same type (tag name), counting
+            from the end.
+          </p>
+          <p>
+            /* Selects every fourth "p" element among any group of siblings,
+            counting backwards from the last one */ p:nth-last-of-type(4n) {
+            color: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The nth-last-of-type pseudo-class is specified with a single
+                argument, which represents the pattern for matching elements,
+                counting from the end. nth-last-of-type( nth )
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-of-type"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-last-of-type</a
+              >
+            </div>
+          </div>
+          <!---->
+          --
+          <h3>:nth-of-type()</h3>
+          <p>
+            The :nth-of-type() CSS pseudo-class matches elements based on their
+            position among siblings of the same type (tag name).
+          </p>
+          <p>
+            /* Selects every fourth p element among any group of siblings */
+            p:nth-of-type(4n) { color: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The nth-of-type pseudo-class is specified with a single
+                argument, which represents the pattern for matching elements.
+                :nth-of-type( nth )
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:only-child</h3>
+          <p>
+            The :only-child CSS pseudo-class represents an element without any
+            siblings. This is the same as :first-child:last-child or
+            :nth-child(1):nth-last-child(1), but with a lower specificity.
+          </p>
+          <p>
+            /* Selects each p, but only if it is the */ /* only child of its
+            parent */ p:only-child { background-color: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:only-child</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:only-of-type</h3>
+          <p>
+            The :only-of-type CSS pseudo-class represents an element that has no
+            siblings of the same type.
+          </p>
+          <p>
+            /* Selects each "p", but only if it is the */ /* only "p" element
+            inside its parent */ p:only-of-type { background-color: lime; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:only-of-type</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:only-of-type"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:only-of-type</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:optional</h3>
+          <p>
+            The :optional CSS pseudo-class represents any "input", "select", or
+            "textarea" element that does not have the required attribute set on
+            it.
+          </p>
+          <p>
+            /* Selects any optional input*/ input:optional { border: 1px dashed
+            black; }
+          </p>
+          <p>
+            This pseudo-class is useful for styling fields that are not required
+            to submit a form.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:optional</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:optional"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:optional</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:out-of-range</h3>
+          <p>
+            The :out-of-range CSS pseudo-class represents an "input" element
+            whose current value is outside the range limits specified by the min
+            and max attributes.
+          </p>
+          <p>
+            /* Selects any "input", but only when it has a range specified, and
+            its value is outside that range */ input:out-of-range {
+            background-color: rgba(255, 0, 0, 0.25); }
+          </p>
+          <p>
+            This pseudo-class is useful for giving the user a visual indication
+            that a field's current value is outside the permitted limits.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:out-of-range</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:out-of-range</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:paused</h3>
+          <p>
+            The :paused CSS pseudo-class selector is a resource state
+            pseudo-class that will match an audio, video, or similar resource
+            that is capable of being "played" or "paused", when that element is
+            "paused".
+          </p>
+          <p>
+            A resource is paused either due to being in an non-activated state,
+            or due to the user explicitly paused it.
+          </p>
+          <p>
+            The nth-last-of-type pseudo-class is specified with a single :paused
+          </p>
+          <p>:paused { }</p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:paused</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:paused"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:paused</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:picture-in-picture</h3>
+          <p>
+            The :picture-in-picture CSS pseudo-class matches the element which
+            is currently in picture-in-picture mode.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:picture-in-picture</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:picture-in-picture</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:placeholder-shown</h3>
+          <p>
+            The :placeholder-shown CSS pseudo-class represents any "input" or
+            "textarea" element that is currently displaying placeholder text.
+          </p>
+          <p>
+            /* Selects any element with an active placeholder */
+            :placeholder-shown { border: 2px solid silver; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:placeholder-shown</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:placeholder-shown</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:playing</h3>
+          <p>
+            The :playing CSS pseudo-class selector is a resource state
+            pseudo-class that will match an audio, video, or similar resource
+            that is capable of being "played" or "paused", when that element is
+            "playing".
+          </p>
+          <p>
+            A resource is playing even if in buffering state or paused for any
+            reason other than a user interaction to cause it to be paused.
+          </p>
+          <p>:playing { }</p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:playing - :checked ?????</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:playing"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:playing</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:read-only</h3>
+          <p>
+            The :read-only CSS pseudo-class represents an element (such as input
+            or textarea) that is not editable by the user.
+          </p>
+          <p>
+            input:read-only, textarea:read-only { background-color: #ccc; }
+            <br />
+            p:read-only { background-color: #ccc; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:read-only</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:read-only</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:read-write</h3>
+          <p>
+            The :read-write CSS pseudo-class represents an element (such as
+            input or textarea) that is editable by the user.
+          </p>
+          <p>
+            input:read-write, textarea:read-write { background-color: #bbf; }
+            <br />
+            p:read-write { background-color: #bbf; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:read-write</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:read-write"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:read-write</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:required</h3>
+          <p>
+            The :required CSS pseudo-class represents any "input", "select", or
+            "textarea" element that has the required attribute set on it.
+          </p>
+          <p>
+            /* Selects any required "input" */ input:required { border: 1px
+            dashed red; }
+          </p>
+          <p>
+            This pseudo-class is useful for highlighting fields that must have
+            valid data before a form can be submitted.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:required</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:required"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:required</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:right</h3>
+          <p>
+            The :right CSS pseudo-class, used with the @page at-rule, represents
+            all right-hand pages of a printed document.
+          </p>
+          <p>
+            /* Selects any right-hand pages when printing */ @page :right {
+            margin: 2in 3in; }
+          </p>
+          <p>
+            Whether a given page is "left" or "right" is determined by the major
+            writing direction of the document. For example, if the first page
+            has a major writing direction of left-to-right then it will be a
+            :right page; if it has a major writing direction of right-to-left
+            then it will be a :left page.
+          </p>
+          <p>
+            This pseudo-class can be used to change only the margin, padding,
+            border, and background properties of the page box. All other
+            properties will be ignored, and only the page box, not the document
+            content on the page, will be affected.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:right</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:right"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:right</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:root</h3>
+          <p>
+            The :root CSS pseudo-class matches the root element of a tree
+            representing the document. In HTML, :root represents the "html"
+            element and is identical to the selector html, except that its
+            specificity is higher.
+          </p>
+          <p>
+            /* Selects the root element of the document: "html" in the case of
+            HTML */ :root { background: yellow; }
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:root</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:root"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:root</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:scope</h3>
+          <p>
+            The :scope CSS pseudo-class represents elements that are a reference
+            point for selectors to match against.
+          </p>
+          <p>
+            /* Selects a scoped element */ :scope { background-color: lime; }
+          </p>
+          <p>
+            Currently, when used in a stylesheet, :scope is the same as :root,
+            since there is not at this time a way to explicitly establish a
+            scoped element. When used from a DOM API such as querySelector(),
+            querySelectorAll(), matches(), or Element.closest(), :scope matches
+            the element on which the method was called.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:scope</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:scope"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:scope</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:target</h3>
+          <p>
+            The :target CSS pseudo-class represents a unique element (the target
+            element) with an id matching the URL's fragment.
+          </p>
+          <p>
+            /* Selects an element with an ID matching the current URL's fragment
+            */ :target { border: 2px solid black; }
+          </p>
+          <p>
+            For example, the following URL has a fragment (denoted by the #
+            sign) that points to an element called section2:
+          </p>
+          <p>http://www.example.com/index.html#section2</p>
+          <p>
+            The following element would be selected by a :target selector when
+            the current URL is equal to the above:
+          </p>
+          <p>section id="section2"/ Example /section</p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:target</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:target"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:target</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>:user-invalid (:-moz-ui-invalid)</h3>
+          <p>
+            The :user-invalid CSS pseudo-class represents any validated form
+            element whose value isn't valid based on their validation
+            constraints, after the user has interacted with it.
+          </p>
+          <p>
+            The :user-invalid pseudo-class must match an :invalid,
+            :out-of-range, or blank-but :required element between the time the
+            user has attempted to submit the form and before the user has
+            interacted again with the form element.
+          </p>
+          <p>
+            The pseudo-class behaves in the same way as the non-standard
+            :-moz-ui-invalid pseudo-class.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:user-invalid</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:user-invalid</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:user-valid (:-moz-ui-valid)</h3>
+          <p>
+            The :user-valid CSS pseudo-class represents any validated form
+            element whose value validates correctly based on its validation
+            constraints. However, unlike :valid it only matches once the user
+            has interacted with it.
+          </p>
+          <p>
+            The pseudo-class behaves in the same way as the non-standard
+            :-moz-ui-valid pseudo-class.
+          </p>
+          <p>This pseudo-class is applied according to the following rules:</p>
+
+          <ul>
+            <li>
+              If the control does not have focus, and the value is valid, apply
+              this pseudo-class.
+            </li>
+            <li>
+              If the control has focus, and the value was valid (including
+              empty) when it gained focus, apply this pseudo-class.
+            </li>
+            <li>
+              If the control has focus, and the value was invalid when it gained
+              focus, re-validate on every keystroke.
+            </li>
+            <li>
+              If the element is required, the preceding rules apply only if the
+              user has changed the value or attempted to submit the form.
+            </li>
+          </ul>
+          <p>
+            The result is that if the control was valid when the user started
+            interacting with it, the validity styling is changed only when the
+            user shifts focus to another control. However, if the user is trying
+            to correct a previously-flagged value, the control shows immediately
+            when the value becomes valid. Required items are flagged as invalid
+            only if the user changes them or attempts to submit an unchanged
+            invalid value.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:user-valid</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:user-valid</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:valid</h3>
+          <p>
+            The :valid CSS pseudo-class represents any "input" or other "form"
+            element whose contents validate successfully. This allows to easily
+            make valid fields adopt an appearance that helps the user confirm
+            that their data is formatted properly.
+          </p>
+          <p>
+            /* Selects any valid input */ input:valid { background-color:
+            powderblue; }
+          </p>
+          <p>
+            This pseudo-class is useful for highlighting correct fields for the
+            user.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:valid</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:valid"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:valid</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:visited</h3>
+          <p>
+            The :visited CSS pseudo-class represents links that the user has
+            already visited. For privacy reasons, the styles that can be
+            modified using this selector are very limited.
+          </p>
+          <p>
+            /* Selects any "a" that has been visited */ a:visited { color:
+            green; }
+          </p>
+          <p>
+            Styles defined by the :visited pseudo-class will be overridden by
+            any subsequent link-related pseudo-class (:link, :hover, or :active)
+            that has at least equal specificity. To style links appropriately,
+            put the :visited rule after the :link rule but before the :hover and
+            :active rules, as defined by the LVHA-order: :link — :visited —
+            :hover — :active.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:visited</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:visited</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>:where()</h3>
+          <p>
+            The :where() CSS pseudo-class function takes a selector list as its
+            argument, and selects any element that can be selected by one of the
+            selectors in that list.
+          </p>
+          <p>
+            /* Selects any paragraph inside a header, main or footer element
+            that is being hovered */ :where(header, main, footer) p:hover {
+            color: red; cursor: pointer; }<br />
+
+            /* The above is equivalent to the following */ header p:hover, main
+            p:hover, footer p:hover { color: red; cursor: pointer; }
+          </p>
+          <p>
+            The difference between :where() and :is() is that :where() always
+            has 0 specificity, whereas :is() takes on the specificity of the
+            most specific selector in its arguments.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>:where( complex-selector-list )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/:where"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/:where</a
+              >
+            </div>
+          </div>
+          <!---->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/CSS"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/es/docs/Web/CSS
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/l1mER1bV0N0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=l1mER1bV0N0"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/dcCCOiQ1ZuM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=dcCCOiQ1ZuM"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>
