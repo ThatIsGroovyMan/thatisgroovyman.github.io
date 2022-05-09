@@ -1,0 +1,1376 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>At Rules</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
+              CSS es el lenguaje de estilos utilizado para describir la
+              presentación de documentos HTML o XML (en-US) (incluyendo varios
+              languages basados en XML como SVG, MathML o XHTML). CSS describe
+              como debe ser renderizado el elemento estructurado en la pantalla,
+              en papel, en el habla o en otros medios.
+            </p>
+            <p>
+              CSS es uno de los lenguajes base de la Open Web y posee una
+              especificación estandarizada por parte del W3C. Anteriormente , el
+              desarrollo de varias partes de las especificaciones de CSS era
+              realizado de manera sincrónica, lo que permiía el versionado de
+              las recomendaciones. Probablemente habrás escuchado acerca de
+              CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado como una
+              versión oficial.
+            </p>
+            <p>
+              Desde CSS3, el alcance de las especificaciones se incrementó de
+              forma significativa y el progreso de los diferentes modulos de CSS
+              comenzó a mostrar varias diferencias, lo que hizo más efectivo
+              desarrollar y publicar recomendaciones separadas por módulos.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="timeline">
+        <div class="container">
+          <div class="blockgrid_1">
+            <p><strong>Versiones obsoletas de CSS:</strong></p>
+            <ul>
+              <li>CSS 1</li>
+              <li>CSS 2</li>
+              <li>CSS 2.1</li>
+            </ul>
+          </div>
+          <div class="blockgrid_1">
+            <center>
+              <figure>
+                <img
+                  src="./images/cssfigure.png"
+                  alt="Linea de tiempo CSS"
+                  class="figure_1_css"
+                />
+                <figcaption>
+                  Representación de una hoja de estilo CSS
+                </figcaption>
+              </figure>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de este tutorial es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="name_order_dictionary">Diccionario:</h2>
+
+          <h3>@charset</h3>
+          <p>
+            The @charset CSS at-rule specifies the character encoding used in
+            the style sheet. It must be the first element in the style sheet and
+            not be preceded by any character; as it is not a nested statement,
+            it cannot be used inside conditional group at-rules. If several
+            @charset at-rules are defined, only the first one is used, and it
+            cannot be used inside a style attribute on an HTML element or inside
+            the "style" element where the character set of the HTML page is
+            relevant.
+          </p>
+          <p>@charset "utf-8";</p>
+          <p>
+            This at-rule is useful when using non-ASCII characters in some CSS
+            properties, like content.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>/* CSS3 syntax */ ::after</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@charset"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@charset</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@color-profile</h3>
+          <p>
+            The @color-profile CSS at-rule defines and names a color profile
+            which can later be used in the color() function to specify a color.
+          </p>
+          <p>
+            @color-profile --swop5c { src:
+            url('https://example.org/SWOP2006_Coated5v2.icc'); }
+          </p>
+          <p>Descriptors</p>
+          <ul>
+            <li>
+              <code>src:</code> Specifies the URL to retrieve the color-profile
+              information from.
+            </li>
+            <li>
+              <code>rendering-intent:</code> If the color profile contains more
+              than one rendering intent, this descriptor allows one to be
+              selected as the one to use to define how to map the color to
+              smaller gamuts than this profile is defined over.
+              <p>
+                If the color profile contains more than one rendering intent,
+                this descriptor allows one to be selected as the one to use to
+                define how to map the color to smaller gamuts than this profile
+                is defined over.
+              </p>
+              <ul>
+                <li>
+                  <code>relative-colorimetric: </code> colorimetric is required
+                  to leave source colors that fall inside the destination medium
+                  gamut unchanged relative to the respective media white points.
+                  Source colors that are out of the destination medium gamut are
+                  mapped to colors on the gamut boundary using a variety of
+                  different methods.
+                </li>
+                <li>
+                  <code>absolute-colorimetric: </code> ICC-absolute colorimetric
+                  is required to leave source colors that fall inside the
+                  destination medium gamut unchanged relative to the adopted
+                  white (a perfect reflecting diffuser). Source colors that are
+                  out of the destination medium gamut are mapped to colors on
+                  the gamut boundary using a variety of different methods.
+                </li>
+                <li>
+                  <code>perceptual: </code> This method is often the preferred
+                  choice for images, especially when there are substantial
+                  differences between the source and destination (such as a
+                  screen display image reproduced on a reflection print). It
+                  takes the colors of the source image and re-optimizes the
+                  appearance for the destination medium using proprietary
+                  methods.
+                </li>
+                <li>
+                  <code>saturation: </code> This option was created to preserve
+                  the relative saturation (chroma) of the original, and to keep
+                  solid colors pure. However, it experienced interoperability
+                  problems like the perceptual intent.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                @color-profile --swop5c { src:
+                url('https://example.org/SWOP2006_Coated5v2.icc'); }<br />
+                .header { background-color: color(--swop5c 0% 70% 20% 0%); }
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@color-profile"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@color-profile</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@counter-style</h3>
+          <p>
+            The @counter-style CSS at-rule lets you define counter styles that
+            are not part of the predefined set of styles. A @counter-style rule
+            defines how to convert a counter value into a string representation.
+          </p>
+          <p>
+            @counter-style thumbs { system: cyclic; symbols: "\1F44D"; suffix: "
+            "; }<br />
+
+            ul { list-style: thumbs; }
+          </p>
+          <p>
+            The initial version of CSS defined a set of useful counter styles.
+            However, although more styles were added to this set of predefined
+            styles over the years, this system proved too restrictive to fulfill
+            the needs of worldwide typography. The @counter-style at-rule
+            addresses this shortcoming in an open-ended manner, by allowing
+            authors to define their own counter styles when the pre-defined
+            styles aren't fitting their needs.
+          </p>
+          <p>Descriptors</p>
+          <ul>
+            <li>
+              <code>system:</code> Specifies the algorithm to be used for
+              converting the integer value of a counter to a string
+              representation.
+            </li>
+            <li>
+              <code>negative:</code> Lets the author specify symbols to be
+              appended or prepended to the counter representation if the value
+              is negative.
+            </li>
+
+            <li>
+              <code>prefix: </code> Specifies a symbol that should be prepended
+              to the marker representation. Prefixes are added to the
+              representation in the final stage, so in the final representation
+              of the counter, it comes before the negative sign.
+            </li>
+            <li>
+              <code>suffix:</code> Specifies, similar to the prefix descriptor,
+              a symbol that is appended to the marker representation. Suffixes
+              come after the marker representation.
+            </li>
+            <li>
+              <code>range:</code> Defines the range of values over which the
+              counter style is applicable. If a counter style is used to
+              represent a counter value outside of its ranges, the counter style
+              will drop back to its fallback style.
+            </li>
+
+            <li>
+              <code>pad: </code> Is used when you need the marker
+              representations to be of a minimum length. For example if you want
+              the counters to start at 01 and go through 02, 03, 04 etc, then
+              the pad descriptor is to be used. For representations larger than
+              the specified pad value, the marker is constructed as normal.
+            </li>
+            <li>
+              <code>fallback: </code> Specifies a system to fall back into if
+              either the specified system is unable to construct the
+              representation of a counter value or if the counter value is
+              outside the specified range. If the specified fallback also fails
+              to represent the value, then the fallback style's fallback is
+              used, if one is specified. If there are either no fallback systems
+              described or if the chain of fallback systems are unable to
+              represent a counter value, then it will ultimately fall back to
+              the decimal style.
+            </li>
+            <li>
+              <code>symbols: </code> Specifies the symbols that are to be used
+              for the marker representations. Symbols can contain strings,
+              images, or custom identifiers. How the symbols are used to
+              construct the marker representation is up to the algorithm
+              specified in the system descriptor. For example, if the system
+              specified is fixed, then each of the N symbols specified in the
+              descriptor will be used to represent the first N counter symbols.
+              Once the specified set of symbols have exhausted, the fallback
+              style will be used for the rest of the list.
+
+              <br />
+              The below @counter-style rule uses images instead of character
+              symbols. Image values for symbols is currently an 'at risk'
+              feature, and is not implemented in any browser.
+              <br />
+              @counter-style winners-list { system: fixed; symbols:
+              url(gold-medal.svg) url(silver-medal.svg) url(bronze-medal.svg);
+              suffix: " "; }
+            </li>
+
+            <li>
+              <code>additive-symbols: </code> While the symbols specified in the
+              symbols descriptor is used for constructing marker representation
+              by most algorithms, some systems such as 'additive' rely on
+              additive tuples described in this descriptor. Each additive tuple
+              consists of a counter symbol and a non-negative integer weight.
+              The additive tuples must be specified in the descending order of
+              their weights.
+            </li>
+            <li>
+              <code>speak-as: </code> Describes how to read out the counter
+              style in speech synthesizers, such as screen readers. For example,
+              the value of the marker symbol can be read out as numbers or
+              alphabets for ordered lists or as audio cues for unordered lists,
+              based on the value of this descriptor.
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                @counter-style counter-style-name {<br />
+                [ system: counter-system; ] ||<br />
+                [ symbols: counter-symbols; ] ||<br />
+                [ additive-symbols: additive-symbols; ] ||<br />
+                [ negative: negative-symbol; ] ||<br />
+                [ prefix: prefix; ] ||<br />
+                [ suffix: suffix; ] ||<br />
+                [ range: range; ] ||<br />
+                [ pad: padding; ] ||<br />
+                [ speak-as: speak-as; ] ||<br />
+                [ fallback: counter-style-name; ] }
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@counter-style</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@font-face</h3>
+          <p>
+            The @font-face CSS at-rule specifies a custom font with which to
+            display text; the font can be loaded from either a remote server or
+            a locally-installed font on the user's own computer.
+          </p>
+          <p>
+            @font-face {<br />
+            font-family: "Open Sans";<br />
+            src: url("/fonts/OpenSans-Regular-webfont.woff2")
+            format("woff2"),<br />
+            url("/fonts/OpenSans-Regular-webfont.woff") format("woff"); }
+          </p>
+          <p>
+            If the local() function is provided, specifying a font name to look
+            for on the user's computer, and if the user agent finds a match,
+            that local font is used. Otherwise, the font resource specified
+            using the url() function is downloaded and used.
+          </p>
+          <p>
+            By allowing authors to provide their own fonts, @font-face makes it
+            possible to design content without being limited to the so-called
+            "web-safe" fonts (that is, the fonts which are so common that
+            they're considered to be universally available). The ability to
+            specify the name of a locally-installed font to look for and use
+            makes it possible to customize the font beyond the basics while
+            making it possible to do so without relying on an Internet
+            connection.
+          </p>
+          <p>
+            It's common to use both url() and local() together, so that the
+            user's installed copy of the font is used if available, falling back
+            to downloading a copy of the font if it's not found on the user's
+            device.
+          </p>
+          <p>
+            The @font-face at-rule may be used not only at the top level of a
+            CSS, but also inside any CSS conditional-group at-rule.
+          </p>
+
+          <p>Descriptors</p>
+          <ul>
+            <li>
+              <code>ascent-override:</code> Defines the ascent metric for the
+              font.
+            </li>
+            <li>
+              <code>descent-override:</code> Defines the descent metric for the
+              font.
+            </li>
+
+            <li>
+              <code>font-display: </code> Determines how a font face is
+              displayed based on whether and when it is downloaded and ready to
+              use.
+            </li>
+            <li>
+              <code>font-family:</code> Specifies a name that will be used as
+              the font face value for font properties.
+            </li>
+            <li>
+              <code>font-stretch:</code> A font-stretch value. Accepts two
+              values to specify a range that is supported by a font-face, for
+              example font-stretch: 50% 200%;
+            </li>
+
+            <li>
+              <code>font-style: </code> A font-style value. Accepts two values
+              to specify a range that is supported by a font-face, for example
+              font-style: oblique 20deg 50deg;
+            </li>
+            <li>
+              <code>font-weight: </code> A font-weight value. Accepts two values
+              to specify a range that is supported by a font-face, for example
+              font-weight: 100 400;
+            </li>
+            <li><code>font-variant: </code> A font-variant value.</li>
+
+            <li>
+              <code>font-feature-settings: </code> Allows control over advanced
+              typographic features in OpenType fonts.
+            </li>
+            <li>
+              <code>font-variation-settings: </code> Allows low-level control
+              over OpenType or TrueType font variations, by specifying the four
+              letter axis names of the features to vary, along with their
+              variation values.
+            </li>
+            <li>
+              <code>line-gap-override: </code> Defines the line gap metric for
+              the font.
+            </li>
+            <li>
+              <code>size-adjust: </code> Defines a multiplier for glyph outlines
+              and metrics associated with this font. This makes it easier to
+              harmonize the designs of various fonts when rendered at the same
+              font size.
+            </li>
+            <li>
+              <code>src: </code> Specifies the resource containing the font
+              data. This can be a URL to a remote font file location or the name
+              of a font on the user's computer.
+
+              <br />
+              To provide the browser with a hint as to what format a font
+              resource is — so it can select a suitable one — it is possible to
+              include a format type inside a format() function:
+
+              <br />
+              src: url(ideal-sans-serif.woff) format("woff"),<br />
+              url(basic-sans-serif.ttf) format("truetype");
+              <br />
+              The available types are: "woff", "woff2", "truetype", "opentype",
+              "embedded-opentype", and "svg".
+            </li>
+            <li>
+              <code>unicode-range: </code> The range of Unicode code points to
+              be used from the font.
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                @charset "UTF-8"; <br />
+                @charset "iso-8859-15";
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@font-feature-values</h3>
+          <p>
+            The @font-feature-values CSS at-rule lets you use a common name in
+            the font-variant-alternates property for features activated
+            differently in OpenType. This can help simplify your CSS when using
+            multiple fonts.
+          </p>
+          <p>
+            The @font-feature-values at-rule may be used either at the top level
+            of your CSS or inside any CSS conditional-group at-rule.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                @font-feature-values family-name/# { feature-value-block-list }
+              </p>
+              <ul>
+                <li>
+                  <code>@swash: </code> Specifies a feature name that will work
+                  with the swash() functional notation of
+                  font-variant-alternates. A swash feature value definition
+                  allows only one value: ident1: 2 is valid, but ident2: 2 4
+                  isn't.
+                </li>
+                <li>
+                  <code>@annotation: </code> Specifies a feature name that will
+                  work with the annotation() functional notation of
+                  font-variant-alternates. An annotation feature value
+                  definition allows only one value: ident1: 2 is valid, but
+                  ident2: 2 4 isn't.
+                </li>
+                <li>
+                  <code>@ornaments: </code> Specifies a feature name that will
+                  work with the ornaments() functional notation of
+                  font-variant-alternates. An ornaments feature value definition
+                  allows only one value: ident1: 2 is valid, but ident2: 2 4
+                  isn't.
+                </li>
+                <li>
+                  <code>@stylistic: </code> Specifies a feature name that will
+                  work with the stylistic() functional notation of
+                  font-variant-alternates. A stylistic feature value definition
+                  allows only one value: ident1: 2 is valid, but ident2: 2 4
+                  isn't.
+                </li>
+                <li>
+                  <code>@styleset:</code> Specifies a feature name that will
+                  work with the styleset() functional notation of
+                  font-variant-alternates. A styleset feature value definition
+                  allows an unlimited number of values: ident1: 2 4 12 1 maps to
+                  the OpenType values ss02, ss04, ss12, and ss01. Note that
+                  values higher than 99 are valid, but don't map to any OpenType
+                  values and are ignored.
+                </li>
+                <li>
+                  <code>@character-variant: </code> Specifies a feature name
+                  that will work with the character-variant() functional
+                  notation of font-variant-alternates. A character-variant
+                  feature value definition allows either one or two values:
+                  ident1: 3 maps to cv03=1, and ident2: 2 4 maps to cv02=4, but
+                  ident2: 2 4 5 is invalid.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-feature-values"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@font-feature-values</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@import</h3>
+          <p>
+            The @import CSS at-rule is used to import style rules from other
+            stylesheets.
+          </p>
+
+          <p>
+            Imported rules must come before all other types of rules, except
+            @charset rules. The @import rule is not a nested statement.
+            Therefore, it cannot be used inside conditional group at-rules.
+          </p>
+
+          <p>
+            So that user agents can avoid retrieving resources for unsupported
+            media types, authors may specify media-dependent import conditions.
+            These conditional imports specify comma-separated media queries
+            after the URL. In the absence of any media query, the import is
+            unconditional. Specifying all for the list-of-media-queries has the
+            same effect.
+          </p>
+          <p>
+            The @import rule can also be used to create a cascade layer by
+            importing rules from a linked resource. Rules can also be imported
+            into an existing cascade layer. The layer keyword or the layer()
+            function is used with @import for this purpose. Declarations in
+            style rules from imported stylesheets interact with the cascade as
+            if they were written literally into the stylesheet at the point of
+            the import.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                @import [ string | url ] [ layer | layer(layer-name) ]? [
+                supports( [ supports-condition | declaration ] ) ]?
+                media-query-list? ;
+              </p>
+              <p>
+                @import url; <br />
+                @import url list-of-media-queries;<br />
+                @import url supports( supports-query );<br />
+                @import url supports( supports-query ) list-of-media-queries;<br />
+                @import url layer;<br />
+                @import url layer( layer-name );<br />
+                @import url layer( layer-name ) list-of-media-queries;<br />
+                @import url layer( layer-name ) supports( supports-query )
+                list-of-media-queries;<br />
+              </p>
+              <p>where:</p>
+              <ul>
+                <li>
+                  <code>url: </code> Is a "string", a "url", or a url() function
+                  representing the location of the resource to import. The URL
+                  may be absolute or relative.
+                </li>
+                <li>
+                  <code>list-of-media-queries: </code> Is a comma-separated list
+                  of media queries, which specify the media-dependent conditions
+                  for applying the CSS rules defined in the linked URL. If the
+                  browser does not support any of these queries, it does not
+                  load the linked resource.
+                </li>
+                <li>
+                  <code>supports-query: </code> Is either a "supports-condition"
+                  or a "declaration". If the import conditions do not match, the
+                  rules in the imported stylesheet do not apply.
+                </li>
+                <li>
+                  <code>layer-name: </code> Is the name of a cascade layer into
+                  which the contents of the linked resource are imported.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@import"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@import</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@keyframes</h3>
+          <p>
+            The @keyframes CSS at-rule controls the intermediate steps in a CSS
+            animation sequence by defining styles for keyframes (or waypoints)
+            along the animation sequence. This gives more control over the
+            intermediate steps of the animation sequence than transitions.
+          </p>
+          <p>
+            To use keyframes, create a @keyframes rule with a name that is then
+            used by the animation-name property to match an animation to its
+            keyframe declaration. Each @keyframes rule contains a style list of
+            keyframe selectors, which specify percentages along the animation
+            when the keyframe occurs, and a block containing the styles for that
+            keyframe.
+          </p>
+          <p>
+            JavaScript can access the @keyframes at-rule with the CSS object
+            model interface CSSKeyframesRule.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                @keyframes slidein { from { transform: translateX(0%); } <br />
+
+                to { transform: translateX(100%); } }
+              </p>
+            </div>
+            <h4>Values</h4>
+            <div class="prooertiesvalues">
+              <ul>
+                <li>
+                  <code>custom-ident: </code> A name identifying the keyframe
+                  list. This must match the identifier production in CSS syntax.
+                </li>
+                <li><code>from: </code> A starting offset of 0%.</li>
+                <li><code>to: </code>An ending offset of 100%.</li>
+                <li>
+                  <code>percentage: </code> A percentage of the time through the
+                  animation sequence at which the specified keyframe should
+                  occur.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@layer</h3>
+          <p>
+            The @layer CSS at-rule is used to declare a cascade layer and can
+            also used to define the order of precedence in case of multiple
+            cascade layers.
+          </p>
+          <p>
+            Rules within a cascade layer cascade together, giving more control
+            over the cascade to web developers. Any styles not in a layer are
+            gathered together and placed into a single anonymous layer that
+            comes after all the declared layers, named and anonymous. This means
+            that any styles declared outside of a layer will override styles
+            declared in a layer, regardless of specificity.
+          </p>
+          <p>
+            The @layer at-rule is used to create a cascade layer in one of three
+            ways.
+          </p>
+          <p>
+            The first way is to create a named cascade layer with the CSS rules
+            for that layer inside, like so:
+          </p>
+          <p>
+            @layer utilities { .padding-sm { padding: .5rem; } .padding-lg {
+            padding: .8rem; } }
+          </p>
+          <p>
+            The second way is to create a named cascade layer without assigning
+            any styles. This can be a single layer, as shown below:
+            <br />
+            @layer utilities;
+          </p>
+          <p>
+            Multiple layers can be defined at once, as shown below:
+            <br />
+            @layer theme, layout, utilities;
+          </p>
+          <p>
+            This is useful because the initial order in which layers are
+            declared indicates which layer has precedence. As with declarations,
+            the last layer to be listed will win if declarations are found in
+            multiple layers. Therefore, with the preceding example, if a
+            competing rule was found in theme and utilities, the one in
+            utilities would win and be applied.
+          </p>
+          <p>
+            A rule in utilities would be applied even if it has lower
+            specificity than the rule in theme. This is because once the layer
+            order has been established, specificity and order of appearance are
+            ignored. This enables the creation of simpler CSS selectors because
+            you do not have to ensure that a selector will have high enough
+            specificity to override competing rules; all you need to ensure is
+            that it appears in a later layer.
+          </p>
+          <p>
+            Having declared your layer names, thus setting their order, you can
+            add CSS rules to the layer by re-declaring the name. The styles are
+            then appended to the layer and the layer order will not be changed.
+          </p>
+          <p>
+            The third way is to create a cascade layer with no name. For
+            example:
+            <br />
+            @layer { p { margin-block: 1rem; } }
+          </p>
+          <p>
+            This creates an anonymous cascade layer. This layer functions in the
+            same way as named layers; however, rules cannot be assigned to it
+            later. The order of precedence for anonymous layers is the order in
+            which layers are declared, named or not, and lower than the styles
+            declared outside of a layer.
+          </p>
+          <p>
+            Another way to create a cascade layer is by using @import. In this
+            case, the rules would be in the imported stylesheet. Remember that
+            the @import at-rule must precede all other types of rules, except
+            the @charset rules.
+          </p>
+          <p>@import 'theme.css' layer(utilities);</p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>@layer [ layer-name # | layer-name ? { stylesheet } ]</p>
+              <p>
+                @layer layer-name {rules}; <br />
+                @layer layer-name;<br />
+                @layer layer-name, layer-name, layer-name;<br />
+                @layer {rules};<br />
+              </p>
+
+              <p>where:</p>
+              <ul>
+                <li>
+                  <code>layer-name: </code> Is the name of the cascade layer.
+                </li>
+                <li>
+                  <code>rules: </code> Is the set of CSS rules in the cascade
+                  layer.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@layer</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@media</h3>
+          <p>
+            The @media CSS at-rule can be used to apply part of a style sheet
+            based on the result of one or more media queries. With it, you
+            specify a media query and a block of CSS to apply to the document if
+            and only if the media query matches the device on which the content
+            is being used.
+          </p>
+          <p>
+            In JavaScript, the rules created using @media can be accessed with
+            the CSSMediaRule CSS object model interface.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The @media at-rule may be placed at the top level of your code
+                or nested inside any other conditional group at-rule.
+              </p>
+              <p>
+                /* At the top level of your code */ @media screen and
+                (min-width: 900px) { article { padding: 1rem 3rem; } }
+                <br />
+                /* Nested within another conditional at-rule */ @supports
+                (display: flex) { @media screen and (min-width: 900px) { article
+                { display: flex; } } }
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@media</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@namespace</h3>
+          <p>
+            @namespace is an at-rule that defines XML namespaces to be used in a
+            CSS style sheet.
+          </p>
+          <p>
+            The defined namespaces can be used to restrict the universal, type,
+            and attribute selectors to only select elements within that
+            namespace. The @namespace rule is generally only useful when dealing
+            with documents containing multiple namespaces—such as HTML5 with
+            inline SVG or MathML, or XML that mixes multiple vocabularies.
+          </p>
+          <p>
+            Any @namespace rules must follow all @charset and @import rules, and
+            precede all other at-rules and style declarations in a style sheet.
+          </p>
+          <p>
+            @namespace can be used to define the default namespace for the style
+            sheet. When a default namespace is defined, all universal and type
+            selectors (but not attribute selectors, see note below) apply only
+            to elements in that namespace.
+          </p>
+          <p>
+            The @namespace rule can also be used to define a namespace prefix.
+            When a universal, type, or attribute selector is prefixed with a
+            namespace prefix, then that selector only matches if the namespace
+            and name of the element or attribute matches.
+          </p>
+          <p>
+            In HTML5, known foreign elements will automatically be assigned
+            namespaces. This means that HTML elements will act as though they
+            are in the XHTML namespace (http://www.w3.org/1999/xhtml), even if
+            there is no xmlns attribute anywhere in the document, and the "svg"
+            and "math" elements will be assigned their proper namespaces
+            (http://www.w3.org/2000/svg and http://www.w3.org/1998/Math/MathML).
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>@namespace namespace-prefix ? [ string | url ];</p>
+              <p>
+                /* Default namespace */ <br />
+                @namespace url(XML-namespace-URL);<br />
+                @namespace "XML-namespace-URL";<br />
+
+                /* Prefixed namespace */<br />
+                @namespace prefix url(XML-namespace-URL);<br />
+                @namespace prefix "XML-namespace-URL";<br />
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@namespace"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@namespace</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@page</h3>
+          <p>
+            The @page CSS at-rule is used to modify some CSS properties when
+            printing a document.
+          </p>
+          <p>
+            You can't change all CSS properties with @page. You can only change
+            the margins, orphans, widows, and page breaks of the document.
+            Attempts to change any other CSS properties will be ignored.
+          </p>
+          <p>
+            The @page at-rule can be accessed via the CSS object model interface
+            CSSPageRule.
+          </p>
+          <p>
+            The W3C is discussing how to handle viewport-related "length" units,
+            vh, vw, vmin, and vmax. Meanwhile do not use them within a @page
+            at-rule.
+          </p>
+          <p>Descriptors</p>
+          <ul>
+            <li>
+              <code>page-orientation: </code> Specifies the orientation of the
+              document on the page, allowing it to be laid out and formatted as
+              normal or be rotated to one either left or right side.
+            </li>
+            <li>
+              <code>size: </code> Specifies the target size and orientation of
+              the page box's containing block. In the general case, where one
+              page box is rendered onto one page sheet, it also indicates the
+              size of the destination page sheet.
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>@page page-selector-list { page-body }</p>
+              <p>
+                @page { margin: 1cm; }
+                <br />
+                @page :first { margin: 2cm; }
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@page"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@page</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@property</h3>
+          <p>
+            The @property CSS at-rule is part of the CSS Houdini umbrella of
+            APIs, it allows developers to explicitly define their css custom
+            properties, allowing for property type checking, setting default
+            values, and define whether a property can inherit values or not.
+          </p>
+          <p>
+            The @property rule represents a custom property registration
+            directly in a stylesheet without having to run any JS. Valid
+            @property rules result in a registered custom property, as if
+            CSS.registerProperty had been called with equivalent parameters.
+          </p>
+
+          <p>Descriptors</p>
+          <ul>
+            <li>
+              <code>syntax: </code>
+              Describes the allowable syntax for the property.
+            </li>
+            <li>
+              <code>inherits: </code>
+              Controls whether the custom property registration specified by
+              @property inherits by default.
+            </li>
+            <li>
+              <code>initial-value: </code>
+              Sets the initial value for the property. <br />
+              A valid @property rule represents a custom property registration,
+              with the property name being the serialization of the in the
+              rule's prelude.
+
+              <br />
+              @property rules require a syntax and inherits descriptor; if
+              either are missing, the entire rule is invalid and must be
+              ignored. The initial-value descriptor is optional only if the
+              syntax is the universal syntax definition, otherwise the
+              descriptor is required; if it's missing, the entire rule is
+              invalid and must be ignored.
+              <br />
+              Unknown descriptors are invalid and ignored, but do not invalidate
+              the @property rule.
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>@property custom-property-name { declaration-list }</p>
+              <p>
+                @property --property-name { <br />
+                syntax: '&ltcolor&gt';<br />
+                inherits: false;<br />
+                initial-value: #c0ffee;<br />
+                }
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@property"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@property</a
+              >
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@scroll-timeline</h3>
+          <p>
+            The @scroll-timeline CSS at-rule defines an AnimationTimeline whose
+            time values are determined by scrolling progress within a scroll
+            container and not by minutes or seconds. Once specified, a scroll
+            timeline is associated with a CSS Animation by using the
+            animation-timeline property.
+          </p>
+          <p>
+            To use the scroll timeline, create a @scroll-timeline rule, which is
+            used by the animation-timeline property to match an animation's
+            timeline to its timeline declaration.
+          </p>
+
+          <p>
+            Each @scroll-timeline rule includes properties to determine the
+            source, orientation and scroll-offsets of the scroll timeline.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>@scroll-timeline timeline-name { declaration-list }</p>
+              <p>
+                @scroll-timeline moveTimeline { source: auto; orientation:
+                vertical; scroll-offsets: 0px, 500px; }
+              </p>
+            </div>
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <code> custom-ident :</code> A name identifying the scroll
+                  timeline. This name is used when specifying the scroll
+                  timeline with the animation-timeline property.
+                </li>
+                <li>
+                  <code>source :</code> The scrollable element whose scrolling
+                  position drives the progress of the timeline. Can be:
+                </li>
+                <li>
+                  <code>auto :</code> The Document associated with the current
+                  global Window object.
+                </li>
+                <li>
+                  <code>selector("id-selector") :</code> The scroll container
+                  identified by an element's id.
+                </li>
+                <li><code>none :</code> No scroll container specified.</li>
+                <li>
+                  <code>orientation: </code> The scroll timeline's orientation:
+                </li>
+                <li><code>auto :</code> Defaults to vertical</li>
+                <li>
+                  <code>block :</code> Uses the scroll position along the block
+                  axis, conforming to writing mode and directionality.
+                </li>
+                <li>
+                  <code>inline :</code> Uses the scroll position along the
+                  inline axis, conforming to writing mode and directionality.
+                </li>
+                <li>
+                  <code>horizontal :</code> Uses the horizontal scroll position,
+                  regardless of writing mode or directionality.
+                </li>
+                <li>
+                  <code>vertical :</code> Uses the vertical scroll position,
+                  regardless of writing mode or directionality.
+                </li>
+                <li>
+                  <code>scroll-offsets :</code> Determines the scroll timeline's
+                  scroll offsets:
+                </li>
+                <li><code>none :</code> No scroll offsets specified.</li>
+                <li>
+                  <code>length-percentage :</code> A comma separated list of
+                  length-percentage values.
+                </li>
+                <li>
+                  <code>element-offset :</code> An element's position determines
+                  the scroll offset.
+                </li>
+              </ul>
+              >
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@scroll-timeline
+              </a>
+            </div>
+          </div>
+
+          <!---->
+
+          <h3>@supports</h3>
+          <p>
+            The @supports CSS at-rule lets you specify declarations that depend
+            on a browser's support for one or more specific CSS features. This
+            is called a feature query. The rule may be placed at the top level
+            of your code or nested inside any other conditional group at-rule.
+          </p>
+          <p>@supports (display: grid) { div { display: grid; } }</p>
+          <p>@supports not (display: grid) { div { float: right; } }</p>
+          <p>
+            In JavaScript, @supports can be accessed via the CSS object model
+            interface CSSSupportsRule.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>@supports supports-condition { group-rule-body }</p>
+              <p>
+                The @supports at-rule associates a block of statements with a
+                supports condition. The supports condition consists of one or
+                more name-value pairs combined by conjunctions (and),
+                disjunctions (or), and/or negations (not). Precedence of
+                operators can be defined with parentheses.
+              </p>
+
+              <p>
+                Declaration syntax- The most basic supports condition is a
+                simple declaration (a property name followed by a value,
+                separated by a colon). The declaration must be surrounded by
+                parentheses. The following example returns true if the browser's
+                transform-origin property considers 5% 5% valid:
+              </p>
+              <p>@supports (transform-origin: 5% 5%) {}</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/@supports</a
+              >
+            </div>
+          </div>
+
+          <!---->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/CSS"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/es/docs/Web/CSS
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/l1mER1bV0N0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=l1mER1bV0N0"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/dcCCOiQ1ZuM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=dcCCOiQ1ZuM"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>

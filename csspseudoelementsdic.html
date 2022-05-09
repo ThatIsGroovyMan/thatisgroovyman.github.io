@@ -1,0 +1,754 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Pseudo Elementos</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
+              CSS es el lenguaje de estilos utilizado para describir la
+              presentación de documentos HTML o XML (en-US) (incluyendo varios
+              languages basados en XML como SVG, MathML o XHTML). CSS describe
+              como debe ser renderizado el elemento estructurado en la pantalla,
+              en papel, en el habla o en otros medios.
+            </p>
+            <p>
+              CSS es uno de los lenguajes base de la Open Web y posee una
+              especificación estandarizada por parte del W3C. Anteriormente , el
+              desarrollo de varias partes de las especificaciones de CSS era
+              realizado de manera sincrónica, lo que permiía el versionado de
+              las recomendaciones. Probablemente habrás escuchado acerca de
+              CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado como una
+              versión oficial.
+            </p>
+            <p>
+              Desde CSS3, el alcance de las especificaciones se incrementó de
+              forma significativa y el progreso de los diferentes modulos de CSS
+              comenzó a mostrar varias diferencias, lo que hizo más efectivo
+              desarrollar y publicar recomendaciones separadas por módulos.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="timeline">
+        <div class="container">
+          <div class="blockgrid_1">
+            <p><strong>Versiones obsoletas de CSS:</strong></p>
+            <ul>
+              <li>CSS 1</li>
+              <li>CSS 2</li>
+              <li>CSS 2.1</li>
+            </ul>
+          </div>
+          <div class="blockgrid_1">
+            <center>
+              <figure>
+                <img
+                  src="./images/cssfigure.png"
+                  alt="Linea de tiempo CSS"
+                  class="figure_1_css"
+                />
+                <figcaption>
+                  Representación de una hoja de estilo CSS
+                </figcaption>
+              </figure>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de este tutorial es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="name_order_dictionary">Diccionario:</h2>
+
+          <h3>::after</h3>
+          <p>
+            In CSS, ::after creates a pseudo-element that is the last child of
+            the selected element. It is often used to add cosmetic content to an
+            element with the content property. It is inline by default.
+          </p>
+          <p>/* Add an arrow after links */ a::after { content: "→"; }</p>
+          <p>
+            The pseudo-elements generated by ::before and ::after are contained
+            by the element's formatting box, and thus don't apply to replaced
+            elements such as img, or to br elements
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>/* CSS3 syntax */ ::after</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::after</a
+              >
+            </div>
+          </div>
+
+          <h3>::backdrop</h3>
+          <p>
+            The ::backdrop CSS pseudo-element is a box the size of the viewport
+            which is rendered immediately beneath any element being presented in
+            fullscreen mode. This includes both elements which have been placed
+            in fullscreen mode using the Fullscreen API and "dialog" elements.
+          </p>
+          <p>
+            When multiple elements have been placed into fullscreen mode, the
+            backdrop is drawn immediately beneath the frontmost such element,
+            and on top of the older fullscreen elements.
+          </p>
+          <p>
+            /* Backdrop is only displayed when dialog is opened with
+            dialog.showModal() */ dialog::backdrop { background:
+            rgba(255,0,0,.25); }
+          </p>
+          <p>
+            All fullscreen elements are placed in a last-in/first out (LIFO)
+            stack in the top layer, which is a special layer in the viewport
+            which is always rendered last (and therefore on top) before drawing
+            the viewport's contents to the screen. The ::backdrop pseudo-element
+            makes it possible to obscure, style, or completely hide everything
+            located below the element when it's the topmost one in the top
+            layer.
+          </p>
+          <p>
+            ::backdrop neither inherits from nor is inherited by any other
+            elements. No restrictions are made on what properties apply to this
+            pseudo-element.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::backdrop</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>::before</h3>
+          <p>
+            In CSS, ::before creates a pseudo-element that is the first child of
+            the selected element. It is often used to add cosmetic content to an
+            element with the content property. It is inline by default.
+          </p>
+          <p>/* Add a heart before links */ a::before { content: "♥"; }</p>
+          <p>
+            The pseudo-elements generated by ::before and ::after are contained
+            by the element's formatting box, and thus don't apply to replaced
+            elements such as <img />, or to <br />
+            elements.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>/* CSS3 syntax */ ::before</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+              </a>
+            </div>
+          </div>
+          <!---->
+
+          <h3>::cue</h3>
+          <p>
+            The ::cue CSS pseudo-element matches WebVTT cues within a selected
+            element. This can be used to style captions and other cues in media
+            with VTT tracks.
+          </p>
+          <p>::cue { color: yellow; font-weight: bold; }</p>
+          <p>
+            The properties are applied to the entire set of cues as if they were
+            a single unit. The only exception is that background and its
+            longhand properties apply to each cue individually, to avoid
+            creating boxes and obscuring unexpectedly large areas of the media.
+          </p>
+          <div class="concept_description">
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <p>::cue | ::cue( selector )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::cue"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::cue
+              </a>
+            </div>
+          </div>
+          <!---->
+
+          <h3>::cue-region</h3>
+          <p>
+            The ::cue-region CSS pseudo-element matches WebVTT cues within a
+            selected element. This can be used to style captions and other cues
+            in media with VTT tracks.
+          </p>
+          <p>::cue-region { color: yellow; font-weight: bold; }</p>
+          <p>
+            The properties are applied to the entire set of cues as if they were
+            a single unit. The only exception is that background and its
+            longhand properties apply to each cue individually, to avoid
+            creating boxes and obscuring unexpectedly large areas of the media.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::cue-region | ::cue-region( selector )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::cue-region"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::cue-region</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>::file-selector-button</h3>
+          <p>
+            The ::file-selector-button CSS pseudo-element represents the button
+            of an input of type="file".
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>selector::file-selector-button</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::file-selector-button</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>::first-letter</h3>
+          <p>
+            The ::first-letter CSS pseudo-element applies styles to the first
+            letter of the first line of a block-level element, but only when not
+            preceded by other content (such as images or inline tables).
+          </p>
+          <p>
+            /* Selects the first letter of a p */ p::first-letter { font-size:
+            130%; }
+          </p>
+          <p>
+            The first letter of an element is not always trivial to identify:
+          </p>
+          <ul>
+            <li>
+              Punctuation that precedes or immediately follows the first letter
+              is included in the match. Punctuation includes any Unicode
+              character defined in the open (Ps), close (Pe), initial quote
+              (Pi), final quote (Pf), and other punctuation (Po) classes.
+            </li>
+            <li>
+              Some languages have digraphs that are always capitalized together,
+              like the IJ in Dutch. In these cases, both letters of the digraph
+              should be matched by the ::first-letter pseudo-element.
+            </li>
+            <li>
+              A combination of the ::before pseudo-element and the content
+              property may inject some text at the beginning of the element. In
+              that case, ::first-letter will match the first letter of this
+              generated content.
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>/* CSS3 syntax */ ::first-letter</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>::first-line</h3>
+          <p>
+            The ::first-line CSS pseudo-element applies styles to the first line
+            of a block-level element.
+          </p>
+          <p>
+            /* Selects the first line of a p */ p::first-line { color: red; }
+          </p>
+          <p>
+            The effects of ::first-line are limited by the length and content of
+            the first line of text in the element. The length of the first line
+            depends on many factors, including the width of the element, the
+            width of the document, and the font size of the text. ::first-line
+            has no effect when the first child of the element, which would be
+            the first part of the first line, is an inline block-level element,
+            such as an inline table.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>/* CSS3 syntax */ ::first-line</p>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>::grammar-error</h3>
+          <p>
+            The ::grammar-error CSS pseudo-element represents a text segment
+            which the user agent has flagged as grammatically incorrect.
+          </p>
+          <p>::grammar-error { text-decoration: underline red; color: red; }</p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::grammar-error</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::grammar-error</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>::marker</h3>
+          <p>
+            The ::marker CSS pseudo-element selects the marker box of a list
+            item, which typically contains a bullet or number. It works on any
+            element or pseudo-element set to display: list-item, such as the li
+            and summary elements.
+          </p>
+          <p>::marker { color: blue; font-size: 1.2em; }</p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::marker</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::marker"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::marker</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>::part()</h3>
+          <p>
+            The ::part CSS pseudo-element represents any element within a shadow
+            tree that has a matching part attribute.
+          </p>
+          <p>
+            custom-element::part(foo) { /* Styles to apply to the `foo` part */
+            }
+          </p>
+          <div class="concept_description">
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <p>::part( &ltident&gt+ )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::part"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::part</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>::placeholder</h3>
+          <p>
+            The ::placeholder CSS pseudo-element represents the placeholder text
+            in an "input" or "textarea" element.
+          </p>
+          <p>::placeholder { color: blue; font-size: 1.5em; }</p>
+          <p>
+            Only the subset of CSS properties that apply to the ::first-line
+            pseudo-element can be used in a rule using ::placeholder in its
+            selector.
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::placeholder</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder
+              </a>
+            </div>
+          </div>
+          <!---->
+          <h3>::selection</h3>
+          <p>
+            The ::selection CSS pseudo-element applies styles to the part of a
+            document that has been highlighted by the user (such as clicking and
+            dragging the mouse across text).
+          </p>
+          <p>::selection { background-color: cyan; }</p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                /* Legacy Firefox syntax (version 61 and below) */
+                ::-moz-selection ::selection
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::selection"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::selection
+              </a>
+            </div>
+          </div>
+          <!---->
+          <h3>::slotted()</h3>
+          <p>
+            The ::slotted() CSS pseudo-element represents any element that has
+            been placed into a slot inside an HTML template (see Using templates
+            and slots for more information).
+          </p>
+          <p>
+            This only works when used inside CSS placed within a shadow DOM.
+            Note also that this selector won't select a text node placed into a
+            slot; it only targets actual elements.
+          </p>
+          <p>
+            /* Selects any element placed inside a slot */ ::slotted(*) {
+            font-weight: bold; }
+            <br />
+            /* Selects any "span" placed inside a slot */ ::slotted(span) {
+            font-weight: bold; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::slotted( compound-selector )</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>::spelling-error</h3>
+          <p>
+            The ::spelling-error CSS pseudo-element represents a text segment
+            which the user agent has flagged as incorrectly spelled.
+          </p>
+          <p>
+            /* Selects any input when focused */ input:focus { color: red; }
+          </p>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::spelling-error</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::spelling-error</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>::target-text</h3>
+          <p>
+            The ::target-text CSS pseudo-element represents the text that has
+            been scrolled to if the browser supports scroll-to-text fragments.
+            It allows authors to choose how to highlight that section of text.
+          </p>
+          <p>::target-text { background-color: pink; }</p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>::target-text</p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/::target-text</a
+              >
+            </div>
+          </div>
+          <!---->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/CSS"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/es/docs/Web/CSS
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/l1mER1bV0N0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=l1mER1bV0N0"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/dcCCOiQ1ZuM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=dcCCOiQ1ZuM"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>
