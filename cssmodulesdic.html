@@ -1,0 +1,2568 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Modules</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
+              CSS es el lenguaje de estilos utilizado para describir la
+              presentación de documentos HTML o XML (en-US) (incluyendo varios
+              languages basados en XML como SVG, MathML o XHTML). CSS describe
+              como debe ser renderizado el elemento estructurado en la pantalla,
+              en papel, en el habla o en otros medios.
+            </p>
+            <p>
+              CSS es uno de los lenguajes base de la Open Web y posee una
+              especificación estandarizada por parte del W3C. Anteriormente , el
+              desarrollo de varias partes de las especificaciones de CSS era
+              realizado de manera sincrónica, lo que permiía el versionado de
+              las recomendaciones. Probablemente habrás escuchado acerca de
+              CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado como una
+              versión oficial.
+            </p>
+            <p>
+              Desde CSS3, el alcance de las especificaciones se incrementó de
+              forma significativa y el progreso de los diferentes modulos de CSS
+              comenzó a mostrar varias diferencias, lo que hizo más efectivo
+              desarrollar y publicar recomendaciones separadas por módulos.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="timeline">
+        <div class="container">
+          <div class="blockgrid_1">
+            <p><strong>Versiones obsoletas de CSS:</strong></p>
+            <ul>
+              <li>CSS 1</li>
+              <li>CSS 2</li>
+              <li>CSS 2.1</li>
+            </ul>
+          </div>
+          <div class="blockgrid_1">
+            <center>
+              <figure>
+                <img
+                  src="./images/cssfigure.png"
+                  alt="Linea de tiempo CSS"
+                  class="figure_1_css"
+                />
+                <figcaption>
+                  Representación de una hoja de estilo CSS
+                </figcaption>
+              </figure>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de este tutorial es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="name_order_dictionary">Diccionario:</h2>
+
+          <h3>Compositing and Blending</h3>
+          <p>
+            Compositing and Blending is a CSS module that defines how shapes of
+            different elements are combined into a single image.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>background-blend-mode</li>
+                <li>isolation</li>
+                <li>mix-blend-mode</li>
+              </ul>
+            </div>
+
+            <h4>Data types</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>blend-mode</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Compositing_and_Blending"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/Compositing_and_Blending</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Animations</h3>
+          <p>
+            CSS Animations is a module of CSS that lets you animate the values
+            of CSS properties over time, using keyframes. The behavior of these
+            keyframe animations can be controlled by specifying their timing
+            function, duration, their number of repetitions, and other
+            attributes.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>animation</li>
+                <li>animation-delay</li>
+                <li>animation-direction</li>
+                <li>animation-duration</li>
+                <li>animation-fill-mode</li>
+                <li>animation-iteration-count</li>
+                <li>animation-name</li>
+                <li>animation-play-state</li>
+                <li>animation-timeline</li>
+                <li>animation-timing-function</li>
+              </ul>
+            </div>
+
+            <h4>At-rules</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>@keyframes</li>
+                <li>@scroll-timeline</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Detecting CSS animation support: </strong> Describes a
+                  technique for detecting if a browser supports CSS animations.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Detecting_CSS_animation_support"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Detecting_CSS_animation_support</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Using CSS animations</strong> Step-by-step tutorial
+                  about how to create animations using CSS. This article
+                  describes each relevant CSS property and at-rule and explains
+                  how they interact with each other.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS animations tips and tricks</strong> Tips and
+                  tricks to help you get the most out of CSS animations.
+                  Currently offers a technique for replaying an animation which
+                  has already run through to completion, which the API doesn't
+                  support inherently.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Tips"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Tips</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Backgrounds and Borders</h3>
+          <p>
+            Styles in the CSS Backgrounds and Borders module allow filling
+            backgrounds with color or an image (clipped or resized), or
+            modifying them in other ways. These styles can also decorate borders
+            with lines or images, and make them square or rounded.
+            (Additionally, element boxes can be decorated with a shadow.)
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>background</li>
+                <li>background-attachment</li>
+                <li>background-clip</li>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-origin</li>
+                <li>background-position</li>
+                <li>background-position-x</li>
+                <li>background-position-y</li>
+                <li>background-repeat</li>
+                <li>background-size</li>
+                <li>border</li>
+                <li>border-bottom</li>
+                <li>border-bottom-color</li>
+                <li>border-bottom-left-radius</li>
+                <li>border-bottom-right-radius</li>
+                <li>border-bottom-style</li>
+                <li>border-bottom-width</li>
+                <li>border-collapse</li>
+                <li>border-color</li>
+                <li>border-image</li>
+                <li>border-image-outset</li>
+                <li>border-image-repeat</li>
+                <li>border-image-slice</li>
+                <li>border-image-source</li>
+                <li>border-image-width</li>
+                <li>border-left</li>
+                <li>border-left-color</li>
+                <li>border-left-style</li>
+                <li>border-left-width</li>
+                <li>border-radius</li>
+                <li>border-right</li>
+                <li>border-right-color</li>
+                <li>border-right-style</li>
+                <li>border-right-width</li>
+                <li>border-style</li>
+                <li>border-top</li>
+                <li>border-top-color</li>
+                <li>border-top-left-radius</li>
+                <li>border-top-right-radius</li>
+                <li>border-top-style</li>
+                <li>border-top-width</li>
+                <li>border-width</li>
+                <li>box-shadow</li>
+              </ul>
+            </div>
+
+            <h4>Tools</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Using multiple backgrounds: </strong> Explains how to
+                  set one or more backgrounds on an element.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Resizing background images: </strong> Describes how to
+                  change the size and repeating behavior of background images.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Applying color to HTML elements using CSS: </strong>
+                  An overview of how CSS color can be used in HTML, including
+                  for borders.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Border-image generator: </strong> This interactive
+                  tool lets you visually create border images (the border-image
+                  property).
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Border-image_generator"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Border-image_generator</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Border-radius generator: </strong> This interactive
+                  tool lets you visually create rounded corners (the
+                  border-radius property).
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Border-radius_generator"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Border-radius_generator</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Box-shadow generator: </strong> This interactive tool
+                  lets you visually create shadows behind elements (the
+                  box-shadow property).
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Basic User Interface</h3>
+          <p>
+            CSS Basic User Interface is a CSS module that lets you define the
+            rendering and functionality of features related to the user
+            interface.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>appearance</li>
+                <li>box-sizing</li>
+                <li>cursor</li>
+                <li>ime-mode</li>
+                <li>nav-down</li>
+                <li>nav-left</li>
+                <li>nav-right</li>
+                <li>nav-up</li>
+                <li>outline</li>
+                <li>outline-width</li>
+                <li>outline-style</li>
+                <li>outline-color</li>
+                <li>outline-offset</li>
+                <li>resize</li>
+                <li>text-overflow</li>
+                <li>user-select</li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Basic_User_Interface"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Basic_User_Interface</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Box Model</h3>
+          <p>
+            CSS Box Model is a module of CSS that defines the rectangular
+            boxes—including their padding and margin—that are generated for
+            elements and laid out according to the visual formatting model.
+          </p>
+          <p>
+            The box model - A box in CSS consists of a content area, which is
+            where any text, images, or other HTML elements are displayed. This
+            is optionally surrounded by padding, a border, and a margin, on one
+            or more sides. The box model describes how these elements work
+            together to create a box as displayed by CSS. To learn more about it
+            read Introduction to the CSS Box Model.
+          </p>
+          <p>
+            Box-edge-keyowrds - The Box Model specification defines a set of
+            keywords that refer to the edges of each part of the box, these are
+            used as keyword values in CSS including as a value for the
+            box-sizing property, to control how the box model calculates its
+            size.
+          </p>
+          <ul>
+            <li>
+              <code>content-box: </code> The edge of the content area of the
+              box.
+            </li>
+            <li>
+              <code>padding-box: </code> The edge of the padding of the box, if
+              there is no padding on a side then this is the same as
+              content-box.
+            </li>
+            <li>
+              <code>border-box: </code> The edge of the border of the box, if
+              there is no border on a side then this is the same as padding-box.
+            </li>
+            <li>
+              <code>margin-box: </code> The edge of the margin of the box, if
+              there is no margin on a side then this is the same as border-box.
+            </li>
+            <li>
+              <code>stroke-box: </code> In SVG refers to the stroke bounding
+              box, in CSS treated as content-box.
+            </li>
+
+            <li>
+              <code>view-box: </code> In SVG refers to the nearest SVG viewport
+              element's origin box, which is a rectangle with the width and
+              height of the initial SVG user coordinate system established by
+              the viewBox attribute for that element. In CSS treated as
+              border-box.
+            </li>
+          </ul>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <p>
+                This specification defines the physical padding and margin
+                properties. Flow-relative properties, which relate to text
+                direction, are defined in Logical Properties and Values.
+              </p>
+              <h5>Properties controlling the margins of a box</h5>
+              <p>
+                Margins surround the border edge of a box, and provide spacing
+                between boxes.
+              </p>
+              <ul>
+                <li>margin</li>
+                <li>margin-bottom</li>
+                <li>margin-left</li>
+                <li>margin-right</li>
+                <li>margin-top</li>
+                <li>margin-trim</li>
+              </ul>
+
+              <h5>Properties controlling the paddings of a box</h5>
+              <p>
+                Padding is inserted between the content edge and border edge of
+                a box.
+              </p>
+              <ul>
+                <li>padding</li>
+                <li>padding-bottom</li>
+                <li>padding-left</li>
+                <li>padding-right</li>
+                <li>padding-top</li>
+              </ul>
+
+              <h5>Other properties</h5>
+              <p>
+                There are other properties that relate to the box model, that
+                are defined elsewhere.
+              </p>
+              <ul>
+                <li>
+                  Borders: The border properties specify the thickness of the
+                  border, drawing style and color.
+                </li>
+                <li>
+                  Overflow: Controls what happens when there is too much content
+                  to fit into a box.
+                </li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Introduction to the CSS box model: </strong>Explains
+                  one of the fundamental concept of CSS: the box model. This
+                  model defines how CSS lays out elements, including their
+                  content, padding, border, and margin areas.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Mastering margin collapsing: </strong> Sometimes, two
+                  adjacent margins are collapsed into one. This article
+                  describes the rules that govern when and why this happens, and
+                  how to control it.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Visual formatting model: </strong> Explains the visual
+                  formatting model.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Charsets</h3>
+          <p>
+            CSS Charsets is a module of CSS that lets you specify the character
+            set used in the style sheet.
+          </p>
+
+          <div class="concept_description">
+            <h4>At-rules</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>@charset</li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Charsets"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Charsets</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Colors</h3>
+          <p>
+            CSS Color is a CSS module that deals with colors, color types, color
+            blending, opacity, and how you can apply these colors and effects to
+            HTML content.
+          </p>
+          <p>
+            Not all CSS properties that take a color as a value are part of this
+            module, but they do depend upon it.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>color</li>
+                <li>print-color-adjust</li>
+                <li>opacity</li>
+              </ul>
+            </div>
+
+            <h4>Data types</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>color</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Applying color to HTML elements using CSS: </strong> A
+                  guide to using CSS to apply color to a variety of types of
+                  content. All color-related CSS properties are touched upon.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <h4>Tools</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Color picker tool: </strong>
+                  This tool makes it easy to create, adjust, and experiment with
+                  custom colors.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Multi-column Layout</h3>
+          <p>
+            CSS Multi-column Layout is a module of CSS that adds support for
+            multi-column layouts. Support is included for establishing the
+            number of columns in a layout, as well as how content should flow
+            from column to column, gap sizes between columns, and column
+            dividing lines (known as column rules) along with their appearance.
+          </p>
+          <p>
+            Not all CSS properties that take a color as a value are part of this
+            module, but they do depend upon it.
+          </p>
+          <p>
+            Relationship to Fragmentation - Multiple-column Layout is closely
+            related to Paged Media, in that each column box becomes a fragment,
+            much like a printed page becomes a fragment of an overall document.
+            Therefore the properties now defined in the CSS Fragmentation
+            specification are required in order to control how content breaks
+            between columns.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <h5>Multiple-column Layout Properties</h5>
+              <ul>
+                <li>column-count</li>
+                <li>column-fill</li>
+                <li>column-gap</li>
+                <li>column-rule</li>
+                <li>column-rule-color</li>
+                <li>column-rule-style</li>
+                <li>column-rule-width</li>
+                <li>column-span</li>
+                <li>column-width</li>
+                <li>columns</li>
+              </ul>
+
+              <h5>Related CSS Fragmentation Properties</h5>
+              <ul>
+                <li>break-after</li>
+                <li>break-before</li>
+                <li>break-inside</li>
+                <li>orphans</li>
+                <li>widows</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Basic Concepts of Multicol: </strong> An overview of
+                  the Multiple-column Layout specification
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Basic_Concepts_of_Multicol"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Basic_Concepts_of_Multicol</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Basic Concepts of Multicol: </strong> An overview of
+                  the Multiple-column Layout specification
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Basic_Concepts_of_Multicol"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Basic_Concepts_of_Multicol</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Styling Columns: </strong> How to use column rules and
+                  manage the spacing between columns.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Styling_Columns"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Styling_Columns</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Spanning and Balancing: </strong> How to make elements
+                  span across all columns and controlling the way columns are
+                  filled.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Spanning_Columns"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Spanning_Columns</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Handling Overflow in Multicol: </strong> What happens
+                  when an item overflows the column it is in and what happens
+                  when there is too much columned content to fit a container.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Handling_Overflow_in_Multicol"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Handling_Overflow_in_Multicol</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Content Breaks in Multicol: </strong> Introduction to
+                  the Fragmentation specification and how to control where
+                  column content breaks.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Handling_content_breaks_in_multicol"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns/Handling_content_breaks_in_multicol</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Conditional Rules</h3>
+          <p>
+            CSS Conditional Rules is a CSS module that allows to define a set of
+            rules that will only apply based on the capabilities of the
+            processor or the document the style sheet is being applied to.
+          </p>
+
+          <div class="concept_description">
+            <h4>At-rules</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>@document</li>
+                <li>@media</li>
+                <li>@supports</li>
+                <li>@import</li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Conditional_Rules</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Counter Styles</h3>
+          <p>
+            CSS Counter Styles is a module of CSS that lets you define your own
+            counter styles.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>counter-increment</li>
+                <li>counter-reset</li>
+              </ul>
+            </div>
+
+            <h4>Functions</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>symbols()</li>
+              </ul>
+            </div>
+
+            <h4>At-rules</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>@counter-style</li>
+                <ul>
+                  <li>system</li>
+                  <li>additive-symbols</li>
+                  <li>negative</li>
+                  <li>prefix</li>
+                  <li>suffix</li>
+                  <li>range</li>
+                  <li>pad</li>
+                  <li>speak-as</li>
+                  <li>fallback</li>
+                </ul>
+                >
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Using CSS counters: </strong>Describes how to use
+                  counters to number any HTML element or to perform complex
+                  counting.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Device Adaptation</h3>
+          <p>
+            CSS Device Adaptation is a module of CSS that lets you define the
+            size, zoom factor, and orientation of the viewport.
+          </p>
+
+          <div class="concept_description">
+            <h4>At-rules</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>@viewport</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Device_Adaptation"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Device_Adaptation</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Display</h3>
+          <p>
+            CSS Display is a module of CSS that defines how the CSS formatting
+            box tree is generated from the document element tree and defines
+            properties controlling it.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <h5>CSS properties</h5>
+              <ul>
+                <li>display</li>
+              </ul>
+
+              <h5>CSS data types</h5>
+              <ul>
+                <li>display-outside</li>
+                <li>display-inside</li>
+                <li>display-listitem</li>
+                <li>display-box</li>
+                <li>display-internal</li>
+                <li>display-legacy</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Adapting to the two-value syntax of display </strong>
+                  <p>
+                    <a
+                      href="hhttps://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/display/two-value_syntax_of_display</a
+                    >
+                  </p>
+                </li>
+                <h5>CSS Flow Layout (display: block, display: inline)</h5>
+
+                <li>
+                  <strong>Block and Inline Layout in Normal Flow</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Flow Layout and Overflow</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Flow_Layout_and_Overflow"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Flow_Layout_and_Overflow</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Flow Layout and Writing Modes</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Flow_Layout_and_Writing_Modes"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Flow_Layout_and_Writing_Modes</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Formatting Contexts Explained</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Intro_to_formatting_contexts</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>In Flow and Out of Flow</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/In_Flow_and_Out_of_Flow"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/In_Flow_and_Out_of_Flow</a
+                    >
+                  </p>
+                </li>
+
+                <h5>display: flex</h5>
+
+                <li>
+                  <strong>Basic concepts of flexbox</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Aligning Items in a Flex Container</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong
+                    >Controlling Ratios of Flex Items Along the Main
+                    Axis</strong
+                  >
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Mastering Wrapping of Flex Items</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Ordering Flex Items</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong
+                    >Relationship of flexbox to other layout methods</strong
+                  >
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Backwards Compatibility of Flexbox</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Typical use cases of Flexbox</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox</a
+                    >
+                  </p>
+                </li>
+                <h5>display: flex</h5>
+
+                <li>
+                  <strong>Basic Concepts of Grid Layout</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Relationship to other layout methods</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Line-based placement</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Grid template areas</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Layout using named grid lines</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Auto-placement in grid layout</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Box alignment in grid layout</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Grids, logical values and writing modes</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS Grid Layout and Accessibility</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS Grid Layout and Progressive Enhancement</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Realizing common layouts using grids</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Display"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Display</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Flexible Box Layout</h3>
+          <p>
+            CSS Flexible Box Layout is a module of CSS that defines a CSS box
+            model optimized for user interface design, and the layout of items
+            in one dimension. In the flex layout model, the children of a flex
+            container can be laid out in any direction, and can "flex" their
+            sizes, either growing to fill unused space or shrinking to avoid
+            overflowing the parent. Both horizontal and vertical alignment of
+            the children can be easily manipulated.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <h5>CSS Properties</h5>
+              <ul>
+                <li>flex</li>
+                <li>flex-basis</li>
+                <li>flex-direction</li>
+                <li>flex-flow</li>
+                <li>flex-grow</li>
+                <li>flex-shrink</li>
+                <li>flex-wrap</li>
+                <li>order</li>
+              </ul>
+
+              <h5>Alignment Properties</h5>
+              <p>
+                The properties align-content, align-self, align-items and
+                justify-content initially appeared in the Flexbox specification,
+                but are now defined in Box Alignment. The Flexbox spec now
+                refers to the Box Alignment specification for up to date
+                definitions. Also additional alignment properties are now
+                defined in Box Alignment.
+              </p>
+              <ul>
+                <li>justify-content</li>
+                <li>align-content</li>
+                <li>align-items</li>
+                <li>align-self</li>
+                <li>place-content</li>
+                <li>place-items</li>
+                <li>row-gap</li>
+                <li>column-gap</li>
+                <li>gap</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Basic Concepts of Flexbox: </strong> An overview of
+                  the features of Flexbox
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong
+                    >Relationship of Flexbox to other layout methods:
+                  </strong>
+                  How Flexbox relates to other layout methods, and other CSS
+                  specifications
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Relationship_of_Flexbox_to_Other_Layout_Methods</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Aligning items in a flex container: </strong> How the
+                  Box Alignment properties work with Flexbox.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Ordering flex items: </strong> Explaining the
+                  different ways to change the order and direction of items, and
+                  covering the potential issues in doing so.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong
+                    >Controlling Ratios of flex items along the main axis:
+                  </strong>
+                  Explaining the flex-grow, flex-shrink and flex-basis
+                  properties.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Controlling_Ratios_of_Flex_Items_Along_the_Main_Ax</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Mastering wrapping of flex items: </strong> How to
+                  create flex containers with multiple lines and control the
+                  display of the items in those lines.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Mastering_Wrapping_of_Flex_Items</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Typical use cases of Flexbox: </strong> Common design
+                  patterns that are typical Flexbox use cases.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Backwards compatibility of Flexbox: </strong> Browser
+                  status of Flexbox, interoperability issues and supporting
+                  older browsers and versions of the spec
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Backwards_Compatibility_of_Flexbox</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Fonts</h3>
+          <p>
+            CSS Fonts is a module of CSS that defines font-related properties
+            and how font resources are loaded. It lets you define the style of a
+            font, such as its family, size and weight, line height, and the
+            glyph variants to use when multiple are available for a single
+            character.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>font</li>
+                <li>font-family</li>
+                <li>font-feature-settings</li>
+                <li>font-kerning</li>
+                <li>font-language-override</li>
+                <li>font-optical-sizing</li>
+                <li>font-size</li>
+                <li>font-size-adjust</li>
+                <li>font-stretch</li>
+                <li>font-style</li>
+                <li>font-synthesis</li>
+                <li>font-variant</li>
+                <li>font-variant-alternates</li>
+                <li>font-variant-caps</li>
+                <li>font-variant-east-asian</li>
+                <li>font-variant-ligatures</li>
+                <li>font-variant-numeric</li>
+                <li>font-variant-position</li>
+                <li>font-variation-settings</li>
+                <li>font-weight</li>
+                <li>line-height</li>
+              </ul>
+            </div>
+
+            <h4>At-rules</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>@font-face</li>
+                <li>@font-feature-values</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Fundamental text and font styling: </strong>
+                  In this beginner's learning article we go through all the
+                  basic fundamentals of text/font styling in detail, including
+                  setting font weight, family and style, font shorthand, text
+                  alignment and other effects, and line and letter spacing.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>OpenType font features guide: </strong>
+                  Font features or variants refer to different glyphs or
+                  character styles contained within an OpenType font. These
+                  include things like ligatures (special glyphs that combine
+                  characters like 'fi' or 'ffl'), kerning (adjustments to the
+                  spacing between specific letterform pairings), fractions,
+                  numeral styles, and a number of others. These are all referred
+                  to as OpenType Features, and are made available to use on the
+                  web via specific properties and a low-level control property —
+                  font-feature-settings. This article provides you with all you
+                  need to know about using OpenType font features in CSS.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/OpenType_fonts_guide"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/OpenType_fonts_guide</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong>Variable fonts guide: </strong>
+                  Variable fonts are an evolution of the OpenType font
+                  specification that enables many different variations of a
+                  typeface to be incorporated into a single file, rather than
+                  having a separate font file for every width, weight, or style.
+                  This article will give you all you need to know to get you
+                  started using variable fonts.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Fragmentation</h3>
+          <p>
+            CSS Fragmentation is a module of CSS that defines how content is
+            displayed when it is broken (fragmented) across multiple pages,
+            regions, or columns.
+          </p>
+          <p>
+            Fragmentation occurs when an inline box wraps onto multiple lines.
+            It also occurs when a block spans more than one column inside a
+            column layout container, or spans a page break when printed. Each
+            piece of the rendering for the element is called a fragment.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>box-decoration-break</li>
+                <li>break-after</li>
+                <li>break-before</li>
+                <li>break-inside</li>
+                <li>orphans</li>
+                <li>widows</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fragmentation"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fragmentation</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Generated Content</h3>
+          <p>
+            CSS Generated Content is a module of CSS that defines how to add
+            content to an element. Generated content can be used to add content
+            to anonymous replaced elements or replace the content of a DOM node
+            in very limited circumstances with a generated value.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>content</li>
+                <li>quotes</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Generated_Content"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Generated_Content</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Grid Layout</h3>
+          <p>
+            CSS Grid Layout excels at dividing a page into major regions or
+            defining the relationship in terms of size, position, and layer,
+            between parts of a control built from HTML primitives.
+          </p>
+          <p>
+            Like tables, grid layout enables an author to align elements into
+            columns and rows. However, many more layouts are either possible or
+            easier with CSS grid than they were with tables. For example, a grid
+            container's child elements could position themselves so they
+            actually overlap and layer, similar to CSS positioned elements.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <h5>CSS properties</h5>
+              <ul>
+                <li>grid-template-columns</li>
+                <li>grid-template-rows</li>
+                <li>grid-template-areas</li>
+                <li>grid-template</li>
+                <li>grid-auto-columns</li>
+                <li>grid-auto-rows</li>
+                <li>grid-auto-flow</li>
+                <li>grid</li>
+                <li>grid-row-start</li>
+                <li>grid-column-start</li>
+                <li>grid-row-end</li>
+                <li>grid-column-end</li>
+                <li>grid-row</li>
+                <li>grid-column</li>
+                <li>grid-area</li>
+                <li>row-gap</li>
+                <li>column-gap</li>
+                <li>gap</li>
+                <li>masonry-auto-flow</li>
+                <li>align-tracks</li>
+                <li>justify-tracks</li>
+              </ul>
+            </div>
+
+            <h4>Functions</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>repeat()</li>
+                <li>minmax()</li>
+                <li>fit-content()</li>
+              </ul>
+            </div>
+
+            <h4>data types</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>flex</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Basic concepts of Grid Layout</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong
+                    >Relationship of Grid Layout to other layout methods</strong
+                  >
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Layout using line-based placement</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Line-based_Placement_with_CSS_Grid</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Grid template areas</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Grid_Template_Areas</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Layout using named grid lines</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Auto-placement in CSS Grid Layout</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Box alignment in CSS Grid Layout</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS Grid, Logical Values and Writing Modes</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Logical_Values_and_Writing_Modes"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Logical_Values_and_Writing_Modes</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS Grid Layout and accessibility</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_Layout_and_Accessibility</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS Grid and progressive enhancement</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/CSS_Grid_and_Progressive_Enhancement</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong
+                    >Realizing common layouts using CSS Grid Layout</strong
+                  >
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Subgrid</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Subgrid"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Subgrid</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Masonry Layout</strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Masonry_Layout</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Houdini</h3>
+          <p>
+            CSS Houdini is a set of APIs that expose parts of the CSS engine.
+            This makes it easier for developers to create extensions for CSS.
+            These extensions might be to polyfill features that are not yet
+            available in a browser, experiment with new ways of doing layout, or
+            add creative borders or other effects.
+          </p>
+          <p>
+            While many Houdini examples showcase the creative possibilities of
+            the APIs, there are many practical use cases. For example, you can
+            use Houdini to create advanced custom properties with type checking
+            and default values.
+          </p>
+          <p>
+            Houdini worklets - A feature of Houdini is the Worklet. A worklet is
+            a module, written in JavaScript, that extends CSS using one of the
+            Houdini APIs. You can see an example worklet on the
+            PaintWorklet.registerPaint() page. Once a worklet has been
+            registered you can use it in CSS just like any other value. This
+            means that even if you are not a JavaScript developer, you can
+            access Houdini APIs by using worklets other people have created.
+            <br />
+            <a href="https://houdini.how/" target="_blank"
+              >https://houdini.how/</a
+            >
+          </p>
+
+          <div class="concept_description">
+            <h4>CSS at-rule and descriptors</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The @property at-rule allows you to register an advanced custom
+                property.
+              </p>
+              <ul>
+                <li>@property</li>
+                <li>inherits</li>
+                <li>initial-value</li>
+                <li>syntax</li>
+              </ul>
+            </div>
+
+            <h4>Houdini API references</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>CSS_Properties_and_Values_API</strong>
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Properties_and_Values_API"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/API/CSS_Properties_and_Values_API</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS_Typed_OM_API</strong>
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Typed_OM_API"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/API/CSS_Typed_OM_API</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>CSS_Painting_API</strong>
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Painting_API"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/API/CSS_Painting_API</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Worklet reference</strong>
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/API/Worklet"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/API/Worklet</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Houdini"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Houdini</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Images</h3>
+          <p>
+            CSS Images is a module of CSS that defines what types of images can
+            be used (the image type, containing URLs, gradients and other types
+            of images), how to resize them and how they, and other replaced
+            content, interact with the different layout models.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>image-orientation</li>
+                <li>image-rendering</li>
+                <li>image-resolution</li>
+                <li>object-fit</li>
+                <li>object-position</li>
+              </ul>
+            </div>
+
+            <h4>Functions</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>linear-gradient()</li>
+                <li>radial-gradient()</li>
+                <li>repeating-linear-gradient()</li>
+                <li>repeating-radial-gradient()</li>
+                <li>conic-gradient()</li>
+                <li>repeating-conic-gradient()</li>
+                <li>url()</li>
+                <li>element()</li>
+                <li>image()</li>
+                <li>cross-fade()</li>
+              </ul>
+            </div>
+
+            <h4>Data types</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>gradient</li>
+                <li>image</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Using CSS gradients: </strong> Presents a specific
+                  type of CSS images, gradients, and how to create and use
+                  these.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Implementing image sprites in CSS: </strong> Describes
+                  the common technique grouping several images in one single
+                  document to save download requests and speed up the
+                  availability of a page.
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Implementing_image_sprites_in_CSS"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Implementing_image_sprites_in_CSS</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Lists</h3>
+          <p>
+            CSS Lists is a module of CSS that defines how lists can be laid out
+            and styled.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>list-style-image</li>
+                <li>list-style-type</li>
+                <li>list-style-position</li>
+                <li>list-style</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong>Consistent list indentation: </strong> Explains how to
+                  achieve consistent list indentation across different browsers.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Consistent_list_indentation</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Using CSS Counters: </strong> Explains how to use the
+                  CSS counter properties to control list counters.
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Logical Properties and Values</h3>
+          <p>
+            CSS Logical Properties and Values is a module of CSS introducing
+            logical properties and values that provide the ability to control
+            layout through logical, rather than physical, direction and
+            dimension mappings.
+          </p>
+          <p>
+            The module also defines logical properties and values for properties
+            previously defined in CSS 2.1. Logical properties define
+            direction‐relative equivalents of their corresponding physical
+            properties.
+          </p>
+          <p>
+            Block vs. inline - Logical properties and values use the abstract
+            terms block and inline to describe the direction in which they flow.
+            The physical meaning of these terms depends on the writing mode.
+          </p>
+          <p>
+            Block dimension - The dimension perpendicular to the flow of text
+            within a line, i.e., the vertical dimension in horizontal writing
+            modes, and the horizontal dimension in vertical writing modes. For
+            standard English text, it is the vertical dimension.
+          </p>
+          <p>
+            Inline dimension - The dimension parallel to the flow of text within
+            a line, i.e., the horizontal dimension in horizontal writing modes,
+            and the vertical dimension in vertical writing modes. For standard
+            English text, it is the horizontal dimension.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <h5>Properties for sizing</h5>
+              <ul>
+                <li>block-size</li>
+                <li>inline-size</li>
+                <li>max-block-size</li>
+                <li>max-inline-size</li>
+                <li>min-block-size</li>
+                <li>min-inline-size</li>
+              </ul>
+
+              <h5>Properties for margins, borders and padding</h5>
+              <ul>
+                <li>border-block</li>
+                <li>border-block-color</li>
+                <li>border-block-end</li>
+                <li>border-block-end-color</li>
+                <li>border-block-end-style</li>
+                <li>border-block-end-width</li>
+                <li>border-block-start</li>
+                <li>border-block-start-color</li>
+                <li>border-block-start-style</li>
+                <li>border-block-start-width</li>
+                <li>border-block-style</li>
+                <li>border-block-width</li>
+                <li>border-color</li>
+                <li>border-inline</li>
+                <li>border-inline-color</li>
+                <li>border-inline-end</li>
+                <li>border-inline-end-color</li>
+                <li>border-inline-end-style</li>
+                <li>border-inline-end-width</li>
+                <li>border-inline-start</li>
+                <li>border-inline-start-color</li>
+                <li>border-inline-start-style</li>
+                <li>border-inline-start-width</li>
+                <li>border-inline-style</li>
+                <li>border-inline-width</li>
+                <li>border-start-start-radius</li>
+                <li>border-start-end-radius</li>
+                <li>border-end-start-radius</li>
+                <li>border-end-end-radius</li>
+                <li>border-style</li>
+                <li>border-width</li>
+                <li>margin</li>
+                <li>margin-block</li>
+                <li>margin-block-end</li>
+                <li>margin-block-start</li>
+                <li>margin-inline</li>
+                <li>margin-inline-end</li>
+                <li>margin-inline-start</li>
+                <li>padding</li>
+                <li>padding-block</li>
+                <li>padding-block-end</li>
+                <li>padding-block-start</li>
+                <li>padding-inline</li>
+                <li>padding-inline-end</li>
+                <li>padding-inline-start</li>
+              </ul>
+
+              <h5>Properties for floating and positioning</h5>
+              <ul>
+                <li>clear (inline-end and inline-start keywords)</li>
+                <li>float (inline-end and inline-start keywords)</li>
+                <li>inset</li>
+                <li>inset-block</li>
+                <li>inset-block-end</li>
+                <li>inset-block-start</li>
+                <li>inset-inline</li>
+                <li>inset-inline-end</li>
+                <li>inset-inline-start</li>
+              </ul>
+
+              <h5>Other properties</h5>
+              <ul>
+                <li>caption-side (inline-end and inline-start keywords)</li>
+                <li>overflow-block</li>
+                <li>overflow-inline</li>
+                <li>overscroll-behavior-block</li>
+                <li>overscroll-behavior-inline</li>
+                <li>resize (block and inline keywords)</li>
+                <li>text-align (end and start keywords)</li>
+              </ul>
+            </div>
+
+            <h4>Guides</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <strong
+                    >Basic concepts of logical properties and values
+                  </strong>
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Basic_concepts"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Basic_concepts</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <strong>Logical Properties for sizing </strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Sizing"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Sizing</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong
+                    >Logical Properties for margins, borders and padding
+                  </strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Margins_borders_padding"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Margins_borders_padding</a
+                    >
+                  </p>
+                </li>
+
+                <li>
+                  <strong
+                    >Logical Properties for floating and positioning
+                  </strong>
+
+                  <p>
+                    <a
+                      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Floating_and_positioning"
+                      target="_blank"
+                      >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Floating_and_positioning</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Masking</h3>
+          <p>
+            CSS Masking is a CSS module that defines means, including masking
+            and clipping, for partially or fully hiding portions of visual
+            elements.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>clip</li>
+                <li>clip-path</li>
+                <li>clip-rule</li>
+                <li>mask</li>
+                <li>mask-border</li>
+                <li>mask-border-mode</li>
+                <li>mask-border-outset</li>
+                <li>mask-border-slice</li>
+                <li>mask-border-source</li>
+                <li>mask-border-width</li>
+                <li>mask-clip</li>
+                <li>mask-composite</li>
+                <li>mask-image</li>
+                <li>mask-mode</li>
+                <li>mask-origin</li>
+                <li>mask-position</li>
+                <li>mask-repeat</li>
+                <li>mask-size</li>
+                <li>mask-type</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Masking"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Masking</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Miscellaneous</h3>
+          <p>
+            These pages contain CSS properties that are highly experimental or
+            don't fit in any other categories.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>all</li>
+                <li>text-rendering</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Miscellaneous"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Miscellaneous</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>CSS Motion Path</h3>
+          <p>
+            Motion Path is a CSS module that allows authors to animate any
+            graphical object along a custom path.
+          </p>
+          <p>
+            The idea is that when you want to animate an element moving along a
+            path, you previously only had animating translation, position, etc.
+            at your disposal, which wasn't ideal and only allowed for simple
+            movements. With offset-path you can define a specific path of any
+            shape you want. You then animate it along that path by animating
+            offset-distance, and can choose to rotate it at any point using
+            offset-rotate.
+          </p>
+
+          <div class="concept_description">
+            <h4>Properties</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>offset</li>
+                <li>offset-anchor</li>
+                <li>offset-distance</li>
+                <li>offset-path</li>
+                <li>offset-position</li>
+                <li>offset-rotate</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Motion_Path"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Motion_Path</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <!------------------------------------------------------------------------------------------------->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/CSS"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/es/docs/Web/CSS
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/l1mER1bV0N0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=l1mER1bV0N0"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/dcCCOiQ1ZuM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=dcCCOiQ1ZuM"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>
