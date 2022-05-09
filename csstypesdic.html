@@ -1,0 +1,2074 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Tipos</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
+              CSS es el lenguaje de estilos utilizado para describir la
+              presentación de documentos HTML o XML (en-US) (incluyendo varios
+              languages basados en XML como SVG, MathML o XHTML). CSS describe
+              como debe ser renderizado el elemento estructurado en la pantalla,
+              en papel, en el habla o en otros medios.
+            </p>
+            <p>
+              CSS es uno de los lenguajes base de la Open Web y posee una
+              especificación estandarizada por parte del W3C. Anteriormente , el
+              desarrollo de varias partes de las especificaciones de CSS era
+              realizado de manera sincrónica, lo que permiía el versionado de
+              las recomendaciones. Probablemente habrás escuchado acerca de
+              CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha lanzado como una
+              versión oficial.
+            </p>
+            <p>
+              Desde CSS3, el alcance de las especificaciones se incrementó de
+              forma significativa y el progreso de los diferentes modulos de CSS
+              comenzó a mostrar varias diferencias, lo que hizo más efectivo
+              desarrollar y publicar recomendaciones separadas por módulos.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="timeline">
+        <div class="container">
+          <div class="blockgrid_1">
+            <p><strong>Versiones obsoletas de CSS:</strong></p>
+            <ul>
+              <li>CSS 1</li>
+              <li>CSS 2</li>
+              <li>CSS 2.1</li>
+            </ul>
+          </div>
+          <div class="blockgrid_1">
+            <center>
+              <figure>
+                <img
+                  src="./images/cssfigure.png"
+                  alt="Linea de tiempo CSS"
+                  class="figure_1_css"
+                />
+                <figcaption>
+                  Representación de una hoja de estilo CSS
+                </figcaption>
+              </figure>
+            </center>
+          </div>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de este tutorial es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="name_order_dictionary">Diccionario:</h2>
+
+          <h3>alpha-value</h3>
+          <p>
+            The alpha-value CSS data type represents a value that can be either
+            a number or a percentage, specifying the alpha channel or
+            transparency of a color.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The value of an alpha-value is given as either a number or a
+                percentage.
+              </p>
+              <p>
+                If given as a number, the useful range is 0 (fully transparent)
+                to 1.0 (fully opaque), with decimal values in between; that is,
+                0.5 indicates that half of the foreground color is used and half
+                of the background color is used. Values outside the range of 0
+                to 1 are permitted, but are clamped to like within the range 0
+                to 1.
+              </p>
+              <p>
+                If the alpha value is given as a percentage, 0% corresponds to
+                fully transparent while 100% indicates fully opaque.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/alpha-value"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/alpha-value</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>angle</h3>
+          <p>
+            The angle CSS data type represents an angle value expressed in
+            degrees, gradians, radians, or turns. It is used, for example, in
+            gradient's and in some transform functions.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The angle data type consists of a number followed by one of the
+                units listed below. As with all dimensions, there is no space
+                between the unit literal and the number. The angle unit is
+                optional after the number 0.
+              </p>
+              <p>
+                Optionally, it may be preceded by a single + or - sign. Positive
+                numbers represent clockwise angles, while negative numbers
+                represent counterclockwise angles. For static properties of a
+                given unit, any angle can be represented by various equivalent
+                values. For example, 90deg equals -270deg, and 1turn equals
+                4turn. For dynamic properties, like when applying an animation
+                or transition, the effect will nevertheless be different.
+              </p>
+              <p>Units</p>
+              <ul>
+                <li>
+                  <code>deg: </code> Represents an angle in degrees. One full
+                  circle is 360deg. Examples: 0deg, 90deg, 14.23deg.
+                </li>
+                <li>
+                  <code>grad: </code> Represents an angle in gradians. One full
+                  circle is 400grad. Examples: 0grad, 100grad, 38.8grad.
+                </li>
+                <li>
+                  <code>rad: </code> Represents an angle in radians. One full
+                  circle is 2π radians which approximates to 6.2832rad. 1rad is
+                  180/π degrees. Examples: 0rad, 1.0708rad, 6.2832rad.
+                </li>
+
+                <li>
+                  <code>turn: </code> Represents an angle in a number of turns.
+                  One full circle is 1turn. Examples: 0turn, 0.25turn, 1.2turn.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/angle</a
+              >
+            </div>
+          </div>
+
+          <!---->
+          <h3>angle-percentage</h3>
+          <p>
+            The angle-percentage CSS data type represents a value that can be
+            either a angle or a percentage.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                Refer to the documentation for angle and percentage for details
+                of the individual syntaxes allowed by this type.
+              </p>
+              <p>
+                Use in calc() - Where an angle-percentage is specified as an
+                allowable type, this means that the percentage resolves to an
+                angle and therefore can be used in a calc() expression.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/angle-percentage"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/angle-percentage</a
+              >
+            </div>
+          </div>
+          <h3>basic-shape</h3>
+          <p>
+            The basic-shape CSS data type represents a shape used in the
+            clip-path, shape-outside, and offset-path properties.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The basic-shape data type is defined with one of the basic shape
+                functions listed below.
+              </p>
+              <p>
+                When creating a shape, the reference box is defined by each
+                property that uses basic-shape values. The coordinate system for
+                the shape has its origin at the top-left corner of the reference
+                box, with the x-axis running to the right and the y-axis running
+                downwards. All the lengths expressed in percentages are resolved
+                from the used dimensions of the reference box.
+              </p>
+              <p>
+                The default reference box is the margin-box, as demonstrated in
+                the below image which shows a circle created using
+                shape-outside: circle(50%). The shape is being defined with
+                reference to the margin box.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape</a
+              >
+            </div>
+          </div>
+          <h3>blend-mode</h3>
+          <p>
+            The blend-mode CSS data type describes how colors should appear when
+            elements overlap. It is used in the background-blend-mode and
+            mix-blend-mode properties.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                For each pixel among the layers to which it is applied, a blend
+                mode takes the colors of the foreground and the background,
+                performs a calculation on them, and returns a new color value.
+              </p>
+              <p>
+                Changes between blend modes are not interpolated. Any change
+                occurs immediately.
+              </p>
+
+              <p>
+                The blend-mode data type is defined using a keyword value chosen
+                from the list below.
+              </p>
+            </div>
+            <h4>Values</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <code>normal: </code> The final color is the top color,
+                  regardless of what the bottom color is. The effect is like two
+                  opaque pieces of paper overlapping.
+                </li>
+                <li>
+                  <code>multiply: </code> The final color is the result of
+                  multiplying the top and bottom colors. A black layer leads to
+                  a black final layer, and a white layer leads to no change. The
+                  effect is like two images printed on transparent film
+                  overlapping.
+                </li>
+                <li>
+                  <code>screen: </code> The final color is the result of
+                  inverting the colors, multiplying them, and inverting that
+                  value. A black layer leads to no change, and a white layer
+                  leads to a white final layer. The effect is like two images
+                  shone onto a projection screen.
+                </li>
+                <li>
+                  <code>overlay: </code> The final color is the result of
+                  multiply if the bottom color is darker, or screen if the
+                  bottom color is lighter. This blend mode is equivalent to
+                  hard-light but with the layers swapped.
+                </li>
+                <li>
+                  <code>darken: </code> The final color is composed of the
+                  darkest values of each color channel.
+                </li>
+                <li>
+                  <code>lighten: </code> The final color is composed of the
+                  lightest values of each color channel.
+                </li>
+                <li>
+                  <code>color-dodge: </code> The final color is the result of
+                  dividing the bottom color by the inverse of the top color. A
+                  black foreground leads to no change. A foreground with the
+                  inverse color of the backdrop leads to a fully lit color. This
+                  blend mode is similar to screen, but the foreground need only
+                  be as light as the inverse of the backdrop to create a fully
+                  lit color.
+                </li>
+                <li>
+                  <code>color-burn: </code> The final color is the result of
+                  inverting the bottom color, dividing the value by the top
+                  color, and inverting that value. A white foreground leads to
+                  no change. A foreground with the inverse color of the backdrop
+                  leads to a black final image. This blend mode is similar to
+                  multiply, but the foreground need only be as dark as the
+                  inverse of the backdrop to make the final image black.
+                </li>
+                <li>
+                  <code>hard-light: </code> The final color is the result of
+                  multiply if the top color is darker, or screen if the top
+                  color is lighter. This blend mode is equivalent to overlay but
+                  with the layers swapped. The effect is similar to shining a
+                  harsh spotlight on the backdrop.
+                </li>
+                <li>
+                  <code>soft-light: </code> The final color is similar to
+                  hard-light, but softer. This blend mode behaves similar to
+                  hard-light. The effect is similar to shining a diffused
+                  spotlight on the backdrop*.*
+                </li>
+                <li>
+                  <code>difference: </code> The final color is the result of
+                  subtracting the darker of the two colors from the lighter one.
+                  A black layer has no effect, while a white layer inverts the
+                  other layer's color.
+                </li>
+                <li>
+                  <code>exclusion: </code> The final color is similar to
+                  difference, but with less contrast. As with difference, a
+                  black layer has no effect, while a white layer inverts the
+                  other layer's color.
+                </li>
+                <li>
+                  <code>hue: </code> The final color has the hue of the top
+                  color, while using the saturation and luminosity of the bottom
+                  color.
+                </li>
+                <li>
+                  <code>saturation: </code> The final color has the saturation
+                  of the top color, while using the hue and luminosity of the
+                  bottom color. A pure gray backdrop, having no saturation, will
+                  have no effect.
+                </li>
+                <li>
+                  <code>color: </code> The final color has the hue and
+                  saturation of the top color, while using the luminosity of the
+                  bottom color. The effect preserves gray levels and can be used
+                  to colorize the foreground.
+                </li>
+                <li>
+                  <code>luminosity: </code> The final color has the luminosity
+                  of the top color, while using the hue and saturation of the
+                  bottom color. This blend mode is equivalent to color, but with
+                  the layers swapped.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode</a
+              >
+            </div>
+          </div>
+          <h3>color</h3>
+          <p>
+            The color CSS data type represents a color. A color may also include
+            an alpha-channel transparency value, indicating how the color should
+            composite with its background.
+          </p>
+          <p>A color can be defined in any of the following ways:</p>
+          <ul>
+            <li>
+              Using a keyword (such as blue or transparent). All existing
+              keywords specify a color in the sRGB color space
+            </li>
+            <li>
+              Using the RGB cubic-coordinate system (via the #-hexadecimal or
+              the rgb() and rgba() functional notations). These always specify a
+              color in the sRGB color space
+            </li>
+            <li>
+              Using the HSL cylindrical-coordinate system (via the hsl() and
+              hsla() functional notations). These always specify a color in the
+              sRGB color space
+            </li>
+            <li>
+              Using the HWB cylindrical-coordinate system (via the hwb()
+              functional notation). These always specify a color in the sRGB
+              color space
+            </li>
+            <li>
+              Using the LCH cylindrical coordinate system, via the lch()
+              functional notation. This can specify any visible color.
+            </li>
+            <li>
+              Using the Lab coordinate system, via the lab() functional
+              notation. This can specify any visible color.
+            </li>
+            <li>
+              Using the color() functional notation, to specify a color in a
+              variety of predefined or custom color spaces.
+            </li>
+          </ul>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The color data type is specified using one of the options listed
+                below.
+              </p>
+              <p>
+                If given as a number, the useful range is 0 (fully transparent)
+                to 1.0 (fully opaque), with decimal values in between; that is,
+                0.5 indicates that half of the foreground color is used and half
+                of the background color is used. Values outside the range of 0
+                to 1 are permitted, but are clamped to like within the range 0
+                to 1.
+              </p>
+              <p>
+                If the alpha value is given as a percentage, 0% corresponds to
+                fully transparent while 100% indicates fully opaque.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/color-value</a
+              >
+            </div>
+          </div>
+          <h3>CSS Functional Notation</h3>
+          <p>
+            CSS functional notation is a type of CSS value that can represent
+            more complex data types or invoke special data processing or
+            calculations.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                selector { property: functional-notation( [argument]? [,
+                argument]! ); }
+              </p>
+              <p>
+                The syntax starts with the name of the functional notation,
+                followed by a left parenthesis (. Next up are the notation
+                argument(s), and the function is finished off with a closing
+                parenthesis ).
+              </p>
+              <p>
+                Functions can take multiple arguments, which are formatted
+                similarly to CSS property values. Whitespace is allowed, but
+                they are optional inside the parentheses. In some functional
+                notations multiple arguments are separated by commas, while
+                others use spaces.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions</a
+              >
+            </div>
+          </div>
+
+          <h3>custom-ident</h3>
+          <p>
+            The custom-ident CSS data type denotes an arbitrary user-defined
+            string used as an identifier. It is case-sensitive, and certain
+            values are forbidden in various contexts to prevent ambiguity.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The syntax of custom-ident is similar to CSS identifiers (such
+                as property names), except that it is case-sensitive. It
+                consists of one or more characters, where characters can be any
+                of the following:
+              </p>
+              <ul>
+                <li>any alphabetical character (A to Z, or a to z),</li>
+                <li>any decimal digit (0 to 9),</li>
+                <li>a hyphen (-),</li>
+                <li>an underscore (_),</li>
+                <li>an escaped character (preceded by a backslash, \),</li>
+                <li>
+                  a Unicode character (in the format of a backslash, \, followed
+                  by one to six hexadecimal digits, representing its Unicode
+                  code point)
+                </li>
+              </ul>
+              <p>
+                Note that id1, Id1, iD1 and ID1 are all different identifiers as
+                they are case-sensitive. On the other hand, as there are several
+                ways to escape a character, toto\? and toto\3F are the same
+                identifiers.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/custom-ident"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/custom-ident</a
+              >
+            </div>
+          </div>
+          <h3>dimension</h3>
+          <p>
+            The dimension CSS data type represents a number with a unit attached
+            to it, for example 10px.
+          </p>
+          <p>
+            CSS uses dimensions to specify distances (length), durations (time),
+            frequencies (frequency), resolutions (resolution), and other
+            quantities.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The syntax of dimension is a number immediately followed by a
+                unit which is an identifier. Unit identifiers are case
+                insensitive.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/dimension"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/dimension</a
+              >
+            </div>
+          </div>
+          <h3>display-box</h3>
+          <p>
+            These keywords define whether an element generates display boxes at
+            all.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>Valid display-box values:</p>
+              <ul>
+                <li>
+                  <code>contents:</code> These elements don't produce a specific
+                  box by themselves. They are replaced by their pseudo-box and
+                  their child boxes. Please note that the CSS Display Level 3
+                  spec defines how the contents value should affect "unusual
+                  elements" — elements that aren't rendered purely by CSS box
+                  concepts such as replaced elements.
+                </li>
+                <li>
+                  <code>none: </code> Turns off the display of an element so
+                  that it has no effect on layout (the document is rendered as
+                  though the element did not exist). All descendant elements
+                  also have their display turned off. To have an element take up
+                  the space that it would normally take, but without actually
+                  rendering anything, use the visibility property instead.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/display-box"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/display-box</a
+              >
+            </div>
+          </div>
+          <h3>display-inside</h3>
+          <p>
+            These keywords specify the element's inner display type, which
+            defines the type of formatting context that lays out its contents
+            (assuming it is a non-replaced element). These keywords are used as
+            values of the display property, and can be used for legacy purposes
+            as a single keyword, or as defined in the Level 3 specification
+            alongside a value from the display-outside keywords.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>Valid display-inside values:</p>
+              <li>
+                <code>flow:</code> The element lays out its contents using flow
+                layout (block-and-inline layout).
+
+                <br />
+                If its outer display type is inline or run-in, and it is
+                participating in a block or inline formatting context, then it
+                generates an inline box. Otherwise it generates a block
+                container box.
+
+                <br />
+                Depending on the value of other properties (such as position,
+                float, or overflow) and whether it is itself participating in a
+                block or inline formatting context, it either establishes a new
+                block formatting context (BFC) for its contents or integrates
+                its contents into its parent formatting context.
+              </li>
+              <li>
+                <code>flow-root: </code> The element generates a block element
+                box that establishes a new block formatting context, defining
+                where the formatting root lies.
+              </li>
+              <li>
+                <code>table: </code> These elements behave like HTML table
+                elements. It defines a block-level box.
+              </li>
+              <li>
+                <code>flex: </code> The element behaves like a block element and
+                lays out its content according to the flexbox model.
+              </li>
+              <li>
+                <code>grid: </code> The element behaves like a block element and
+                lays out its content according to the grid model.
+              </li>
+              <li>
+                <code>ruby: </code> The element behaves like an inline element
+                and lays out its content according to the ruby formatting model.
+                It behaves like the corresponding HTML ruby elements.
+              </li>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/display-inside"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/display-inside</a
+              >
+            </div>
+          </div>
+
+          <h3>display-internal</h3>
+          <p>
+            Some layout models such as table and ruby have a complex internal
+            structure, with several different roles that their children and
+            descendants can fill. This page defines those "internal" display
+            values, which only have meaning within that particular layout mode.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>Valid display-internal values:</p>
+              <ul>
+                <li>
+                  <code>table-row-group:</code> These elements behave like tbody
+                  HTML elements.
+                </li>
+                <li>
+                  <code>table-header-group: </code> These elements behave like
+                  thead HTML elements.
+                </li>
+                <li>
+                  <code>table-footer-group: </code> These elements behave like
+                  tfoot HTML elements.
+                </li>
+                <li>
+                  <code>table-row: </code> These elements behave like tr HTML
+                  elements.
+                </li>
+                <li>
+                  <code>table-cell: </code> These elements behave like td HTML
+                  elements.
+                </li>
+                <li>
+                  <code>table-column-group: </code> These elements behave like
+                  colgroup HTML elements.
+                </li>
+                <li>
+                  <code>table-column: </code> These elements behave like col
+                  HTML elements.
+                </li>
+                <li>
+                  <code>table-caption: </code> These elements behave like
+                  caption HTML elements.
+                </li>
+                <li>
+                  <code>ruby-base: </code> These elements behave like rb HTML
+                  elements.
+                </li>
+                <li>
+                  <code>ruby-text: </code> These elements behave like rt HTML
+                  elements.
+                </li>
+                <li>
+                  <code>ruby-base-container: </code> These elements behave like
+                  rbc HTML elements generated as anonymous boxes.
+                </li>
+                <li>
+                  <code>ruby-text-container: </code> These elements behave like
+                  rtc HTML elements.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/display-internal"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/display-internal</a
+              >
+            </div>
+          </div>
+          <h3>display-legacy</h3>
+          <p>
+            CSS 2 used a single-keyword syntax for the display property,
+            requiring separate keywords for block-level and inline-level
+            variants of the same layout mode. This page details those values.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>Valid display-legacy values:</p>
+              <ul>
+                <li>
+                  <code>inline-block:</code> The element generates a block
+                  element box that will be flowed with surrounding content as if
+                  it were a single inline box (behaving much like a replaced
+                  element would).
+                  <br />
+                  It is equivalent to inline flow-root.
+                </li>
+                <li>
+                  <code>inline-table: </code> The inline-table value does not
+                  have a direct mapping in HTML. It behaves like an HTML table
+                  element, but as an inline box, rather than a block-level box.
+                  Inside the table box is a block-level context.
+                  <br />
+                  It is equivalent to inline table.
+                </li>
+                <li>
+                  <code>inline-flex: </code> The element behaves like an inline
+                  element and lays out its content according to the flexbox
+                  model.
+
+                  <br />
+                  It is equivalent to inline flex.
+                </li>
+                <li>
+                  <code>inline-grid: </code> The element behaves like an inline
+                  element and lays out its content according to the grid model.
+                  <br />
+                  It is equivalent to inline grid.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/display-legacy"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/display-legacy</a
+              >
+            </div>
+          </div>
+          <h3>display-listitem</h3>
+          <p>
+            The list-item keyword causes the element to generate a ::marker
+            pseudo-element with the content specified by its list-style
+            properties (for example a bullet point) together with a principal
+            box of the specified type for its own contents.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                A single value of list-item will cause the element to behave
+                like a list item. This can be used together with list-style-type
+                and list-style-position.
+              </p>
+              <p>
+                list-item can also be combined with any display-outside keyword
+                and the flow or flow-root display-inside keywords.
+              </p>
+              <p>
+                In browsers that support the two-value syntax, if no inner value
+                is specified it will default to flow. If no outer value is
+                specified, the principal box will have an outer display type of
+                block.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/display-listitem"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/display-listitem</a
+              >
+            </div>
+          </div>
+          <h3>display-outside</h3>
+          <p>
+            The display-outside keywords specify the element's outer display
+            type, which is essentially its role in flow layout. These keywords
+            are used as values of the display property, and can be used for
+            legacy purposes as a single keyword, or as defined in the Level 3
+            specification alongside a value from the display-inside keywords.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>Valid display-outside values:</p>
+              <ul>
+                <li>
+                  <code>block: </code> The element generates a block element
+                  box, generating line breaks both before and after the element
+                  when in the normal flow.
+                </li>
+                <li>
+                  <code>inline: </code> The element generates one or more inline
+                  element boxes that do not generate line breaks before or after
+                  themselves. In normal flow, the next element will be on the
+                  same line if there is space
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/display-outside"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/display-outside</a
+              >
+            </div>
+          </div>
+          <h3>easing-function</h3>
+          <p>
+            The easing-function CSS data type denotes a mathematical function
+            that describes the rate at which a numerical value changes.
+          </p>
+          <p>
+            This transition between two values may be applied in different
+            situations. It may be used to describe how fast values change during
+            animations. This lets you vary the animation's speed over the course
+            of its duration. It may also be used to interpolate between two
+            colors in a color gradient.
+          </p>
+          <p>
+            The easing functions in the cubic-bezier subset of easing functions
+            are often called "smooth" easing functions, because they can be used
+            to smooth down the start and end of the interpolation. They
+            correlate an input ratio to an output ratio, both expressed as
+            number's. For these values, 0.0 represents the initial state, and
+            1.0 represents the final state.
+          </p>
+          <p>
+            Depending on the specific function used, the calculated output can
+            sometimes grow to be greater than 1.0 or smaller than 0.0 during the
+            course of an animation. This causes the value to go farther than the
+            final state, and then return. In animations, for some properties,
+            such as left or right, this creates a kind of "bouncing" effect.
+          </p>
+          <p>
+            However, certain properties will restrict the output if it goes
+            outside an allowable range. For example, a color component greater
+            than 255 or smaller than 0 will be clipped to the closest allowed
+            value (255 and 0, respectively). Some cubic-bezier() curves exhibit
+            this property.
+          </p>
+          <div class="concept_description">
+            <h4>Functions</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>Linear</li>
+                <li>The cubic-bezier() class of easing functions</li>
+                <ul>
+                  <li>EASE</li>
+                  <li>EASE-IN</li>
+                  <li>EASE-IN-OUT</li>
+                  <li>EASE-OUT</li>
+                </ul>
+                <li>The steps() class of easing functions</li>
+                <ul>
+                  <li>
+                    <code>number_of_steps: </code> Is a strictly positive
+                    integer, representing the amount of equidistant treads
+                    composing the stepping function.
+                  </li>
+                  <il
+                    ><code>direction: </code> Is a keyword indicating if it the
+                    function is left- or right-continuous:
+                    <ul>
+                      <li>
+                        jump-start denotes a left-continuous function, so that
+                        the first step or jump happens when the interpolation
+                        begins;
+                      </li>
+                      <li>
+                        jump-end denotes a right-continuous function, so that
+                        the last step or jump happens when the interpolation
+                        ends;
+                      </li>
+                      <li>
+                        jump-both denotes a right and left continuous function,
+                        includes pauses at both the 0% and 100% marks,
+                        effectively adding a step during the interpolation
+                        iteration;
+                      </li>
+                      <li>
+                        jump-none There is no jump on either end. Instead,
+                        holding at both the 0% mark and the 100% mark, each for
+                        1/n of the duration
+                      </li>
+                      <li>start is the equivalent of jump-start</li>
+                      <li>end is the equivalent of jump-end</li>
+                    </ul>
+                  </il>
+                </ul>
+                <li>STEPS( N, DIRECTION )</li>
+                <li>STEP-START</li>
+                <li>STEP-END</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function</a
+              >
+            </div>
+          </div>
+          <h3>filter-function</h3>
+          <p>
+            The filter-function CSS data type represents a graphical effect that
+            can change the appearance of an input image. It is used in the
+            filter and backdrop-filter properties.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The filter-function data type is specified using one of the
+                filter functions listed below. Each function requires an
+                argument which, if invalid, results in no filter being applied.
+              </p>
+              <ul>
+                <li><code>blur(): </code> Blurs the image.</li>
+                <li>
+                  <code>brightness(): </code> Makes the image brighter or
+                  darker.
+                </li>
+                <li>
+                  <code>contrast(): </code> Increases or decreases the image's
+                  contrast.
+                </li>
+                <li>
+                  <code>drop-shadow(): </code> Applies a drop shadow behind the
+                  image.
+                </li>
+                <li>
+                  <code>grayscale(): </code> Converts the image to grayscale.
+                </li>
+                <li>
+                  <code>hue-rotate(): </code> Changes the overall hue of the
+                  image.
+                </li>
+                <li>
+                  <code>invert(): </code> Inverts the colors of the image.
+                </li>
+                <li><code>opacity(): </code> Makes the image transparent.</li>
+                <li>
+                  <code>saturate(): </code> Super-saturates or desaturates the
+                  input image.
+                </li>
+                <li><code>sepia(): </code>Converts the image to sepia.</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function</a
+              >
+            </div>
+          </div>
+          <h3>flex</h3>
+          <p>
+            The flex CSS data type denotes a flexible length within a grid
+            container. It is used in grid-template-columns, grid-template-rows
+            and other related properties.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The flex data type is specified as a number followed by the unit
+                fr. The fr unit represents a fraction of the leftover space in
+                the grid container. As with all CSS dimensions, there is no
+                space between the unit and the number.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value</a
+              >
+            </div>
+          </div>
+          <h3>frequency</h3>
+          <p>
+            The frequency CSS data type represents a frequency dimension, such
+            as the pitch of a speaking voice. It is not currently used in any
+            CSS properties.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The frequency data type consists of a number followed by one of
+                the units listed below. As with all CSS dimensions, there is no
+                space between the unit literal and the number.
+              </p>
+              <ul>
+                <li>
+                  <code>Hz: </code> Represents a frequency in hertz. Examples:
+                  0Hz, 1500Hz, 10000Hz.
+                </li>
+                <li>
+                  <code>kHz: </code> Represents a frequency in kilohertz.
+                  Examples: 0kHz, 1.5kHz, 10kHz.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/frequency"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/frequency</a
+              >
+            </div>
+          </div>
+          <h3>frequency-percentage</h3>
+          <p>
+            The frequency-percentage CSS data type represents a value that can
+            be either a frequency or a percentage. Frequency values, e.g. the
+            pitch of a speaking voice, are not currently used in any CSS
+            properties.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                Use in calc() - Where a frequency-percentage is specified as an
+                allowable type, this means that the percentage resolves to a
+                frequency and therefore can be used in a calc() expression.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/frequency-percentage"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/frequency-percentage</a
+              >
+            </div>
+          </div>
+          <h3>gradient</h3>
+          <p>
+            The gradient CSS data type is a special type of image that consists
+            of a progressive transition between two or more colors.
+          </p>
+          <p>
+            A CSS gradient has no intrinsic dimensions; i.e., it has no natural
+            or preferred size, nor a preferred ratio. Its concrete size will
+            match the size of the element to which it applies.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The gradient data type is defined with one of the function types
+                listed below.
+              </p>
+              <ul>
+                <li>
+                  <code>Linear gradient: </code> Linear gradients transition
+                  colors progressively along an imaginary line. They are
+                  generated with the linear-gradient() function.
+                </li>
+                <li>
+                  <code>Radial gradient: </code> Radial gradients transition
+                  colors progressively from a center point (origin). They are
+                  generated with the radial-gradient() function.
+                </li>
+                <li>
+                  <code>Repeating gradient: </code> Repeating gradients
+                  duplicate a gradient as much as necessary to fill a given
+                  area. They are generated with the repeating-linear-gradient()
+                  and repeating-radial-gradient() functions.
+                </li>
+                <li>
+                  <code>Conic gradient: </code> Conic gradients transition
+                  colors progressively around a circle. They are generated with
+                  the conic-gradient() function.
+                </li>
+                <li>
+                  Interpolation - As with any interpolation involving colors,
+                  gradients are calculated in the alpha-premultiplied color
+                  space. This prevents unexpected shades of gray from appearing
+                  when both the color and the opacity are changing. (Be aware
+                  that older browsers may not use this behavior when using the
+                  transparent keyword.)
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/gradient"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/gradient</a
+              >
+            </div>
+          </div>
+          <h3>hex-color</h3>
+          <p>
+            The hex-color CSS data type is a notation for describing the
+            hexadecimal color syntax of an sRGB color using its primary color
+            components (red, green, blue) written as hexadecimal numbers, as
+            well as its transparency. It can be used everywhere a color type is
+            allowed.
+          </p>
+          <p>
+            A hex-color value can be used everywhere where a color can be used.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                #RGB // The three-value syntax <br />
+                #RGBA // The four-value syntax <br />
+                #RRGGBB // The six-value syntax <br />
+                #RRGGBBAA // The eight-value syntax <br />
+              </p>
+            </div>
+
+            <h4>Value</h4>
+            <div class="propoertiesvalues">
+              <ul>
+                <li>
+                  <code> R or RR:</code> The red component of the color, as a
+                  case-insensitive hexadecimal number between 0 and ff (255)).
+                  If there is only one number, it is duplicated: 1 means 11.
+                </li>
+                <li>
+                  <code>G or GG: </code> The green component of the color, as a
+                  case-insensitive hexadecimal number between 0 and ff (255)).
+                  If there is only one number, it is duplicated: c means cc.
+                </li>
+                <li>
+                  <code>B or BB: </code> The blue component of the color, as a
+                  case-insensitive hexadecimal number between 0 and ff (255)).
+                  If there is only one number, it is duplicated: 9 means 99.
+                </li>
+                <li>
+                  <code>A or AA: </code> The alpha component of the color,
+                  indicating its transparency, as a case-insensitive hexadecimal
+                  number between 0 and ff (255)). If there is only one number,
+                  it is duplicated: e means ee. 0 represents a fully transparent
+                  color, and ffa fully opaque one.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/hex-color</a
+              >
+            </div>
+          </div>
+          <h3>ident</h3>
+          <p>
+            The ident CSS data type denotes an arbitrary string used as an
+            identifier.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The syntax of custom-ident is similar to CSS identifiers (such
+                as property names), except that it is case-sensitive. It
+                consists of one or more characters, where characters can be any
+                of the following:
+              </p>
+              <ul>
+                <li>any alphabetical character (A to Z, or a to z),</li>
+                <li>any decimal digit (0 to 9),</li>
+                <li>a hyphen (-),</li>
+                <li>an underscore (_),</li>
+                <li>an escaped character (preceded by a backslash, \),</li>
+                <li>
+                  a Unicode character (in the format of a backslash, \, followed
+                  by one to six hexadecimal digits, representing its Unicode
+                  code point)
+                </li>
+              </ul>
+              <p>
+                Note that id1, Id1, iD1 and ID1 are all different identifiers as
+                they are case-sensitive. On the other hand, as there are several
+                ways to escape a character, toto\? and toto\3F are the same
+                identifiers.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/ident"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/ident</a
+              >
+            </div>
+          </div>
+          <h3>image</h3>
+          <p>The image CSS data type represents a two-dimensional image.</p>
+          <p>CSS can handle the following kinds of images:</p>
+          <ul>
+            <li>
+              Images with intrinsic dimensions (a natural size), like a JPEG,
+              PNG, or other raster format.
+            </li>
+            <li>
+              Images with multiple intrinsic dimensions, existing in multiple
+              versions inside a single file, like some .ico formats. (In this
+              case, the intrinsic dimensions will be those of the image largest
+              in area and the aspect ratio most similar to the containing box.)
+            </li>
+            <li>
+              Images with no intrinsic dimensions but with an intrinsic aspect
+              ratio between its width and height, like an SVG or other vector
+              format.
+            </li>
+            <li>
+              Images with neither intrinsic dimensions, nor an intrinsic aspect
+              ratio, like a CSS gradient.
+            </li>
+          </ul>
+          <p>
+            CSS determines an object's concrete size using (1) its intrinsic
+            dimensions; (2) its specified size, defined by CSS properties like
+            width, height, or background-size; and (3) its default size,
+            determined by the kind of property the image is used with:
+          </p>
+          <p>
+            The concrete object size is calculated using the following
+            algorithm:
+          </p>
+          <ul>
+            <li>
+              If the specified size defines both the width and the height, these
+              values are used as the concrete object size.
+            </li>
+            <li>
+              If the specified size defines only the width or only the height,
+              the missing value is determined using the intrinsic ratio, if
+              there is any, the intrinsic dimensions if the specified value
+              matches, or the default object size for that missing value.
+            </li>
+            <li>
+              If the specified size defines neither the width nor the height,
+              the concrete object size is calculated so that it matches the
+              intrinsic aspect ratio of the image but without exceeding the
+              default object size in any dimension. If the image has no
+              intrinsic aspect ratio, the intrinsic aspect ratio of the object
+              it applies to is used; if this object has none, the missing width
+              or height are taken from the default object size.
+            </li>
+          </ul>
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The image data type can be represented with any of the
+                following:
+              </p>
+              <ul>
+                <li>An image denoted by the url() data type</li>
+                <li>A gradient data type</li>
+                <li>
+                  A part of the webpage, defined by the element() function
+                </li>
+                <li>
+                  An image, image fragment or solid patch of color, defined by
+                  the image() function
+                </li>
+                <li>
+                  A blending of two or more images defined by the cross-fade()
+                  function.
+                </li>
+                <li>
+                  A selection of images chosen based on resolution defined by
+                  the image-set() function.
+                </li>
+              </ul>
+
+              <p>
+                If given as a number, the useful range is 0 (fully transparent)
+                to 1.0 (fully opaque), with decimal values in between; that is,
+                0.5 indicates that half of the foreground color is used and half
+                of the background color is used. Values outside the range of 0
+                to 1 are permitted, but are clamped to like within the range 0
+                to 1.
+              </p>
+              <p>
+                If the alpha value is given as a percentage, 0% corresponds to
+                fully transparent while 100% indicates fully opaque.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/image"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/image</a
+              >
+            </div>
+          </div>
+          <h3>integer</h3>
+          <p>
+            The integer CSS data type is a special type of number that
+            represents a whole number, whether positive or negative. Integers
+            can be used in numerous CSS properties, such as column-count,
+            counter-increment, grid-column, grid-row, and z-index.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The integer data type consists of one or several decimal digits,
+                0 through 9 inclusive, optionally preceded by a single + or -
+                sign. There is no unit associated with integers.
+              </p>
+              <p>
+                When animated, values of the integer data type are interpolated
+                using discrete, whole steps. The calculation is done as if they
+                were real, floating-point numbers; the discrete value is
+                obtained using the floor function. The speed of the
+                interpolation is determined by the timing function associated
+                with the animation.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/integer"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/integer</a
+              >
+            </div>
+          </div>
+          <h3>length</h3>
+          <p>
+            The length CSS data type represents a distance value. Lengths can be
+            used in numerous CSS properties, such as width, height, margin,
+            padding, border-width, font-size, and text-shadow.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The length data type consists of a number followed by one of the
+                units listed below. As with all CSS dimensions, there is no
+                space between the unit literal and the number. The length unit
+                is optional after the number 0.
+              </p>
+              <p>Units:</p>
+              <ul>
+                <li>Relative length units</li>
+                <li>FONT-RELATIVE LENGTHS</li>
+                <li>VIEWPORT-PERCENTAGE LENGTHS</li>
+                <li>Absolute length units</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/length"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/length</a
+              >
+            </div>
+          </div>
+          <h3>length-percentage</h3>
+          <p>
+            The length-percentage CSS data type represents a value that can be
+            either a length or a percentage.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                Refer to the documentation for length and percentage for details
+                of the individual syntaxes allowed by this type.
+              </p>
+              <p>
+                Use in calc() - Where a length-percentage is specified as an
+                allowable type, this means that the percentage resolves to a
+                length and therefore can be used in a calc() expression.
+                Therefore, all of the following values are acceptable for width:
+              </p>
+              <p>
+                width: 200px; <br />
+                width: 20%;<br />
+                width: calc(100% - 200px);<br />
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/length-percentage"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/length-percentage</a
+              >
+            </div>
+          </div>
+          <h3>number</h3>
+          <p>
+            The number CSS data type represents a number, being either an
+            integer or a number with a fractional component.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The syntax of number extends the syntax of integer. A fractional
+                value is represented by a . followed by one or more decimal
+                digits, and may be appended to an integer. There is no unit
+                associated with numbers.
+              </p>
+              <p>
+                Interpolation - When animated, values of the number CSS data
+                type are interpolated as real, floating-point numbers. The speed
+                of the interpolation is determined by the timing function
+                associated with the animation.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/number"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/number</a
+              >
+            </div>
+          </div>
+          <h3>percentage</h3>
+          <p>
+            The percentage CSS data type represents a percentage value. It is
+            often used to define a size as relative to an element's parent
+            object. Numerous properties can use percentages, such as width,
+            height, margin, padding, and font-size.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The percentage data type consists of a number followed by the
+                percentage sign (%). Optionally, it may be preceded by a single
+                + or - sign, although negative values are not valid for all
+                properties. As with all CSS dimensions, there is no space
+                between the symbol and the number.
+              </p>
+              <p>
+                Interpolation - When animated, values of the percentage data
+                type are interpolated as real, floating-point numbers. The speed
+                of the interpolation is determined by the timing function
+                associated with the animation.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/percentage</a
+              >
+            </div>
+          </div>
+          <h3>position</h3>
+          <p>
+            The position (or bg-position) CSS data type denotes a
+            two-dimensional coordinate used to set a location relative to an
+            element box. It is used in the background-position and offset-anchor
+            properties.
+          </p>
+          <p>
+            The position data type is specified with one or two keywords, with
+            optional offsets.
+          </p>
+          <p>
+            The keyword values are center, top, right, bottom, and left. Each
+            keyword represents either an edge of the element's box or the center
+            line between two edges. Depending on the context, center represents
+            either the center between the left and right edges, or the center
+            between the top and bottom edges.
+          </p>
+          <p>
+            If specified, an offset can be either a relative percentage value or
+            an absolute length value. Positive values are offset towards the
+            right or the bottom, whichever is appropriate. Negative values are
+            offset in the opposite directions.
+          </p>
+          <p>
+            If only a single offset value is specified, it defines the
+            x-coordinate, with the value for the other axis defaulting to
+            center.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                /* 1-value syntax */<br />
+                keyword /* Either the horizontal or vertical position; the other
+                axis defaults to center */<br />
+                value /* The position on the x-axis; the y-axis defaults to 50%
+                */<br />
+
+                /* 2-value syntax */<br />
+                keyword keyword /* A keyword for each direction (the order is
+                irrelevant) */<br />
+                keyword value /* A keyword for horizontal position, value for
+                vertical position */<br />
+                value keyword /* A value for horizontal position, keyword for
+                vertical position */<br />
+                value value /* A value for each direction (horizontal then
+                vertical) */<br />
+
+                /* 4-value syntax */<br />
+                keyword value keyword value /* Each value is an offset from the
+                keyword that precedes it */<br />
+              </p>
+              <p>
+                Interpolation - When animated, a point's abscissa and ordinate
+                values are interpolated independently. However, because the
+                speed of the interpolation is determined by a single timing
+                function for both coordinates, the point will move in a straight
+                line.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/position_value"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/position_value</a
+              >
+            </div>
+          </div>
+          <!---->
+
+          <h3>ratio</h3>
+          <p>
+            The ratio CSS data type, used for describing aspect ratios in media
+            queries, denotes the proportion between two unitless values.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                In Media Queries Level 3, the ratio data type consisted of a
+                strictly positive integer followed by a forward slash ('/',
+                Unicode U+002F SOLIDUS) and a second strictly positive integer.
+                Spaces before and after the slash are optional. The first number
+                represents the width, while the second represents the height.
+              </p>
+              <p>
+                In Media Queries Level 4, the ratio date type is updated to
+                consist of a strictly positive number followed by a forward
+                slash ('/', Unicode U+002F SOLIDUS) and a second strictly
+                positive number. In addition a single number as a value is
+                allowable.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/ratio"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/ratio</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>resolution</h3>
+          <p>
+            The resolution CSS data type, used for describing resolutions in
+            media queries, denotes the pixel density of an output device, i.e.,
+            its resolution.
+          </p>
+          <p>
+            On screens, the units are related to CSS inches, centimeters, or
+            pixels, not physical values.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The resolution data type consists of a strictly positive number
+                followed by one of the units listed below. As with all CSS
+                dimensions, there is no space between the unit literal and the
+                number.
+              </p>
+              <ul>
+                <li>
+                  <code>dpi: </code> Represents the number of dots per inch.
+                  Screens typically contains 72 or 96 dots per inch, but the dpi
+                  for printed documents is usually much greater. As 1 inch is
+                  2.54 cm, 1dpi ≈ 0.39dpcm.
+                </li>
+                <li>
+                  <code>dpcm: </code> Represents the number of dots per
+                  centimeter. As 1 inch is 2.54 cm, 1dpcm ≈ 2.54dpi.
+                </li>
+                <li>
+                  <code>dppx: </code> Represents the number of dots per px unit.
+                  Due to the 1:96 fixed ratio of CSS in to CSS px, 1dppx is
+                  equivalent to 96dpi, which corresponds to the default
+                  resolution of images displayed in CSS as defined by
+                  image-resolution.
+                </li>
+                <li><code>x: </code> Alias for dppx.</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/resolution"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/resolution</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>string</h3>
+          <p>
+            The string CSS data type represents a sequence of characters.
+            Strings are used in numerous CSS properties, such as content,
+            font-family, and quotes.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The string data type is composed of any number of Unicode
+                characters surrounded by either double (") or single (') quotes.
+              </p>
+              <p>
+                Most characters can be represented literally. All characters can
+                also be represented with their respective Unicode code points in
+                hexadecimal, in which case they are preceded by a backslash (\).
+                For example, \22 represents a double quote, \27 a single quote
+                ('), and \A9 the copyright symbol (©).
+              </p>
+              <p>
+                Importantly, certain characters which would otherwise be invalid
+                can be escaped with a backslash. These include double quotes
+                when used inside a double-quoted string, single quotes when used
+                inside a single-quoted string, and the backslash itself. For
+                example, \\ will create a single backslash.
+              </p>
+              <p>
+                To output new lines, you must escape them with a line feed
+                character such as \A or \00000A. In your code, however, strings
+                can span multiple lines, in which case each new line must be
+                escaped with a \ as the last character of the line.
+              </p>
+              <p>
+                However, to get new lines, you must also set the white-space
+                property to appropriate value.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/string"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/string</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>time</h3>
+          <p>
+            The time CSS data type represents a time value expressed in seconds
+            or milliseconds. It is used in animation, transition, and related
+            properties.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The time data type consists of a number followed by one of the
+                units listed below. Optionally, it may be preceded by a single +
+                or - sign. As with all dimensions, there is no space between the
+                unit literal and the number.
+              </p>
+              <p>
+                Although the number 0 is always the same regardless of unit, the
+                unit may not be omitted. In other words, 0 is invalid and does
+                not represent 0s or 0ms.
+              </p>
+              <p>Units</p>
+              <ul>
+                <li>
+                  <code>s: </code> Represents a time in seconds. Examples: 0s,
+                  1.5s, -60s.
+                </li>
+                <li>
+                  <code>ms: </code> Represents a time in milliseconds. Examples:
+                  0ms, 150.25ms, -60000ms.
+                </li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/time"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/time</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>time-percentage</h3>
+          <p>
+            The time-percentage CSS data type represents a value that can be
+            either a time or a percentage.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                Refer to the documentation for time and percentage for details
+                of the individual syntaxes allowed by this type.
+              </p>
+              <p>
+                Use in calc() - Where a time-percentage is specified as an
+                allowable type, this means that the percentage resolves to a
+                time and therefore can be used in a calc() expression.
+              </p>
+              <p>
+                If the alpha value is given as a percentage, 0% corresponds to
+                fully transparent while 100% indicates fully opaque.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/time-percentage"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/time-percentage</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>transform-function</h3>
+          <p>
+            The transform-function CSS data type represents a transformation
+            that affects an element's appearance. Transformation functions can
+            rotate, resize, distort, or move an element in 2D or 3D space. It is
+            used in the transform property.
+          </p>
+          <p>
+            Various coordinate models can be used to describe an HTML element's
+            size and shape, as well as any transformations applied to it. The
+            most common is the Cartesian coordinate system, although homogeneous
+            coordinates are also sometimes used.
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The transform-function data type is specified using one of the
+                transformation functions listed below. Each function applies a
+                geometric operation in either 2D or 3D.
+              </p>
+              <ul>
+                <li>Matrix transformation</li>
+                <li>Perspective</li>
+                <li>Rotation</li>
+                <li>Scaling (resizing)</li>
+                <li>Skewing (distortion)</li>
+                <li>Translation (moving)</li>
+                <li>Cartesian coordinates</li>
+                <li>Transformation functions</li>
+              </ul>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function</a
+              >
+            </div>
+          </div>
+          <!---->
+          <h3>translation-value</h3>
+          <p>
+            The translation-value CSS data type is used in the arguments for
+            certain transform functions, including translate(), translateX(),
+            translateY(), and translate3d().
+          </p>
+
+          <div class="concept_description">
+            <h4>Syntax</h4>
+            <div class="propoertiesvalues">
+              <p>
+                The translation-value data type can be either a length value or
+                a percentage value.
+              </p>
+            </div>
+            <div class="moreinfo">
+              <h4>Más información</h4>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/translation-value"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/translation-value</a
+              >
+            </div>
+          </div>
+          <!---->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/CSS"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/es/docs/Web/CSS
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/l1mER1bV0N0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=l1mER1bV0N0"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/dcCCOiQ1ZuM"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=dcCCOiQ1ZuM"
+                  target="_blank"
+                >
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>
