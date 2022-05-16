@@ -117,7 +117,24 @@ proporcionar una descripción concisa de la página -->
         </div>
       </section>
       <section id="configuration">
+        <div class="container"></div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de esta guía es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+
+      <section id="dictionary">
         <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="examples_guide">Ejemplos:</h2>
           <h3>Using multiple backgrounds</h3>
           <p>
             You can apply multiple backgrounds to elements. These are layered
@@ -137,32 +154,13 @@ proporcionar una descripción concisa de la página -->
             background-image, background-origin, background-position,
             background-repeat, background-size.
           </p>
-        </div>
-      </section>
-      <section id="progresssbar_dictionary">
-        <center>
-          <label for="tutorial">El progreso de esta guía es:</label>
-          <br />
-          <progress id="tutorial" max="100" value="50">50%</progress>
-        </center>
-      </section>
-
-      <section id="dictionary">
-        <div class="container">
-          <p>
-            A continuación se mostraran los elementos
-            <strong>más populares</strong> dentro del lenguaje de estilo CSS
-            especificamente la versión <b>CSS3</b>.
-          </p>
-          <h2 id="examples_guide">Ejemplos:</h2>
-
           <p>
             In this example, three backgrounds are stacked: the Firefox logo, an
             image of bubbles, and a linear gradient:
           </p>
-          <h3>HTML</h3>
+          <h4>HTML</h4>
           <p class="codeblack">div class="multi-bg-example" /div</p>
-          <h3>CSS</h3>
+          <h4>CSS</h4>
           <p class="codeblack">
             .multi-bg-example { <br />
             width: 100%;<br />
@@ -180,7 +178,7 @@ proporcionar una descripción concisa de la página -->
             }
           </p>
 
-          <h3>Resultado</h3>
+          <h4>Resultado</h4>
           <div class="multi-bg-example"></div>
 
           <p>
@@ -192,8 +190,129 @@ proporcionar una descripción concisa de la página -->
             So the first listed value for background-repeat applies to the first
             (frontmost) background, and so forth.
           </p>
-
           <!---->
+          <hr />
+          <hr />
+
+          <h3>Resizing background images with background-size</h3>
+          <p>
+            The background-size CSS property lets you resize the background
+            image of an element, overriding the default behavior of tiling the
+            image at its full size by specifying the width and/or height of the
+            image. By doing so, you can scale the image upward or downward as
+            desired.
+          </p>
+          <h4>Tiling a large image</h4>
+          <p>
+            Let's consider a large image, a 2982x2808 Firefox logo image. We
+            want (for some reason likely involving horrifyingly bad site design)
+            to tile four copies of this image into a 300x300-pixel element. To
+            do this, we can use a fixed background-size value of 150 pixels.
+          </p>
+          <h4>HTML</h4>
+          <p class="codeblock">&ltdiv class="tiledBackground"&gt &lt/div&gt</p>
+          <h4>CSS</h4>
+          <p class="codeblack">
+            .tiledBackground {<br />
+            background-image:
+            url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);<br />
+            background-size: 150px;<br />
+            width: 300px;<br />
+            height: 300px;<br />
+            border: 2px solid;<br />
+            color: pink;<br />
+            }
+          </p>
+          <div class="tiledBackground" id="tiledBackground1"></div>
+          <h4>Stretching an image</h4>
+          <p>
+            You can also specify both the horizontal and vertical sizes of the
+            image, like this:
+          </p>
+          <p class="codeblack">background-size: 300px 150px;</p>
+          <p>The result looks like this:</p>
+          <div class="tiledBackground" id="tiledBackground2"></div>
+          <h4>Scaling an image up</h4>
+          <p>
+            On the other end of the spectrum, you can scale an image up in the
+            background. Here we scale a 32x32 pixel favicon to 300x300 pixels:
+          </p>
+          <div class="square" id="square"></div>
+          <p>
+            As you can see, the CSS is actually essentially identical, save the
+            name of the image file.
+          </p>
+          <h4>Special values: "contain" and "cover"</h4>
+          <p>
+            Besides length values, the background-size CSS property offers two
+            special size values, contain and cover. Let's take a look at these.
+          </p>
+          <h3>contain</h3>
+          <p>
+            The contain value specifies that, regardless of the size of the
+            containing box, the background image should be scaled so that each
+            side is as large as possible while not exceeding the length of the
+            corresponding side of the container. Try resizing the example below
+            to see this in action.
+          </p>
+          <h4>HTML</h4>
+          <p class="codeblack">
+            &ltdiv class="bgSizeContain"&gt <br />
+            &ltpTry resizing this <br />
+            element! &lt/p&gt &lt/div&gt <br />
+          </p>
+
+          <h4>CSS</h4>
+          <p class="codeblack">
+            .bgSizeContain { <br />
+            background-image:
+            url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);<br />
+            background-size: contain;<br />
+            width: 160px;<br />
+            height: 160px;<br />
+            border: 2px solid;<br />
+            color: pink;<br />
+            resize: both;<br />
+            overflow: scroll;<br />
+            }
+          </p>
+
+          <div class="bgSizeContain">
+            <p>Try resizing this element!</p>
+          </div>
+          <h3>Cover</h3>
+          <p>
+            The cover value specifies that the background image should be sized
+            so that it is as small as possible while ensuring that both
+            dimensions are greater than or equal to the corresponding size of
+            the container. Try resizing the example below to see this in action.
+          </p>
+          <h4>HTML</h4>
+          <p>
+            &ltdiv class="bgSizeCover"&gt &ltp&gtTry resizing this
+            element!&lt/p&gt &lt/div&gt
+          </p>
+
+          <p class="codeblack">
+            .bgSizeCover {<br />
+            background-image:
+            url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+            <br />
+            background-size: cover;<br />
+            width: 160px;<br />
+            height: 160px;<br />
+            border: 2px solid;<br />
+            color: pink;<br />
+            resize: both;<br />
+            overflow: scroll;<br />
+            }
+          </p>
+
+          <div class="bgSizeCover">
+            <p>Try resizing this element!</p>
+          </div>
+
+          <!------------------------------------------------------------------------------------------------------>
         </div>
       </section>
       <section id="complete_documentation_css">
@@ -202,13 +321,21 @@ proporcionar una descripción concisa de la página -->
             <p class="centertext">
               <strong
                 >Este enlace te llevará a la documentación completa por parte de
-                Mozilla:
+                Mozilla:<br />
                 <a
                   href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds"
                   target="_blank"
                   class="text_emphasis"
                 >
                   https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Using_multiple_backgrounds
+                </a>
+                <br /><br />
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images
                 </a>
               </strong>
             </p>

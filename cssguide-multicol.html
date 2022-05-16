@@ -1,0 +1,702 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Basic Concepts of Multicol Guide</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              The CSS Box Alignment module specifies CSS features that relate to
+              the alignment of boxes in the various CSS box layout models: block
+              layout, table layout, flex layout, and grid layout. The module
+              aims to create a consistent method of alignment across all of CSS.
+              This document details the general concepts found in the
+              specification.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="configuration">
+        <div class="container">
+          <h3>Basic Concepts of Multicol</h3>
+          <p>
+            Multiple-column Layout, usually referred to as multicol, is a
+            specification for laying out content into a set of column boxes much
+            like columns in a newspaper. This guide explains how the
+            specification works with some common use case examples.
+          </p>
+
+          <h4>Key Concepts and Terminology</h4>
+          <p>
+            Multicol is unlike any of the other layout methods we have in CSS in
+            that it fragments the content, including all descendent elements,
+            into columns. This happens in the same way that content is
+            fragmented into pages when we work with CSS Paged Media, for example
+            by creating a print stylesheet.
+          </p>
+          <p>The properties defined by the specification are:</p>
+          <ul>
+            <li>column-width</li>
+            <li>column-count</li>
+            <li>columns</li>
+            <li>column-rule-color</li>
+            <li>column-rule-style</li>
+            <li>column-rule-width</li>
+            <li>column-rule</li>
+            <li>column-span</li>
+            <li>column-fill</li>
+            <li>column-gap</li>
+          </ul>
+
+          <p>
+            By adding column-count or column-width to an element, that element
+            becomes a multi-column container, or multicol container for short.
+            The columns are anonymous boxes and described as column boxes in the
+            specification.
+          </p>
+
+          <h4>Defining columns</h4>
+          <p>
+            To create a multicol container you must use at least one of the
+            column-* properties, these being column-count and column-width.
+          </p>
+          <h4>The column-count property</h4>
+          <p>
+            The column-count property specifies the number of columns that you
+            would like the content to be displayed as. The browser will then
+            assign the correct amount of space to each column box to create the
+            requested number of columns.
+          </p>
+          <p>
+            In the below example we use the column-count property to create
+            three columns on the .container element. The content, including the
+            children of .container is then split between the three columns.
+          </p>
+          <img src="./images/multicol-1.PNG" />
+          <p>
+            In the above example the content is wrapped in paragraph p tags with
+            default styling. Therefore, there is a margin above each paragraph.
+            You can see how this margin causes the first line of text to be
+            pushed down. This is because a multicol container creates a new
+            Block Formatting Context (BFC) which means margins on child elements
+            do not collapse with any margin on the container.
+          </p>
+          <h4>The column-width property</h4>
+          <p>
+            The column-width property is used to set the optimal width for every
+            column box. If you declare a column-width, the browser will work out
+            how many columns of that width will fit into the multicol container
+            and distribute any extra space equally between the columns.
+            Therefore, the column width should be seen as a minimum width, as
+            column boxes are likely to be wider due to the additional space.
+          </p>
+          <p>
+            The column box will only shrink to be smaller than the declared
+            column width in the case of a single column with less available
+            width than the value of column-width.
+          </p>
+          <p>
+            In the below example we use the column-width property with a value
+            of 200px. We get as many 200 pixel columns as will fit the
+            container, with the extra space shared equally.
+          </p>
+          <img src="./images/multicol-2.PNG" />
+          <h4>Using column-count and column-width together</h4>
+          <p>
+            If you specify both properties on a multicol container then
+            column-count will act as a maximum number of columns. Therefore the
+            behavior as described for column-width will happen, until the number
+            of columns in column-count is reached. After this point no more
+            columns will be drawn, and the extra space is distributed evenly
+            between the existing columns, even if there is enough room for more
+            columns of the specified column-width size.
+          </p>
+          <p>
+            When using both properties together you may get fewer columns than
+            specified in the value for column-count.
+          </p>
+          <p>
+            In this next example we use column-width of 200px and column-count
+            of 2. Even if there is space for more than two columns, we get two.
+            If there is not enough space for two columns of 200px, however, we
+            get one.
+          </p>
+          <img src="./images/multicol-3.PNG" />
+          <h4>The columns shorthand</h4>
+          <p>
+            You can use the columnsshorthand to set column-count and
+            column-width. If you set a length unit, this will be used for
+            column-width, set an integer and it will be used for column-count.
+            You can set both, separating the two values with a space.
+          </p>
+          <p>
+            This CSS would give the same result as example 1, column-count set
+            to 3.
+          </p>
+          <p class="codeblack">.container { columns: 3; }</p>
+          <p>
+            This CSS would give the same result as example 2, with column-width
+            of 200px.
+          </p>
+          <p class="codeblack">.container { columns: 200px; }</p>
+          <p>
+            This CSS would give the same result as example 3, with both
+            column-count and column-width set.
+          </p>
+          <p class="codeblack">.container { columns: 2 200px; }</p>
+          <hr />
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de esta guía es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="examples_guide">Ejemplos:</h2>
+          <h3>Styling Columns</h3>
+          <p>
+            As column boxes created inside multicol containers are anonymous
+            boxes, there is little we can do to style them. However, we do have
+            a few things that we can do. This guide explains how to change the
+            gap and style rules between columns.
+          </p>
+
+          <h4>Can I Style the Column Boxes?</h4>
+          <p>
+            Sadly, not at present. The anonymous boxes that make up your columns
+            can't be targeted in any way, meaning it isn't possible to change a
+            box's background color or have one column larger than the others.
+            Perhaps in future versions of the specification it might be. For
+            now, however, we are able to change the spacing and add lines
+            between columns.
+          </p>
+          <h4>The column-gap property</h4>
+          <p>
+            The gap between our columns is controlled by the column-gap
+            property. This property was originally defined in the Multi-column
+            Layout specification. However, it is now defined in Box Alignment in
+            order to unify gaps between boxes in other specifications such as
+            CSS Grid Layout.
+          </p>
+          <p>
+            The initial value of column-gap in multicol is 1em. This means your
+            columns will not run into each other. In other layout methods the
+            initial value for column-gap is 0. If you use the keyword value
+            "normal" the gap will be set to 1em.
+          </p>
+          <p>
+            You can change the gap by using any length unit as the value of
+            column-gap. In the example below, the column-gap is set to 40px.
+          </p>
+          <img src="./images/multicol-4.PNG" />
+          <p>
+            The allowed value for column-gap is a length-percentage, this means
+            percentages are allowed. Percentage values for column-gap are
+            calculated as a percentage of the width of the multicol container.
+          </p>
+
+          <h4>Column rules</h4>
+          <p>
+            The specification defines column-rule-width, column-rule-style and
+            column-rule-color, providing a shorthand column-rule. These
+            properties work in exactly the same way as the border properties:
+            any valid border-style can be used as a column-rule-style.
+          </p>
+          <p>
+            These properties are applied to the element which is the multicol
+            container and therefore all columns will have the same rule. Rules
+            are only drawn between columns and not on the outer edges. Rules
+            should also only be drawn between columns which have content.
+          </p>
+          <p>
+            In this next example I have created a 5px dotted rule with a color
+            of rebeccapurple, using the longhand values.
+          </p>
+          <img src="./images/multicol-5.PNG" />
+          <p>
+            Note that the rule itself does not take up any space: a wide rule
+            will not push the columns apart to make space for the rule. Instead,
+            the rule overlays the gap.
+          </p>
+          <p>
+            In this next example we have a very wide rule of 40px and a 10px
+            gap. The rule displays under the content of the columns. In order to
+            make space on both sides of the rule, the gap would need to be
+            increased to be larger than 40px.
+          </p>
+          <img src="./images/multicol-6.PNG" />
+          <hr />
+          <h3>Spanning and Balancing Columns</h3>
+          <p>
+            In this guide we look at how to make elements span across columns
+            inside the multicol container and how to control how the columns are
+            filled.
+          </p>
+          <h4>Spanning the Columns</h4>
+          <p>
+            To cause an item to span across columns use the property column-span
+            with a value of all. This will cause the element to span all of the
+            columns.
+          </p>
+          <p>
+            Any descendant element of the multicol container may become a
+            spanner including both direct and indirect children. For example, a
+            heading nested directly inside the container could become a spanner,
+            as could a heading nested inside a section nested inside the
+            multicol container.
+          </p>
+          <p>
+            In the example below, the h2 element is set to column-span: all and
+            spans all of the columns.
+          </p>
+          <img src="./images//multicol-7.PNG" />
+          <p>
+            In this second example, the heading is inside an article element,
+            yet still spans the content as expected.
+          </p>
+          <img src="./images//multicol-8.PNG" />
+          <p>
+            When a spanner is introduced, it breaks the flow of columns and
+            columns restart after the spanner, effectively creating a new set of
+            column boxes. The content does not jump over a spanning element.
+          </p>
+          <h4>Limitations of column-span</h4>
+          <p>
+            In the current level 1 specification there are only two allowable
+            values for column-span. The value none is the initial value and
+            means the item does not span, remaining within a column. The value
+            all means the item spans all of the columns. You cannot cause an
+            item to span two out of three columns for example.
+          </p>
+          <h4>Things to watch out for</h4>
+          <p>
+            If the spanning element is inside another element which has margins,
+            padding and a border or a background color, it is possible to end up
+            with the top of the box appearing above the spanner and the rest
+            displaying below, as shown in the next example. For this reason,
+            some care should be taken when deciding to make an element a spanner
+            and ensure this scenario is accounted for.
+          </p>
+          <img src="./images/multicol-9.PNG" />
+          <p>
+            Additionally, if a spanning element appears later in the content it
+            can cause unexpected or unwanted behavior when there is not enough
+            content to create columns after the spanner. Use spanning carefully
+            and test at various breakpoints to make sure you get the intended
+            effect.
+          </p>
+          <h4>Column Filling and Balancing</h4>
+          <p>
+            A balanced set of columns is where all columns have approximately
+            the same amount of content. Filling and balancing comes into play
+            when the amount of content does not match the amount of space
+            provided, such as when a height is declared on the container.
+          </p>
+          <p>
+            The initial value of multicol for column-fill is balance. The value
+            of balance means all columns are as balanced as is possible. In
+            fragmented contexts such as Paged Media, only the last fragment is
+            balanced. This means that on the last page the final set of column
+            boxes will be balanced.
+          </p>
+          <p>
+            There is a second value for balancing, balance-all, which attempts
+            to balance all columns in fragmented contexts and not just the
+            columns on the final fragment.
+          </p>
+          <p>
+            In this example, we have columns containing an image and some text
+            which are balanced. The image cannot break and so goes into the
+            first column and the other columns fill with equal amounts of text.
+          </p>
+          <img src="./images/multicol-10.PNG" />
+          <p>
+            The other value for column-fill is auto. In this case, rather than
+            filling all the columns equally so their heights are balanced, the
+            columns are filled sequentially. In the example below we have
+            changed column-fill to auto and the columns are now filled, in
+            order, to the height of the multicol container, leaving some columns
+            empty at the end.
+          </p>
+          <img src="./images/multicol-11.PNG" />
+          <p>
+            Note that column balancing is not supported by all browsers. Check
+            that you are getting the sort of effect that you expect in the
+            browsers you support.
+          </p>
+          <hr />
+          <h3>Handling Overflow in Multicol</h3>
+          <p>
+            In this guide we look at how multicol deals with overflow, both
+            inside the column boxes and in situations where there is more
+            content than will fit into the container.
+          </p>
+          <h4>Overflow inside column boxes</h4>
+          <p>
+            An overflow situation happens when an item's size is larger than the
+            column box. For example, the situation could happen when an image in
+            a column is wider than the column-width value or the width of the
+            column based on the number of columns declared with column-count.
+          </p>
+          <p>
+            In this situation, the content should visibly overflow into the next
+            column, rather than be clipped by the column box. You can see an
+            example of this below, with an image of the expected rendering as,
+            at the time of writing, browsers deal with this differently.
+          </p>
+          <img src="./images/multicol-12.PNG" />
+          <img src="./images/multicol-13.PNG" />
+          <p>
+            If you want an image to size down to fit the column box, the
+            standard responsive images solution of setting max-width: 100% will
+            achieve that for you.
+          </p>
+          <img src="./images/multicol-14.PNG" />
+          <h4>More columns than will fit</h4>
+          <p>
+            How overflowing columns are handled depends on whether you are in a
+            fragmented media context, such as print, or a continuous media
+            context, such as a web page.
+          </p>
+          <p>
+            In fragmented media, once a fragment (for example a page) is filled
+            with columns, the columns will move to a new page and fill that up
+            with columns. In continuous media, columns will overflow in the
+            inline direction. On the web this means that you will get a
+            horizontal scrollbar.
+          </p>
+          <p>
+            The example below shows this overflow behavior. My multicol
+            container has a height and there is more text than space to create
+            columns, therefore we get columns created outside of the container.
+          </p>
+          <img src="./images/multicol-15.PNG" />
+          <p>
+            In a future version of the specification it would be useful to be
+            able to have overflow columns in continuous media display in the
+            block direction, therefore allowing the reader to scroll down to
+            view the next set of columns.
+          </p>
+          <h4>Using vertical media queries</h4>
+          <p>
+            One issue with multicol on the web is that, if your columns are
+            taller than the viewport, the reader will need to scroll up and down
+            to read, which is not good user experience. One way to avoid this is
+            to only apply the column properties if you know you have enough
+            height.
+          </p>
+          <p>
+            In the example below we have used a min-height query to check the
+            height before applying the column properties.
+          </p>
+          <img src="./images/multicol-16.PNG" />
+          <h3>Handling content breaks in multicol</h3>
+          <p>
+            Content is broken between column boxes in multiple-column layout in
+            the same way that it is broken between pages in paged media. In both
+            contexts we control where and how things break by using properties
+            of the CSS Fragmentation specification. In this guide we see how
+            Fragmentation works in multicol.
+          </p>
+          <h4>Fragmentation basics</h4>
+          <p>
+            The CSS Fragmentation specification details how content breaks
+            between the fragmentation containers, or fragmentainers. In
+            multicol, the fragmentainer is the column box.
+          </p>
+          <p>
+            A column box can contain other markup and there are many places
+            where a break would not be ideal. For example, we would generally
+            prefer that the figcaption of an image not be separated into a new
+            column away from the image it refers to and ending a column with a
+            heading looks strange. The fragmentation properties give us ways to
+            exercise some control over this.
+          </p>
+          <p>There are various places we might want to control our breaks:</p>
+          <ul>
+            <li>Breaks inside boxes, for example inside a figure element.</li>
+            <li>
+              Breaks before and after boxes, which would include our heading
+              example above.
+            </li>
+            <li>Breaks between lines.</li>
+          </ul>
+          <h4>Breaks inside boxes</h4>
+          <p>
+            To control breaks inside boxes use the break-inside property. This
+            property takes values of:
+          </p>
+          <ul>
+            <li>auto</li>
+            <li>avoid</li>
+            <li>avoid-page</li>
+            <li>avoid-column</li>
+            <li>avoid-region</li>
+          </ul>
+          <p>
+            In the example below, we have applied break-inside to the figure
+            element to prevent the caption from becoming separated from the
+            image.
+          </p>
+          <img src="./images/multicol-17.PNG" />
+          <h4>Breaks before and after boxes</h4>
+          <p>
+            The break-before and break-after properties are used to control
+            breaks before and after elements. They take the following values
+            when in a multicol context:
+          </p>
+          <ul>
+            <li>auto</li>
+            <li>avoid</li>
+            <li>avoid-column</li>
+            <li>column</li>
+          </ul>
+          <p>
+            In this next example, we are forcing a column break before an h2
+            element.
+          </p>
+          <img src="./images/multicol-18.PNG" />
+          <h4>Breaks between lines</h4>
+          <p>
+            The orphans and widows properties are also useful. The orphans
+            property controls the number of lines left on their own at the end
+            of a fragment. The widows property controls the number left on their
+            own at the start of a fragment.
+          </p>
+          <p>
+            The orphans and widows properties take an integer as a value, which
+            represents the number of lines to keep together at the end and start
+            of a fragment, respectively. Note that these properties only work
+            inside a block container, such as a paragraph. If the block has
+            fewer lines in it than the number that you specify as a value, all
+            lines will be kept together.
+          </p>
+          <p>
+            In the example below, we are using the orphans property to control
+            the number of lines left at the bottom of a column. You can change
+            that value to see the effect on the breaking of the content.
+          </p>
+          <img src="./images/multicol-19.PNG" />
+          <h4>When things don't work as expected</h4>
+          <p>
+            If you have small amounts of content and are trying to control
+            breaks in a number of ways or on several elements, your content
+            needs to break somewhere, so you may not always get the result you
+            intended. To some extent your use of fragmentation is always a
+            suggestion to the browser, to control breaks in this way if it is
+            possible.
+          </p>
+          <p>
+            In addition to the above, browser support for these properties is a
+            little patchy. The compatibility data charts on the individual
+            property pages here on MDN can help you see which browsers support
+            which features. In most cases, the fallback to breaks not being
+            controlled is something you can live with, with suboptimal breaking
+            being untidy rather than a disaster to your layout.
+          </p>
+
+          <!---->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/YszONjKpgg4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/YszONjKpgg4" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/PjUCq04ebVA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/PjUCq04ebVA" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>

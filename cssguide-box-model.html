@@ -1,0 +1,387 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Box Model Guide</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">
+              The CSS Box Alignment module specifies CSS features that relate to
+              the alignment of boxes in the various CSS box layout models: block
+              layout, table layout, flex layout, and grid layout. The module
+              aims to create a consistent method of alignment across all of CSS.
+              This document details the general concepts found in the
+              specification.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="configuration">
+        <div class="container">
+          <h3>Introduction to the CSS basic box model</h3>
+          <p>
+            When laying out a document, the browser's rendering engine
+            represents each element as a rectangular box according to the
+            standard CSS basic box model. CSS determines the size, position, and
+            properties (color, background, border size, etc.) of these boxes.
+          </p>
+          <p>
+            Every box is composed of four parts (or areas), defined by their
+            respective edges: the content edge, padding edge, border edge, and
+            margin edge.
+          </p>
+          <img src="./images/boxmodel-1.png" />
+          <h4>Content area</h4>
+          <p>
+            The content area, bounded by the content edge, contains the "real"
+            content of the element, such as text, an image, or a video player.
+            Its dimensions are the content width (or content-box width) and the
+            content height (or content-box height). It often has a background
+            color or background image.
+          </p>
+          <p>
+            If the box-sizing property is set to content-box (default) and if
+            the element is a block element, the content area's size can be
+            explicitly defined with the width, min-width, max-width, height,
+            min-height, and max-height properties.
+          </p>
+          <h4>Padding area</h4>
+          <p>
+            The padding area, bounded by the padding edge, extends the content
+            area to include the element's padding. Its dimensions are the
+            padding-box width and the padding-box height.
+          </p>
+          <p>
+            The thickness of the padding is determined by the padding-top,
+            padding-right, padding-bottom, padding-left, and shorthand padding
+            properties.
+          </p>
+          <h4>Border area</h4>
+          <p>
+            The border area, bounded by the border edge, extends the padding
+            area to include the element's borders. Its dimensions are the
+            border-box width and the border-box height.
+          </p>
+          <p>
+            The thickness of the borders are determined by the border-width and
+            shorthand border properties. If the box-sizing property is set to
+            border-box, the border area's size can be explicitly defined with
+            the width, min-width, max-width, height, min-height, and max-height
+            properties. When there is a background (background-color or
+            background-image) set on a box, it extends to the outer edge of the
+            border (i.e. extends underneath the border in z-ordering). This
+            default behavior can be altered with the background-clip CSS
+            property.
+          </p>
+          <h4>Margin area</h4>
+
+          <p>
+            The margin area, bounded by the margin edge, extends the border area
+            to include an empty area used to separate the element from its
+            neighbors. Its dimensions are the margin-box width and the
+            margin-box height.
+          </p>
+
+          <p>
+            The size of the margin area is determined by the margin-top,
+            margin-right, margin-bottom, margin-left, and shorthand margin
+            properties. When margin collapsing occurs, the margin area is not
+            clearly defined since margins are shared between boxes.
+          </p>
+
+          <p>
+            Finally, note that for non-replaced inline elements, the amount of
+            space taken up (the contribution to the height of the line) is
+            determined by the line-height property, even though the borders and
+            padding are still displayed around the content.
+          </p>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de esta guía es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="examples_guide">Ejemplos:</h2>
+          <h3>Mastering margin collapsing</h3>
+          <p>
+            The top and bottom margins of blocks are sometimes combined
+            (collapsed) into a single margin whose size is the largest of the
+            individual margins (or just one of them, if they are equal), a
+            behavior known as margin collapsing. Note that the margins of
+            floating and absolutely positioned elements never collapse.
+          </p>
+
+          <h4>Margin collapsing occurs in three basic cases:</h4>
+          <p>
+            Adjacent siblings: <br />
+            The margins of adjacent siblings are collapsed (except when the
+            latter sibling needs to be cleared past floats).
+          </p>
+
+          <p>
+            No content separating parent and descendants <br />
+            If there is no border, padding, inline part, block formatting
+            context created, or clearance to separate the margin-top of a block
+            from the margin-top of one or more of its descendant blocks; or no
+            border, padding, inline content, height, or min-height to separate
+            the margin-bottom of a block from the margin-bottom of one or more
+            of its descendant blocks, then those margins collapse. The collapsed
+            margin ends up outside the parent.
+          </p>
+          <p>
+            Empty blocks <br />
+            If there is no border, padding, inline content, height, or
+            min-height to separate a block's margin-top from its margin-bottom,
+            then its top and bottom margins collapse.
+          </p>
+          <p>Some things to note:</p>
+          <ul>
+            <li>
+              More complex margin collapsing (of more than two margins) occurs
+              when the above cases are combined.
+            </li>
+            <li>
+              These rules apply even to margins that are zero, so the margin of
+              a descendant ends up outside its parent (according to the rules
+              above) whether or not the parent's margin is zero.
+            </li>
+            <li>
+              When negative margins are involved, the size of the collapsed
+              margin is the sum of the largest positive margin and the smallest
+              (most negative) negative margin.
+            </li>
+            <li>
+              When all margins are negative, the size of the collapsed margin is
+              the smallest (most negative) margin. This applies to both adjacent
+              elements and nested elements.
+            </li>
+          </ul>
+          <h3>Examples</h3>
+          <h4>HTML</h4>
+          <p class="codeblack">
+            &ltp&gtThe bottom margin of this paragraph is collapsed …&lt/p&gt<br />
+            &ltp&gt… with the top margin of this paragraph, yielding a margin of
+            &ltcode&gt1.2rem&lt/code&gt in between.&lt/p&gt <br />
+            &ltdiv&gtThis parent element contains two paragraphs!<br />
+            &ltp&gtThis paragraph has a &ltcode>.4rem&lt/code&gt margin between
+            it and the text above.&lt/p&gt<br />
+            &ltp&gtMy bottom margin collapses with my parent, yielding a bottom
+            margin of &ltcode&gt2rem&lt/code&gt. <br />&lt/p&gt &lt/div&gt
+            <br />&ltp&gt I am &ltcode>2rem&lt/code> below the element
+            above.&lt/p&gt
+          </p>
+
+          <h4>CSS</h4>
+          <p class="codeblack">
+            div { margin: 2rem 0; background: lavender; } <br />
+
+            p { margin: .4rem 0 1.2rem 0; background: yellow; }
+          </p>
+          <img src="./images//margin-collapse-1.PNG" />
+
+          <!---->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/YszONjKpgg4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/YszONjKpgg4" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/PjUCq04ebVA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/PjUCq04ebVA" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>

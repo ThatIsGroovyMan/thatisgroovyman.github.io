@@ -565,8 +565,54 @@ padding: 30px 0px 30px 0px ;
         right;
   }
 
+  .tiledBackground{
+    background-image: url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    color: pink;
+  }
+
+  #tiledBackground1 {
+    background-size: 150px;
+  }
 
 
+  #tiledBackground2 {
+    background-size: 300px 150px;
+  }
+
+  #square1 {
+    background-image: url(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images/favicon57.de33179910ae.1.1.png);
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+  }
+
+  .bgSizeContain {
+    background-image: url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    border: 2px solid;
+    color: pink;
+    resize: both;
+    overflow: scroll;
+  }
+
+  .bgSizeCover {
+    background-image: url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border: 2px solid;
+    color: pink;
+    resize: both;
+    overflow: scroll;
+  }
   
 /* .syntaxcode {
     font-size: 12px;

@@ -1,0 +1,477 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Coordinate systems Guide</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <h4>Using feature queries</h4>
+            <p class="concept_definition">
+              When specifying the location of a pixel in a graphics context
+              (just like when specifying coordinate systems in algebra), its
+              position is defined relative to a fixed point in the context. This
+              fixed point is called the origin. The position is specified as the
+              number of pixels offset from the origin along each dimension of
+              the context.
+            </p>
+            <p>
+              This guide describes the standard coordinate systems used by the
+              CSS object model. These are generally only different in terms of
+              where their origin is located.
+            </p>
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="configuration">
+        <div class="container">
+          <h3>Dimensions</h3>
+          <p>
+            In the coordinate systems used by web technologies, convention
+            dictates that the horizontal offset is called the x-coordinate,
+            where a negative value indicates a position to the left of the
+            origin and a positive value is to the right of the origin. The
+            y-coordinate specifies the vertical offset, with a negative value
+            being above the origin and a positive value being below the origin.
+          </p>
+          <p>
+            On the web, the default origin is the top-left corner of a given
+            context (with positive y-coordinate values being below the origin).
+            Note that this is unlike most mathematical models, where the origin
+            is at the bottom-left corner, with positive y-coordinate values
+            being above the origin.
+          </p>
+          <p>
+            When drawing 3D graphics, or using a third dimension to layer
+            objects from front to back, the z-coordinate is also used. This
+            specifies the distance away from the viewer if positive and toward
+            the viewer if negative.
+          </p>
+          <h3>Standard CSSOM coordinate systems</h3>
+
+          <p>
+            There are four standard coordinate systems used by the CSS object
+            model, as described below.
+          </p>
+          <h4>Offset</h4>
+          <p>
+            Coordinates specified using the "offset" model use the top-left
+            corner of the element being examined, or on which an event has
+            occurred.
+          </p>
+          <p>
+            For example, when a mouse event occurs, the position of the mouse as
+            specified in the event's offsetX and offsetY properties are given
+            relative to the top-left corner of the node to which the event has
+            been delivered. The origin is inset by the distances specified by
+            padding-left and padding-top.
+          </p>
+          <h4>Client</h4>
+
+          <p>
+            The "client" coordinate system uses as its origin the top-left
+            corner of the viewport or browsing context in which the event
+            occurred. This is the entire viewing area in which the document is
+            presented. Scrolling is not a factor.
+          </p>
+          <p>
+            On a desktop computer, for example, the MouseEvent.clientX and
+            MouseEvent.clientY properties indicate the position of the mouse
+            cursor at the moment the event occurred, relative to the top-left
+            corner of the browser window. The top-left corner of the window is
+            always (0, 0), regardless of the content of the document or any
+            scrolling that may have been done. In other words, scrolling the
+            document will change the client coordinates of a given position
+            within the document.
+          </p>
+          <h4>Page</h4>
+          <p>
+            The "page" coordinate system gives the position of a pixel relative
+            to the top-left corner of the entire Document in which the pixel is
+            located. That means that a given point in an element within the
+            document will keep the same coordinates in the page model unless the
+            element moves (either directly by changing its position or
+            indirectly by adding or resizing other content).
+          </p>
+          <p>
+            Mouse events' pageX and pageY properties provide the position of the
+            mouse at the time the event was generated, given relative to the
+            top-left corner of the document.
+          </p>
+          <h4>Screen</h4>
+          <p>
+            Finally, we come to the "screen" model. It's probably fairly obvious
+            what this is: it's the coordinate system where the origin is located
+            at the top-left corner of the user's entire screen space. This means
+            that the position of a given point within a document will change if
+            the containing window is moved, for example, or if the user's screen
+            geometry changes (by changing display resolution or by adding or
+            removing monitors to their system).
+          </p>
+          <p>
+            The MouseEvent.screenX and MouseEvent.screenY properties give the
+            coordinates of a mouse event's position relative to the screen's
+            origin.
+          </p>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de esta guía es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="examples_guide">Ejemplos:</h2>
+
+          <p>
+            Let's take a look at an example. This simple example creates a set
+            of nested boxes. Whenever the mouse enters, moves around inside, or
+            exits the inner box, the corresponding event is handled by updating
+            a set of informational messages within the box, listing out the
+            current mouse coordinates in each of the four available coordinate
+            systems.
+          </p>
+          <h4>JavaScript</h4>
+          <p>
+            Let's look at the script in two sections. First, the code that logs
+            the coordinates to the screen. This code will be called by the event
+            handler for the various mouse events we watch.
+          </p>
+          <h4>Displaying the coordinates</h4>
+          <p>
+            As we'll see in the HTML, the inner box (the one we're watching for
+            events on) contains several paragraphs; one for each of the four
+            coordinate systems we'll be reporting on.
+          </p>
+          <p class="codeblack">
+            let inner = document.querySelector(".inner"); <br />
+            let log = document.querySelector(".log"); <br />
+
+            function setCoords(e, type) { <br />
+            let idX = type + "X"; <br />
+            let idY = type + "Y"; <br />
+
+            document.getElementById(idX).innerText = e[idX]; <br />
+            document.getElementById(idY).innerText = e[idY]; <br />
+            }
+          </p>
+          <p>
+            A reference to the div inside the inner box which contains the
+            paragraphs that will show the coordinate information is fetched into
+            log.
+          </p>
+          <p>
+            The setCoords() function is designed to accept as input a MouseEvent
+            and the name of the origin to use when obtaining the coordinates.
+            The implementation is then quite simple. The variables idX and idY
+            are set to strings with the names of the properties corresponding to
+            the coordinates in the given coordinate system. For example, if the
+            value of type is "page", then idX is "pageX" and idY is "pageY".
+          </p>
+
+          <h4>Handling the mouse events</h4>
+          <p>
+            setCoords() is called by the event handler for the various mouse
+            events, named update(); this is shown below.
+          </p>
+          <p class="codeblack">
+            function update(e) { <br />
+            setCoords(e, "offset");<br />
+            setCoords(e, "client");<br />
+            setCoords(e, "page");<br />
+            setCoords(e, "screen");<br />
+            }<br />
+
+            inner.addEventListener("mouseenter", update, false);<br />
+            inner.addEventListener("mousemove", update, false);<br />
+            inner.addEventListener("mouseleave", update, false);<br />
+          </p>
+          <p>
+            The event handler is in the update() method. It calls setCoords()
+            once for each coordinate system, passing in the event that occurred.
+          </p>
+          <p>
+            Our main code sets up the event handlers on the inner box by calling
+            addEventListener() for each of the types mouseenter, mousemove, and
+            mouseleave.
+          </p>
+          <h4>HTML</h4>
+          <p>
+            The HTML for our example is below. Note that within the div with the
+            ID "log", we have a paragraph for each coordinate system, with span
+            used for each of the elements to receive and display the coordinates
+            in each model.
+          </p>
+          <p class="codeblack">
+            &ltdiv class="outer"&gt <br />
+            &ltdiv class="inner"&gt<br />
+            &ltdiv class="log"&gt<br />
+            &ltp&gt<br />
+            Offset-relative: &ltspan id="offsetX"&gt0&lt/span&gt,<br />
+            &ltspan id="offsetY"&gt0&lt/span&gt<br />
+            &lt/p&gt<br />
+            &ltp&gt<br />
+            Client-relative: &ltspan id="clientX"&gt0&lt/span&gt,<br />
+            &ltspan id="clientY"&gt0&lt/span&gt<br />
+            &lt/p&gt<br />
+            &ltp&gt<br />
+            Page-relative: &ltspan id="pageX"&gt0&lt/span&gt,<br />
+            &ltspan id="pageY"&gt0&lt/span&gt<br />
+            &lt/p&gt<br />
+            &ltp&gt<br />
+            Screen-relative: &ltspan id="screenX"&gt0&lt/span&gt,<br />
+            &ltspan id="screenY"&gt0&lt/span&gt<br />
+            &lt/p&gt<br />
+            &lt/div&gt<br />
+            &lt/div&gt<br />
+            &lt/div&gt<br />
+          </p>
+          <p>
+            The CSS is pretty much just for appearances here. The class "outer"
+            is used for the containing box, which is intentionally too wide to
+            show in the MDN window, to allow you to scroll it horizontally. The
+            "inner" box is the one that we track events in and in which we show
+            the mouse coordinates.
+          </p>
+          <p class="codeblack">
+            .outer { <br />
+            width: 1000px;<br />
+            height: 200px;<br />
+            background-color: red;<br />
+            }<br />
+
+            .inner {<br />
+            position: relative;<br />
+            width: 500px;<br />
+            height: 150px;<br />
+            top: 25px;<br />
+            left: 100px;<br />
+            background-color: blue;<br />
+            color: white;<br />
+            cursor: crosshair;<br />
+            user-select: none;<br />
+            -moz-user-select: none;<br />
+            -ms-user-select: none;<br />
+            -webkit-user-select: none;<br />
+            }<br />
+
+            .log {<br />
+            position: relative;<br />
+            width: 100%;<br />
+            text-align: center;<br />
+            }<br />
+          </p>
+          <h4>Result</h4>
+          <p>
+            Here you can see the results in action. As you mouse in and around
+            the blue box, watch the values of the mouse's X and Y coordinates
+            change in the various coordinate systems in which you can obtain the
+            values. Note also the effect of scrolling the example horizontally
+            upon the values returned and how the value of clientX doesn't
+            change.
+          </p>
+          <img src="./images/coordinate-systems-1.PNG" />
+
+          <!---->
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/YszONjKpgg4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/YszONjKpgg4" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/PjUCq04ebVA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/PjUCq04ebVA" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>
