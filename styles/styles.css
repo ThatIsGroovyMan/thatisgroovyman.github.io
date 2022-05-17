@@ -614,6 +614,10 @@ padding: 30px 0px 30px 0px ;
     overflow: scroll;
   }
   
+.bigimages{
+    width: 50%;
+}
+
 /* .syntaxcode {
     font-size: 12px;
     padding: 10px 30px 10px 30px;
