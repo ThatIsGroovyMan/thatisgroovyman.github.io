@@ -1,0 +1,836 @@
+<html lang="es-MX">
+  <!-- Puedes especificar el idioma de tu página. html lang="es-MX,
+    tambien es posible hacerlo en subsecciones-->
+  <!-- función del head es contener los metadatos del documento. -->
+  <head>
+    <!-- los metadatos son datos que describen datos. -->
+    <!-- especfiica la codificación de caracteres del documento utf-8 
+    es un conjunto de caracteres universales que incluye casi todos los caracteres
+de casi cualquier idioma humano conocido. -->
+
+    <!-- Open Graph Data es un protocolo de metadatos que Facebook inventó para 
+proveer metadatos más ricos para los sitios web -->
+
+    <!-- Twitter Cards tambien tiene sus propios metadatos -->
+    <meta charset="utf-8" />
+
+    <!-- Muchos elementos meta incluyen atributos name y content que ayudan a 
+proporcionar una descripción concisa de la página -->
+    <meta name="author" content="leonardo LLanes" />
+    <meta name="description" content="Diccionario CSS3" />
+
+    <!-- Puedes añadir a tus metadatos referencias a iconos personalizados
+    que se mostrarán en determinados contextos. - deben ser guardados en el mismo
+    directorio que tu index.html en formato .ico -->
+    <!-- Otros iconos https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML -->
+    <link rel="shorcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!--  es un metadato que representa el titulo de todo el documento HTML -->
+    <title>Diccionario de elementos CSS3</title>
+  </head>
+  <body>
+    <nav class="cssdicnav">
+      <ul>
+        <li><a href="./index.html">HTML5</a></li>
+        <li><a href="./cssdic.html">CSS3</a></li>
+        <li><a href="./jsdic.html">JS</a></li>
+        <li><a href="./gitdic.html">Git</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavcategories">
+      <ul>
+        <li><a href="./cssdic.html">Propierties</a></li>
+        <li><a href="./cssselectorsdic.html">Selectors</a></li>
+        <li><a href="./csspseudoclassesdic.html">Pseudo-classes</a></li>
+        <li><a href="./csspseudoelementsdic.html">Pseudo-elements</a></li>
+        <li><a href="./cssatrulesdic.html">At-rules</a></li>
+        <li><a href="./csstypesdic.html">Types</a></li>
+        <li><a href="./cssmodulesdic.html">Modules</a></li>
+      </ul>
+    </nav>
+    <nav class="cssdicnavabc">
+      <ul>
+        <li><a href="#a">A-E</a></li>
+        <li><a href="#f">F-J</a></li>
+        <li><a href="#l">L-N</a></li>
+        <li><a href="#o">O-S</a></li>
+        <li><a href="#t">T-Z</a></li>
+      </ul>
+    </nav>
+    <!-- Usar h1 como título superior dentro del body  solamente una vez y todos los 
+    demás subtitulos y parrafos estarán por debajo de él.-->
+    <!-- Las personas solemos escaner una página web y buscar solamente lo relevante para nosotros. -->
+    <!-- Los buscadores consideran a los titulos como palabras claves. -->
+    <main>
+      <section id="intro">
+        <div class="container">
+          <h1>Diccionario de elementos CSS3</h1>
+          <center><h2>Ftons Guide</h2></center>
+          <br />
+          <center>
+            <img
+              class="imgeffect_1_grayscale"
+              src="./images/csslogo.png"
+              width="80px"
+            />
+          </center>
+          <br />
+          <center>
+            <q>Innovation distinguishes between a leader and a follower</q>
+            <br />
+            <q class="quotedirectionrtl">الابتكار يميز بين القائد والتابع</q>
+          </center>
+          <article>
+            <p class="concept_definition">Ftons Layout</p>
+
+            <blockquote>
+              Last modified: 7 jul 2021, by MDN contributors
+            </blockquote>
+          </article>
+        </div>
+      </section>
+      <section id="herarchical_structure_css">
+        <div class="container">
+          <div class="backgroundgrey">
+            <p>
+              Diseño de estructura para este diccionario de
+              <em>CSS3.</em>
+            </p>
+            <code> (&ltH2&gt Orden en abecedario &lt/H2&gt) </code><br />
+            <code> --(&ltH3&gt Titulo del elemento &lt/H3&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt Definición del elemento &lt/p&gt) </code><br />
+            <code> ----(&ltp&gt posibles valores la propiedad &lt/p&gt) </code
+            ><br />
+            <code>
+              ----(&lta&gt Enlace a documentación completa por elemento
+              &lt/a&gt)</code
+            >
+          </div>
+        </div>
+      </section>
+      <section id="configuration">
+        <div class="container">
+          <h3>Fonts</h3>
+        </div>
+      </section>
+      <section id="progresssbar_dictionary">
+        <center>
+          <label for="tutorial">El progreso de esta guía es:</label>
+          <br />
+          <progress id="tutorial" max="100" value="50">50%</progress>
+        </center>
+      </section>
+
+      <section id="dictionary">
+        <div class="container">
+          <p>
+            A continuación se mostraran los elementos
+            <strong>más populares</strong> dentro del lenguaje de estilo CSS
+            especificamente la versión <b>CSS3</b>.
+          </p>
+          <h2 id="examples_guide">Ejemplos:</h2>
+          <h3>OpenType font features guide</h3>
+          <p>
+            Font features or variants refer to different glyphs or character
+            styles contained within an OpenType font. These include things like
+            ligatures (special glyphs that combine characters like 'fi' or
+            'ffl'), kerning (adjustments to the spacing between specific
+            letterform pairings), fractions, numeral styles, and several others.
+            These are all referred to as OpenType Features, and are made
+            available to use on the web via specific properties and low-level
+            control properties — font-feature-settings. This article provides
+            you with all you need to know about using OpenType font features in
+            CSS.
+          </p>
+          <p>
+            Some fonts will have one or more of these features enabled by
+            default (kerning and default ligatures are common examples), while
+            others are left to the designer or developer to choose to enable in
+            specific scenarios.
+          </p>
+          <p>
+            In addition to broad feature sets like ligatures or lining figures
+            (numerals that line up evenly as opposed to 'oldstyle', which look
+            more like lower-case letters), there are also very specific ones
+            such as stylistic sets (which might include several specific
+            variants of glyphs meant to be used together), alternates (which
+            might be one or more variants of the letter 'a'), or even
+            language-specific alterations for East Asian languages. In the
+            latter case, these alterations are actually necessary to properly
+            express the language, so they go beyond the more stylistic
+            preference of most other OpenType features.
+          </p>
+
+          <p class="contentwarning">
+            Warning: There are many CSS attributes defined to leverage font
+            features, but unfortunately many are not fully implemented. They are
+            all defined and shown here, but many will only work using the
+            lower-level font-feature-settings property. It's possible to write
+            CSS to work both ways but this can become cumbersome. The issue with
+            using font-feature-settings for everything is that every time you
+            want to change one of the individual features, you have to redefine
+            the entire string (similar to manipulating variable fonts with
+            font-variation-settings).
+          </p>
+          <h3>Discovering availability of features in fonts</h3>
+          <p>
+            This is sometimes the trickiest thing to work out if you don't have
+            any documentation that came with the fonts (many type designers and
+            foundries will provide sample pages and CSS just for this very
+            reason). But there are some sites that make it easier to figure out.
+            You can visit wakamaifondue.com, drop your font file on the circle
+            where instructed, and in a few moments you'll have a full report on
+            all the capabilities and features of your font. Axis-praxis.org also
+            offers a similar capability, with the ability to click on the
+            features to turn them on or off in a given text block.
+          </p>
+          <h3>Why you would use them?</h3>
+          <p>
+            Given that these features take a bit of work to discover and use, it
+            may seem a fair question to ask why one would bother to use them.
+            The answer lies in the specific features that will make a site more
+            useful, readable, and polished:
+          </p>
+          <ul>
+            <li>
+              Ligatures like 'ff' or 'fi' make letter spacing and reading more
+              even and smooth.
+            </li>
+            <li>
+              Fractions can make home improvement and recipe sites much easier
+              to read and understand.
+            </li>
+            <li>
+              Numerals within paragraphs of text set as 'oldstyle' sit more
+              comfortably between lower-case letters, and likewise setting them
+              as 'tabular numbers' will make them line up better when setting a
+              list of costs in a table say. 'lining' figures on the other hand
+              sit more uniformly on their own or in front of capitalized words.
+            </li>
+          </ul>
+          <p>
+            While none of these features individually will render a site useless
+            due to their absence, each of them in turn can make a site easier to
+            use and more memorable for its attention to detail.
+          </p>
+
+          <p>
+            <q
+              >OpenType features are like secret compartments in fonts. Unlock
+              them and you'll find ways to make fonts look and behave
+              differently in subtle and dramatic ways. Not all OpenType features
+              are appropriate to use all of the time, but some features are
+              critical for great typography. -- Tim Brown, Head of Typography at
+              Adobe.
+            </q>
+          </p>
+          <h4>Sometimes it's substance, not just style</h4>
+          <p>
+            There are some cases — like with font-variant-east-asian — that
+            OpenType features are directly tied to using different forms of
+            certain glyphs, which can impact meaning and readability. In cases
+            such as these, it's more than just a nicety, but rather an integral
+            part of the content itself.
+          </p>
+          <h3>The font features</h3>
+          <p>
+            There are a number of different features to consider. They are
+            grouped and explained here according to the main attributes and
+            options covered in the W3C specifications.
+          </p>
+          <p class="contentnote">
+            Note: The examples below show the properties and some example
+            combinations, along with the lower-level syntax equivalents. They
+            may not match exactly due to browser implementation inconsistencies,
+            but in many cases, the first example will match the second. The
+            typefaces shown are Playfair Display, Source Serif Pro, IBM Plex
+            Serif, Dancing Script, and Kokoro (all available and free to use,
+            most are on Google Fonts and other services).
+          </p>
+          <h4>Kerning</h4>
+          <p>Associated CSS property: font-kerning</p>
+          <p>
+            This refers to the spacing between specific glyph pairings. This is
+            generally on by default (as recommended by the OpenType
+            specification). It should be noted that if letter-spacing is also
+            set on your text, that is applied after kerning.
+          </p>
+          <img src="./images/fonts-1.PNG" />
+          <img src="./images/fonts-2.PNG" />
+          <h4>Alternates</h4>
+          <p>Associated CSS property: font-variant-alternates</p>
+          <p>
+            Fonts can supply a number of different alternatives for various
+            glyphs, such as different styles of lower case 'a' or more or less
+            elaborate swashes in a script typeface. This property can activate
+            an entire set of alternates or just a specific one, depending on the
+            values supplied. The example below is showing several different
+            aspects of working with alternate characters. Fonts with alternate
+            glyphs can make them available across the board or individually in
+            separate stylistic sets, or even individual characters. In this
+            example you can see two different typefaces, and the introduction of
+            the @font-feature-values at-rule. This is used to define shortcuts
+            or named options that can be defined per font family. This way you
+            can create a named option that applies to only a single font, or one
+            that is shared and can be applied more generally
+          </p>
+          <img src="./images/fonts-3.PNG" />
+          <img src="./images/fonts-4.PNG" />
+          <p>
+            In this case, @stylistic(alternates) will show all the alternate
+            characters for either font). Applying this to just the word 'My'
+            alters the way the 'M' renders, and applying @styleset(alt-a) only
+            changes the lower case 'a'.
+          </p>
+          <p>Try changing the line</p>
+          <p class="codeblack">font-variant-alternates: styleset(alt-a);</p>
+          <p>to</p>
+          <p class="codeblack">font-variant-alternates: styleset(alt-g);</p>
+          <p>
+            and notice that the lower case 'a' reverts to its regular form and
+            the lower case 'g's changes instead.
+          </p>
+          <h4>More about alternates</h4>
+          <ul>
+            <li>
+              <a
+                href="https://www.w3.org/TR/css-fonts-4/#propdef-font-variant-alternates"
+                target="_blank"
+                >https://www.w3.org/TR/css-fonts-4/#propdef-font-variant-alternates</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates"
+                target="_blank"
+                >https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates</a
+              >
+            </li>
+          </ul>
+          <h4>Ligatures</h4>
+          <p>Associated CSS property: font-variant-ligatures</p>
+          <p>
+            Ligatures are glyphs that replace two or more separate glyphs in
+            order to represent them more smoothly (from a spacing or aesthetic
+            perspective). Some of the most common are letters like 'fi', 'fl',
+            or 'ffl' — but there are many other possibilities. There are the
+            most frequent ones (referred to as common ligatures), and there are
+            also more specialized categories like 'discretionary ligatures',
+            'historical ligatures', and 'contextual alternates'. While these
+            last ones are not technically ligatures, they are generally similar
+            in that they replace specific combinations of letters when they
+            appear together.
+          </p>
+          <p>
+            While more common in script typefaces, in the below example they are
+            used to create arrows:
+          </p>
+          <img src="./images/fonts-5.PNG" />
+          <img src="./images/fonts-6.PNG" />
+
+          <h4>Position</h4>
+          <p>Associated CSS property: font-variant-position</p>
+          <p>
+            Position variants are used to enable typographic superscript and
+            subscript glyphs. These are designed to work with the surrounding
+            text without altering the baseline or line spacing. This is one of
+            the key benefits over using the "sub" or "sup" elements.
+          </p>
+          <img src="./images/fonts-7.PNG" />
+          <img src="./images/fonts-8.PNG" />
+          <h4>Capitals</h4>
+          <p>Associated CSS property: font-variant-caps</p>
+          <p>
+            One of the more common use cases for OpenType features is proper
+            small caps. These are capital letters sized to fit better amongst
+            lower case letters and are generally used for acronyms and
+            abbreviations.
+          </p>
+          <img src="./images/fonts-9.PNG" />
+          <img src="./images/fonts-10.PNG" />
+          <h4>Numerals</h4>
+          <p>Associated CSS property: font-variant-numeric</p>
+          <p>
+            There are several different styles of numerals commonly included in
+            fonts:
+          </p>
+          <ul>
+            <li>
+              'Lining' figures are all the same height and on the same baseline.
+            </li>
+            <li>
+              'Oldstyle' figures are mixed height and designed to have the
+              appearance of ascenders and descenders like other lower case
+              letters. These are designed to be used inline with a copy so the
+              numerals visually blend with the surrounding glyphs in a similar
+              fashion to small caps.
+            </li>
+          </ul>
+          <p>
+            There is also the notion of spacing. Proportional spacing is the
+            normal setting, whereas tabular spacing lines up numerals evenly
+            regardless of character width, making it more appropriate for lining
+            up tables of numbers in financial tables.
+          </p>
+          <p>
+            There are two types of fractions supported through this property:
+          </p>
+          <ul>
+            <li>Diagonal slashed fractions.</li>
+            <li>Vertically stacked fractions.</li>
+          </ul>
+          <p>
+            Ordinals are also supported (such as '1st' or '3rd'), as is a
+            slashed zero if present in the font.
+          </p>
+          <h4>Lining and old-style figures</h4>
+          <img src="./images/fonts-11.PNG" />
+          <img src="./images/fonts-12.PNG" />
+          <h4>Fractions, ordinals, and slashed zero</h4>
+          <img src="./images/fonts-13.PNG" />
+          <img src="./images/fonts-14.PNG" />
+          <h4>East Asian</h4>
+          <p>Associated CSS property: font-variant-east-asian</p>
+          <p>
+            This allows access to various alternate forms of glyphs within a
+            font. The example below shows a string of glyphs with only the
+            OpenType set 'jis78' enabled. Uncheck the box below and you'll see
+            more characters displayed.
+          </p>
+          <img src="./images/fonts-15.PNG" />
+          <img src="./images/fonts-16.PNG" />
+          <p class="contentnote">
+            Note: these glyphs were copied out of a font sample and are not
+            intended as prose.
+          </p>
+          <h4>Font variant shorthand</h4>
+          <p>
+            The font-variant property is the shorthand syntax for defining all
+            of the above. Setting a value of normal resets all properties to
+            their initial value. Setting a value of none sets
+            font-variant-ligatures to none and all other properties to their
+            initial value. (Meaning that if kerning is on by default, it will
+            still be on even with a value of none being supplied here.)
+          </p>
+          <img src="./images/fonts-17.PNG" />
+          <img src="./images/fonts-18.PNG" />
+          <h3>Font feature settings</h3>
+          <p>
+            font-feature-settings is the 'low level syntax' that allows explicit
+            access to every named available OpenType feature. This gives a lot
+            of control but has some disadvantages in how it impacts inheritance
+            and — as mentioned above — if you wish to change one setting, you
+            have to redeclare the entire string (unless you're using CSS custom
+            properties to set the values). Because of this, it's best to use the
+            standard properties shown above wherever possible.
+          </p>
+          <p>
+            There are a huge number of possible features. You can see examples
+            of a number of them above, and there are several resources available
+            for finding more of them.
+          </p>
+          <p>The general syntax looks like this:</p>
+          <p class="codeblack">
+            .small-caps { font-feature-settings: "smcp", "c2sc"; }
+          </p>
+          <p>
+            According to the specification you can either supply just the
+            4-character feature code or supply a 1 following the code (for
+            enabling that feature) or a 0 (zero) to disable it. This is helpful
+            if you have a feature like ligatures enabled by default but you
+            would like to turn them off like so:
+          </p>
+          <p class="codeblack">
+            .no-ligatures { font-feature-settings: "liga" 0, "dlig" 0; }
+          </p>
+          <h4>More on font-feature-settings codes</h4>
+          <ul>
+            <li>
+              'The Complete CSS Demo for OpenType Features' (can't vouch for the
+              truth of the name, but it's pretty big)
+            </li>
+            <li>A list of OpenType features on Wikipedia</li>
+          </ul>
+          <h3>Using CSS feature detection for implementation</h3>
+          <p>
+            Since not all properties are evenly implemented, it's good practice
+            to set up your CSS using feature detection to utilize the correct
+            properties, with font-feature-settings as the fallback.
+          </p>
+          <p>
+            For example, small caps can be set several ways, but if you want to
+            ensure that no matter what the underlying capitalization is that you
+            end up with everything in small caps, it requires 2 settings with
+            font-feature-settings versus a single property value using
+            font-variant-caps.
+          </p>
+          <p class="codeblack">
+            .small-caps {<br />
+            font-feature-settings: "smcp", "c2sc";<br />
+            }<br />
+
+            @supports (font-variant-caps: all-small-caps) {<br />
+            .small-caps {<br />
+            font-feature-settings: normal;<br />
+            font-variant-caps: all-small-caps;<br />
+            }<br />
+            }<br />
+          </p>
+          <p>
+            <a
+              href="https://sparanoid.com/lab/opentype-features/"
+              target="_blank"
+              >https://sparanoid.com/lab/opentype-features/</a
+            >
+          </p>
+          <p>
+            <a href="https://wakamaifondue.com/" target="_blank"
+              >https://wakamaifondue.com/</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://helpx.adobe.com/fonts/using/use-open-type-features.html"
+              target="_blank"
+              >https://helpx.adobe.com/fonts/using/use-open-type-features.html</a
+            >
+          </p>
+          <hr />
+          <h3>Variable fonts guide</h3>
+          <p>
+            Variable fonts are an evolution of the OpenType font specification
+            that enables many different variations of a typeface to be
+            incorporated into a single file, rather than having a separate font
+            file for every width, weight, or style. They let you access all the
+            variations contained in a given font file via CSS and a single
+            @font-face reference. This article will give you all you need to
+            know to get you started using variable fonts.
+          </p>
+          <p class="contentnote">
+            Note: To use variable fonts on your operating system, you need to
+            make sure that it is up to date. For example, Linux OSes need the
+            latest Linux Freetype version, and macOS prior to High Sierra
+            (10.13) does not support variable fonts. If your operating system is
+            not up to date, you will not be able to use variable fonts in web
+            pages or the Firefox Developer Tools.
+          </p>
+          <h3>Variable Fonts: what they are, and how they differ</h3>
+          <p>
+            To better understand what's different about variable fonts, it is
+            worth reviewing what non-variable ones are like and how they
+            compare.
+          </p>
+          <h4>Standard (or Static) fonts</h4>
+          <p>
+            In the past, a typeface would be produced as several individual
+            fonts, and each font would represent one specific width/weight/style
+            combination. So you would have separate files for 'Roboto Regular',
+            'Roboto Bold', and 'Roboto Bold Italic' — meaning that you could end
+            up with 20 or 30 different font files to represent a complete
+            typeface (it could be several times that for a large typeface that
+            has different widths as well).
+          </p>
+          <p>
+            In such a scenario, to use a typeface for typical use on a site for
+            body copy you would need at least four files: regular, italic, bold,
+            and bold italic. If you wanted to add more weights, like a lighter
+            one for captions or a heavier one for extra emphasis, that would
+            mean several more files. This results in more HTTP requests, and
+            more data being downloaded (usually around 20k or more per file).
+          </p>
+          <h4>Variable fonts</h4>
+          <p>
+            With a variable font, all of those permutations can be contained in
+            a single file. That file would be larger than a single font, but in
+            most cases smaller or about the same size as the 4 you might load
+            for body copy. The advantage in choosing the variable font is that
+            you have access to the entire range of weights, widths, and styles
+            available, rather than being constrained to only the few that you
+            previously would have loaded separately.
+          </p>
+          <p>
+            This allows for common typographic techniques such as setting
+            different size headings in different weights for better readability
+            at each size or using a slightly narrower width for data-dense
+            displays. For comparison, it is typical in a typographic system for
+            a magazine to use 10–15 or more different weight and width
+            combinations throughout the publication — giving a much wider range
+            of styles than currently typical on the web (or indeed practical for
+            performance reasons alone).
+          </p>
+          <h4>A note about font families, weights, and variants</h4>
+          <p>
+            You might notice that we have been talking about having a specific
+            font file for every weight and style (i.e. bold and italic and bold
+            italic), rather than relying upon the browser to synthesize them.
+            The reason for this is that most typefaces have very specific
+            designs for bolder weights and italics that often include completely
+            different characters (lower-case 'a' and 'g's are often quite
+            different in italics, for example). To most accurately reflect the
+            typeface design and avoid differences between browsers and how they
+            may or may not synthesize the different styles, it's more accurate
+            to load the specific font files where needed when using a
+            non-variable font.
+          </p>
+          <p>
+            You may also find that some variable fonts come split into two
+            files: one for uprights and all their variations, and one containing
+            the italic variations. This is sometimes done to reduce the overall
+            file size in cases where the italics aren't needed or used. In all
+            cases, it is still possible to link them with a common font-family
+            name so you can call them using the same font-family and appropriate
+            font-style.
+          </p>
+          <h3>Introducing the 'variation axis'</h3>
+          <p>
+            The heart of the new variable fonts format is the concept of an axis
+            of variation describing the allowable range of that particular
+            aspect of the typeface design. So the 'weight axis' describes how
+            light or how bold the letterforms can be; the 'width axis' describes
+            how narrow or how wide they can be; the 'italic axis' describes if
+            italic letterforms are present and can be turned on or off
+            accordingly, etc. Note that an axis can be a range or a binary
+            choice. Weight might range from 1–999, whereas italic might be 0 or
+            1 (off or on).
+          </p>
+          <p>
+            As defined in the specification, there are two kinds of axes:
+            registered and custom:
+          </p>
+          <ul>
+            <li>
+              Registered axes are those that are most frequently encountered,
+              and common enough that the authors of the specification felt it
+              was worth standardizing. The five currently registered axes are
+              weight, width, slant, italic, and optical size. The W3C has
+              undertaken to map them to existing CSS attributes, and in one case
+              introduced a new one, which you'll see below.
+            </li>
+            <li>
+              Custom axes are limitless: the typeface designer can define and
+              scope any axis they like and are just required to give it a
+              four-letter tag to identify it within the font file format itself.
+              You can use these four-letter tags in CSS to specify a point along
+              that axis of variation, as will be shown in the code examples
+              below.
+            </li>
+          </ul>
+          <h4>Registered axes and existing CSS attributes</h4>
+          <p>
+            In this section we'll demonstrate the five registered axes defined
+            with examples and the corresponding CSS. Where possible, both the
+            standard and lower-level syntax are included. The lower-level syntax
+            (font-variation-settings) was the first mechanism implemented to
+            test the early implementations of variable font support and is
+            necessary to utilize new or custom axes beyond the five registered
+            ones. However, the W3C's intent was for this syntax not to be used
+            when other attributes are available. Therefore wherever possible,
+            the appropriate property should be used, with the lower-level syntax
+            of font-variation-settings only being used to set values or axes not
+            available otherwise.
+          </p>
+          <h4>Notes</h4>
+          <ol>
+            <li>
+              When using font-variation-settings it is important to note that
+              axis names are case-sensitive. The registered axis names must be
+              in lower case, and custom axes must be in upper case. For example:
+              <p class="codeblack">
+                font-variation-settings: 'wght' 375, 'GRAD' 88;
+              </p>
+              wght (weight) is a registered axis, and GRAD (grade) is a custom
+              one.
+            </li>
+            <li>
+              If you have set values using font-variation-settings and want to
+              change one of those values, you must redeclare all of them (in the
+              same way as when you set OpenType font features using
+              font-feature-settings). You can work around this limitation by
+              using CSS Custom Properties (CSS variables) for the individual
+              values, and modifying the value of an individual custom property.
+              Example code follows at the end of the guide.
+            </li>
+          </ol>
+          <h3>Weight</h3>
+          <p>
+            Weight (represented by the wght tag) defines the design axis of how
+            thin or thick (light or heavy, in typical typographic terms) the
+            strokes of the letterforms can be. For a long time in CSS there has
+            existed the ability to specify this via the font-weight property,
+            which takes numeric values ranging from 100 to 900 in increments of
+            100, and keywords like normal or bold, which are aliases for their
+            corresponding numeric values (400 and 700 in this case). These are
+            still applied when dealing with non-variable or variable fonts, but
+            with variable ones, any number from 1 to 1000 is now valid.
+          </p>
+          <p>
+            It should be noted that at this point there is no way in the
+            @font-face declaration to 'map' a specific point on the variation
+            axis of a variable font to the keyword bold (or any other keyword).
+            This can generally be resolved fairly easily, but does require an
+            extra step in writing your CSS:
+          </p>
+          <p class="codeblack">
+            font-weight: 375; <br />font-variation-settings: 'wght' 375;
+          </p>
+          <p>
+            The following live example's CSS can be edited to allow you to play
+            with font-weight values.
+          </p>
+          <img src="./images/fonts-19.PNG" />
+          <img src="./images/fonts-20.PNG" />
+          <h4>Width</h4>
+          <p>
+            Width (represented by the wdth tag) defines the design axis of how
+            narrow or wide (condensed or extended, in typographic terms) the
+            letterforms can be. This is typically set in CSS using the
+            font-stretch property, with values expressed as a percentage above
+            or below 'normal' (100%), any number greater than 0 is technically
+            valid—though it is far more likely that the range would fall closer
+            to the 100% mark, such as 75%-125%. If a number value supplied is
+            outside the range encoded in the font, the browser should render the
+            font at the closest value allowed.
+          </p>
+          <p class="contentnote">
+            Note: The % symbol is not used when utilizing
+            font-variation-settings.
+          </p>
+          <p class="codeblack">
+            font-stretch: 115%; <br />
+            font-variation-settings: 'wdth' 115;
+          </p>
+          <p>
+            The following live example's CSS can be edited to allow you to play
+            with font width values.
+          </p>
+          <img src="./images/fonts-21.PNG" />
+          <img src="./images/fonts-22.PNG" />
+          <h4>Italic</h4>
+          <p>
+            The Italic (ital) axis works differently in that it is either on or
+            off; there is no in-between. Italic designs often include
+            dramatically different letterforms from their upright counterparts,
+            so in the transition from upright to italic, several glyph (or
+            character) substitutions usually occur. Italic and oblique are often
+            used somewhat interchangeably, but in truth are quite different.
+            Oblique is defined in this context with the term slant (see the
+            below section), and a typeface would typically have one or the
+            other, but not both.
+          </p>
+          <p>
+            In CSS, both italic and oblique are applied to text using the
+            font-style property. Also note the introduction of font-synthesis:
+            none; — which will prevent browsers from accidentally applying the
+            variation axis and a synthesized italic. This can be used to prevent
+            faux-bolding as well.
+          </p>
+          <p class="codeblack">
+            font-style: italic; <br />
+
+            font-variation-settings: 'ital' 1; <br />
+
+            font-synthesis: none; <br />
+          </p>
+          <p>
+            The following live example's CSS can be edited to allow you to play
+            with font italics.
+          </p>
+          <img src="./images/fonts-23.PNG" />
+          <img src="./images/fonts-24.PNG" />
+          <h4>Slant</h4>
+        </div>
+      </section>
+      <section id="complete_documentation_css">
+        <div class="container">
+          <div class="backdrop_container">
+            <p class="centertext">
+              <strong
+                >Este enlace te llevará a la documentación completa por parte de
+                Mozilla:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations"
+                  target="_blank"
+                  class="text_emphasis"
+                >
+                  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+                </a>
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="container">
+          <h3>Video</h3>
+          <i
+            >Se usa esta etiqueta al momento de inclur un video desde nuestro
+            servidor &ltvideo src="/dir/dir2/video.ogg"&gt Nombre del video
+            &lt/video&gt y acepta formatos MP4,WebM, Ogg
+          </i>
+          <center>
+            <div class="video-container_blue">
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/YszONjKpgg4"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/YszONjKpgg4" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+              <span>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/PjUCq04ebVA"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+                <p>
+                  Este es un tutorial para aprender HTML en video. Tiene la
+                  caracteristica que es muy dinámico y el tutor se explica muy
+                  bien. Espero lo disfrutes.
+                </p>
+                <a href="https://youtu.be/PjUCq04ebVA" target="_blank">
+                  <button class="boton_tipo_1" type="button">
+                    Verlo en Youtube
+                  </button></a
+                >
+              </span>
+            </div>
+          </center>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <nav class="cssdicnav">Este será un futuro menu footer de navegación</nav>
+      <center>
+        <div id="copyright">
+          <small> Hecho por Leonardo Ernesto LLanes Hoyos </small>
+        </div>
+      </center>
+    </footer>
+  </body>
+</html>
