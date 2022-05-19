@@ -746,6 +746,214 @@ proporcionar una descripción concisa de la página -->
           <img src="./images/fonts-23.PNG" />
           <img src="./images/fonts-24.PNG" />
           <h4>Slant</h4>
+          <p>
+            Slant (represented by the slnt tag), or as it's often referred to,
+            'oblique' — is different from true italics in that it changes the
+            angle of the letterforms but doesn't perform any kind of character
+            substitution. It is also variable, in that it is expressed as a
+            numeric range. This allows the font to be varied anywhere along that
+            axis. The allowed range is generally 0 (upright) to 20 degrees — any
+            number value along that range can be supplied, so the font can be
+            slanted just a tiny bit. However, any value from -90 to 90 degrees
+            is valid.
+          </p>
+          <p class="contentnote">
+            Note: The deg keyword is not used when utilizing
+            font-variation-settings.
+          </p>
+          <p class="codeblack">
+            font-style: oblique 14deg; font-variation-settings: 'slnt' 14;
+          </p>
+          <p>
+            The following live example's CSS can be edited to allow you to play
+            with font slant/oblique values.
+          </p>
+          <img src="./images/fonts-25.PNG" />
+          <img src="./images/fonts-26.PNG" />
+          <h4>Optical size</h4>
+          <p>
+            This is something new to digital fonts and CSS, but is a
+            centuries-old technique in designing and creating metal type.
+            Optical sizing refers to the practice of varying the overall stroke
+            thickness of letterforms based on physical size. If the size was
+            very small (such as an equivalent to 10 or 12px), the characters
+            would have an overall thicker stroke, and perhaps other small
+            modifications to ensure that it would reproduce and be readable at a
+            physically smaller size. Conversely, when a much larger size was
+            being used (like 48 or 60px), there might be much greater variation
+            in thick and thin stroke weights, showing the typeface design more
+            in line with the original intent.
+          </p>
+          <p>
+            While this was originally done to compensate for the ink and paper
+            printing process (very thin lines at small sizes often didn't print,
+            giving the letterforms a broken appearance), it translates well to
+            digital displays when compensating for screen quality and physical
+            size rendering.
+          </p>
+          <p>
+            Optical size values are generally intended to be automatically
+            applied corresponding to font-size, but can also be manipulated
+            using the lower-level font-variation-settings syntax.
+          </p>
+          <p>
+            There is a new attribute, font-optical-sizing, created to support
+            variable fonts in CSS. When using font-optical-sizing, the only
+            allowed values are auto or none — so this attribute only allows for
+            turning optical sizing on or off. However when using
+            font-variation-settings: 'opsz' "num", you can supply a numeric
+            value. In most cases you would want to match the font-size (the
+            physical size the type is being rendered) with the opsz value (which
+            is how optical sizing is intended to be applied when using auto).
+            The option to provide a specific value is provided so that should it
+            be necessary to override the default — for legibility, aesthetic, or
+            some other reason — a specific value can be applied.
+          </p>
+          <p class="codeblack">
+            font-optical-sizing: auto; font-variation-settings: 'opsz' 36;
+          </p>
+          <p>
+            The following live example's CSS can be edited to allow you to play
+            with optical size values.
+          </p>
+          <img src="./images/fonts-27.PNG" />
+          <img src="./images/fonts-28.PNG" />
+          <h4>Custom axes</h4>
+          <p>
+            Custom axes are just that: they can be any axis of design variation
+            that the typeface designer imagines. There may be some that become
+            fairly common — or even become registered — but only time will tell.
+          </p>
+          <h4>Grade</h4>
+          <p>
+            Grade may become one of the more common custom axes as it has a
+            known history in typeface design. The practice of designing
+            different grades of a typeface was often done in reaction to
+            intended use and printing technique. The term 'grade' refers to the
+            relative weight or density of the typeface design, but differs from
+            traditional 'weight' in that the physical space the text occupies
+            does not change, so changing the text grade doesn't change the
+            overall layout of the text or elements around it. This makes grade a
+            useful axis of variation as it can be varied or animated without
+            causing a reflow of the text itself.
+          </p>
+          <p class="codeblack">font-variation-settings: 'GRAD' 88;</p>
+          <p>
+            The following live example's CSS can be edited to allow you to play
+            with font grade values.
+          </p>
+          <img src="./images/fonts-29.PNG" />
+          <h4>Using a variable font: @font-face changes</h4>
+          <p>
+            The syntax for loading variable fonts is very similar to any other
+            web font, with a few notable differences, which are provided via
+            upgrades to the traditional @font-face syntax now available in
+            modern browsers.
+          </p>
+          <p>
+            The basic syntax is the same, but the font technology can be
+            specified, and allowable ranges for descriptors like font-weight and
+            font-stretch can be supplied, rather than named according to the
+            font file being loaded.
+          </p>
+          <h4>Example for a standard upright (Roman) font:</h4>
+          <p class="codeblack">
+            @font-face { <br />
+            font-family: 'MyVariableFontName';<br />
+            src: url('path/to/font/file/myvariablefont.woff2')
+            format('woff2-variations');<br />
+            font-weight: 125 950;<br />
+            font-stretch: 75% 125%;<br />
+            font-style: normal;<br />
+            }
+          </p>
+          <h4>Example for a font that includes both upright and italics:</h4>
+          <p class="codeblack">
+            @font-face {<br />
+            font-family: 'MyVariableFontName';<br />
+            src: url('path/to/font/file/myvariablefont.woff2')
+            format('woff2-variations');<br />
+            font-weight: 125 950;<br />
+            font-stretch: 75% 125%;<br />
+            font-style: oblique 0deg 20deg;<br />
+            }
+          </p>
+          <p class="contentnote">
+            Note: there is no set specific value for the upper-end degree
+            measurement in this case; they indicate that there is an axis so the
+            browser can know to render upright or italic (remember that italics
+            are only on or off)
+          </p>
+          <h4>
+            Example for a font that contains only italics and no upright
+            characters:
+          </h4>
+          <p class="codeblack">
+            @font-face { <br />
+            font-family: 'MyVariableFontName';<br />
+            src: url('path/to/font/file/myvariablefont.woff2')
+            format('woff2-variations');<br />
+            font-weight: 125 950;<br />
+            font-stretch: 75% 125%;<br />
+            font-style: italic;<br />
+            }<br />
+          </p>
+          <h4>Example for a font that contains an oblique (slant) axis:</h4>
+          <p class="codeblack">
+            @font-face { <br />
+            font-family: 'MyVariableFontName';<br />
+            src: url('path/to/font/file/myvariablefont.woff2')
+            format('woff2-variations');<br />
+            font-weight: 125 950;<br />
+            font-stretch: 75% 125%;<br />
+            font-style: oblique 0deg 12deg;<br />
+            }
+          </p>
+          <p class="contentnote">
+            Note: Not all browsers have implemented the full syntax for font
+            format, so test carefully. All browsers that support variable fonts
+            will still render them if you set the format to just the file
+            format, rather than format-variations (i.e. woff2 instead of
+            woff2-variations), but it's best to use the proper syntax if
+            possible.
+          </p>
+          <p class="contentnote">
+            Note: Supplying value ranges for font-weight, font-stretch, and
+            font-style will keep the browser from attempting to render an axis
+            outside that range if you are using the appropriate attribute (i.e.
+            font-weight or font-stretch), but will not block you from supplying
+            an invalid value via font-variation-settings, so use with care.
+          </p>
+          <h3>Working with older browsers</h3>
+          <p>
+            Variable font support can be checked with CSS Feature Queries (see
+            @supports), so it's possible to use variable fonts in production and
+            scope the CSS calling the variable fonts inside a feature query
+            block.
+          </p>
+          <p class="codeblack">
+            h1 { <br />
+            font-family: some-non-variable-font-family;<br />
+            }<br />
+
+            @supports (font-variation-settings: 'wdth' 115) {<br />
+            h1 {<br />
+            font-family: some-variable-font-family;<br />
+            }<br />
+            }
+          </p>
+          <h3>Sample pages</h3>
+          <p>
+            The following example pages show two different ways to structure
+            your CSS. The first uses the standard attributes wherever possible.
+            The second example uses CSS Custom Properties to set values for a
+            font-variation-settings string and shows how you can more easily
+            update single variable values by overriding a single variable rather
+            than rewriting the whole string. Note the hover effect on the h2,
+            which only alters the grade axis custom property value.
+          </p>
+          <img src="./images/fonts-30.PNG" />
+          <img src="./images/fonts-31.PNG" />
         </div>
       </section>
       <section id="complete_documentation_css">
